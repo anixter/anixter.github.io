@@ -94,11 +94,14 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/fancybox/jquery.fancybox.js"></script>
     <script type="text/javascript">
-      $(document).ready(function() {
-        $(".fancybox").fancybox({
-          openEffect  : 'none',
-          closeEffect : 'none'
-        });
+        jQuery(document).ready(function($) {
+          $(".fancybox").fancybox({
+              autoSize : true,
+              scrolling : 'auto',
+              fitToView : false,
+              width : 'auto',
+              maxWidth : '100%',
+          });
       });
     </script>
   </body>
