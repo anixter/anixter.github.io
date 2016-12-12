@@ -1,0 +1,48 @@
+body {background:url(/images/background1.png) repeat;}
+.portal-home {background-color:#fff; box-shadow:0px 0px 42px -25px rgba(0, 0, 0, 0.75); padding-bottom:100px; margin-top:50px; margin-bottom:50px; border-radius:7px;}
+
+a { color: #4B58A6; }
+a:hover { color: #4B58A6; }
+
+h1 {color:#0078c0; font-size:22px;}
+h5 {background-color:#C2DAE8; border:1px solid #8dacbe; padding:7px; margin:0px; font-weight:bold;}
+.tagline-column {margin-top:10px;}
+#search-functions h4 {margin-bottom:3px; color: #0078c0;}
+#search-functions select {height:33px;}
+.locations-icon-container {
+    height: 50px;
+    margin-top: 15px;
+    margin-right: 10px;}
+    .action-buttons {
+    margin-top: 32px;}
+#map_canvas img {
+  max-width: none;
+}
+
+.filter-box { 
+  height: 15px; 
+  width: 15px;  
+  display: inline-block;
+  *border-right-width: 2px;
+  *border-bottom-width: 2px;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  -webkit-background-clip: padding-box;
+     -moz-background-clip: padding;
+          background-clip: padding-box; 
+}
+
+.filter-yellow { background-color: #FBF358; }
+.filter-green { background-color: #00E13C; }
+.filter-blue { background-color: #5781FC; }
+.filter-purple { background-color: #7C54FB; }
+.filter-red { background-color: #FB6353; }
+
+canvas {-ms-touch-action: double-tap-zoom;}
+
+/* customizations for iframe template */
+.iframe #map_canvas { height: 500px; }
+.iframe .well { margin-bottom: 5px; }
+.iframe .alert { margin-top: 5px; }
+
