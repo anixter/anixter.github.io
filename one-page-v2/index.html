@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Anixter Power Solutions</title>
+    <meta name="description" content="Anixter Power Solutions is the number one utility distributor in the United States and Canada. Offering Supply Chain Solutions, MRO Solutions, and global capabilities with a local presence.">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/screen.css" rel="stylesheet">	
+    <link rel="icon" href="images/favicon.ico" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="top-nav-wrapper">
+      <div class="top-nav container">
+        <ul>
+          <li class="no-border"><a class="top-bar-link" href="">Get Support</a></li>
+          <li><a class="top-bar-link" href="">Power Solutions Canada</a></li>
+          <li><a class="top-bar-link" href="">Weather</a></li>
+          <li><a class="top-bar-link" href="">Anixter.com</a></li>
+        </ul>
+      </div><!--top nav-->
+    </div><!--top nav wrapper-->
+
+    <div class="clearfix"></div>
+
+    <header>
+      <div class="container">
+        <img src="images/logo.png" id="logo" alt="Anixter Power Solutions" />
+      </div>
+    </header>
+
+    <div class="clearfix"></div>
+
+
+    <nav class="navbar navbar-inverse">
+      <div class="container navbar-container">
+
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-brand" href="#">Main Menu</a>
+        </div><!--mobile nav-->
+
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active nav-item-last"><a class="" onclick="$('#home').animatescroll();" href="#home">Home</a></li>
+            <li><a class="" onclick="$('#locations').animatescroll();" href="#locations">Locations</a></li>
+            <li><a class="" onclick="$('#contact').animatescroll();" href="#contact">Contact Us</a></li>
+            <li><a class="" target="_blank" href="https://utilesource.hdsupply.com/storefrontCommerce/">Shop</a></li>
+            <li><a id="signIn" class="" href="#home">Sign In</a></li>
+            <li><a style="display:none;" id="signoutBtn" class="" href="#home">Sign Out</a></li>
+            <li><a class="" href="javascript:void(0);" onclick="javascript:introJs().start();">Quick Tutorial</a></li>
+          </ul>
+        </div><!--nav links -->
+      </div>
+    </nav><!--secondary nav bar-->
+
+ 
+
+    <div class="content">
+
+    
+
+      <a id="home" class="smooth"></a>
+      <div id="page1">
+        <div class="sectional container first-section">
+          <div class="col-md-8 intro-copy">
+             <h1>Welcome to Anixter Power Solutions</h1>
+             <p>Our industry-leading portfolio of products and services help our customers realize labor and supply chain stability and efficiency. Anixter Power Solutions offers access to a vast selection of products from top-name suppliers. Our associates are skilled at sourcing hard to find and specialty items, and our individual supplier relationships ensure competitive pricing and quick turnaround time providing what you need, where you need it and when you need it.</p>
+             <div data-step="2" data-intro="Browse the MRO Catalog. Clicking on this banner will open the catalog in a new window. Be sure to register an account so you can begin shopping." data-position='right'>
+             <a target="_blank" href="https://utilesource.hdsupply.com/storefrontCommerce/"><img class="shop-banner" src="images/mro-banner-high-res-compressor.png" alt="Browse MRO Catalog" /></a></div>
+             <div data-step="3" data-intro="Use the buttons to navigate to the documents for EDI, Credit Application or Legal Documents: such as Terms and Conditions and Privacy Policies." data-position='right' id="documents">
+               <h2>Documents and Forms</h2>
+               <p>Use the buttons below to view or download documents relating to EDI (Electronic Data Interchange), Credit Applications, and Terms &amp; Conditions as well as our Privacy Policies.
+               <div class="row" id="websiteList">
+
+                 <a onclick="$('#edi-page').animatescroll();" href="#edi-page">
+                  <div class="col-md-4 card">
+                      <h3><span class="card-icon"><span class="glyphicon glyphicon-file doc-con"></span></span>EDI</h3>
+                  </div>
+                </a><!--card-->
+
+                 <a data-toggle="modal" data-target="#creditApp" href="">
+                  <div class="col-md-4 card">
+                    <h3><span class="card-icon"><span class="glyphicon glyphicon-file doc-con"></span></span>Credit Application</h3>
+                  </div>
+                </a><!--card-->
+
+                 <a onclick="$('#page3').animatescroll();" href="#page3">
+                  <div class="col-md-4 card">
+                    <h3><span class="card-icon"><span class="glyphicon glyphicon-file doc-con"></span></span>Terms &amp; Conditions</h3>
+                  </div>
+                </a><!--card-->
+
+                 <!-- Credit App Modal -->
+                  <div class="modal fade" id="creditApp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          <h4 class="modal-title" id="myModalLabel">Credit Applications</h4>
+                        </div>
+                        <div class="modal-body">
+                          <p>If you have any questions, please contact the <a href="mailto:creditservicesele@anixter.com">Credit Services Team.</a></p>
+                          <ul class="edi-list">
+                            <li><a target="_blank" href="legal/Anixter_Power_Solutions_Application_for_Credit.pdf"><img src="images/acrobat-icon.png" alt="Download PDF" /> Anixter Inc. Credit Application – United States</a></li>
+                            <li><a target="_blank" href="legal/PS_FIN_CreditApplication_Canada_FINAL.pdf"><img src="images/acrobat-icon.png" alt="Download PDF" /> Anixter Inc. Credit Application – Canada</a></li>
+                          </ul>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!--modal-->
+                </div><!--documents-->
+             </div>
+          </div>
+
+          <div class="col-md-4 login-form" data-step="1" data-intro="Use this form to log in to your account. Once you log in, you will see your applications in this same area. You can also change your password or register for a new account." data-position='right'>
+            <div class="if-not-signed-in">
+            <h2><img src="http://utilidevinternal.hdsupply.com/SSOFace/images/users.png" alt="Sign In" width="20" /> Sign In</h2>
+            <form role="form" data-toggle="validator">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                  <input type="text" class="form-control" placeholder="Email/Login ID" id="login" aria-describedby="inputGroupSuccess1Status" required>
+                </div>
+              </div>
+
+              <br />
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon"><span class="glyphicon glyphicon-star"></span></span>
+                  <input type="password" class="form-control login-field  login-field-password" placeholder="Password" value="" id="password" aria-describedby="inputGroupSuccess1Status" required />
+                </div>
+              </div>
+
+            <p class="pull-right"><em><a data-toggle="modal" data-target="#forgotpassword" href="">Forgot Your Password?</a></em></p>
+
+            <input class='tgl tgl-light' id='show-password' type='checkbox'>
+            <label class='tgl-btn' for='show-password'></label><p class="togglePassword">Show Password</p>
+
+              <div class="col-md-6">
+                <input type="submit" value="Sign In" class="btn btn-primary" id="signinBtn"></input>
+              </div>
+              
+              <div class="col-md-6">
+                <div data-toggle="modal" data-target="#register" class="btn btn-danger">Register</div>
+              </div>
+
+            </form>
+
+                <!-- Modal -->
+                <div class="modal fade" id="forgotpassword" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Forgot Your Password?</h4>
+                      </div>
+                      <div class="modal-body">
+                       <p>Enter the email address associated with your account (from account registration). You will receive an email from us containing a temporary password.</p>
+
+                      <p>If you do not recieve an email from us with a temporary password or your email address has changed since you registered for this account, please contact us via email at <a href="mailto:aps-ApplicationSupport@anixter.com?subject=Forgot Password">aps-ApplicationSupport@anixter.com</a>.</p>
+
+                      <div class="form-group">
+                        <label class="control-label" for="emailFP">Email</label>
+                        <div class="input-group">
+                          <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                          <input type="text" class="form-control" placeholder="Email/Login ID" id="emailFP" aria-describedby="inputGroupSuccess1Status">
+                        </div>
+                        <p class="has-error" id="invalid-email"></p>
+                      </div>
+
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="resetPWBtn">Reset Password</button>
+                      </div>
+                    </div>
+                  </div>
+                </div><!--MODAL-->
+
+                
+
+                <!-- Modal -->
+                <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Your Information</h4>
+                      </div>
+                      <div class="modal-body">
+
+                      <div class="stepsection">
+                          <div class="col-md-6">
+                                <label class="mylabel"><span class="red">* </span>First Name</label>
+                                <input name="fname" id="fname" type="text" required><br>
+                          </div>
+
+                          <div class="col-md-6">
+                                <label class="mylabel"><span class="red">* </span>Last Name</label>
+                                <input name="lname" id="lname" type="text" required><br>
+                          </div>
+
+                          <div class="clearfix"></div><!--ROW 1-->
+
+                          <div class="col-md-6">
+                                <label class="mylabel"><span class="red">* </span>Company</label>
+                                <input name="company" id="company" type="text" required><br>
+                          </div>
+
+                          <div id="email-form-required" class="col-md-6">
+                                <label class="mylabel"><span class="red">* </span>Email</label>
+                                <input name="email" id="email" type="email" required><br>
+                          </div>
+
+                          <div class="clearfix"></div><!--ROW 2-->
+
+                          <div class="col-md-6">
+                                <label class="mylabel"><span class="red">* </span>Address</label>
+                                <input name="address" id="address" type="text" required><br>
+                          </div>
+
+                          <div class="col-md-6">
+                                <label class="mylabel">&nbsp;&nbsp;Address 2</label>
+                                <input type="text" name="address2" id="address2"><br>
+                          </div>
+
+                          <div class="clearfix"></div><!--ROW 3-->
+
+                          <div class="col-md-6">
+                                <label class="mylabel"><span class="red">* </span>City</label>
+                                <input  name="city" id="city" type="text" required><br>
+                          </div>
+
+                          <div class="col-md-6">
+                                <label class="mylabel"><span class="red">* </span>State</label>
+                                <select name="state" id="state" required>
+                                      <option value="">Select One...</option>
+                                      <option value="AL">Alabama</option>
+                                      <option value="AK">Alaska</option>
+                                      <option value="AZ">Arizona</option>
+                                      <option value="AR">Arkansas</option>
+                                      <option value="CA">California</option>
+                                      <option value="CO">Colorado</option>
+                                      <option value="CT">Connecticut</option>
+                                      <option value="DE">Delaware</option>
+                                      <option value="DC">District Of Columbia</option>
+                                      <option value="FL">Florida</option>
+                                      <option value="GA">Georgia</option>
+                                      <option value="HI">Hawaii</option>
+                                      <option value="ID">Idaho</option>
+                                      <option value="IL">Illinois</option>
+                                      <option value="IN">Indiana</option>
+                                      <option value="IA">Iowa</option>
+                                      <option value="KS">Kansas</option>
+                                      <option value="KY">Kentucky</option>
+                                      <option value="LA">Louisiana</option>
+                                      <option value="ME">Maine</option>
+                                      <option value="MD">Maryland</option>
+                                      <option value="MA">Massachusetts</option>
+                                      <option value="MI">Michigan</option>
+                                      <option value="MN">Minnesota</option>
+                                      <option value="MS">Mississippi</option>
+                                      <option value="MO">Missouri</option>
+                                      <option value="MT">Montana</option>
+                                      <option value="NE">Nebraska</option>
+                                      <option value="NV">Nevada</option>
+                                      <option value="NH">New Hampshire</option>
+                                      <option value="NJ">New Jersey</option>
+                                      <option value="NM">New Mexico</option>
+                                      <option value="NY">New York</option>
+                                      <option value="NC">North Carolina</option>
+                                      <option value="ND">North Dakota</option>
+                                      <option value="OH">Ohio</option>
+                                      <option value="OK">Oklahoma</option>
+                                      <option value="OR">Oregon</option>
+                                      <option value="PA">Pennsylvania</option>
+                                      <option value="RI">Rhode Island</option>
+                                      <option value="SC">South Carolina</option>
+                                      <option value="SD">South Dakota</option>
+                                      <option value="TN">Tennessee</option>
+                                      <option value="TX">Texas</option>
+                                      <option value="UT">Utah</option>
+                                      <option value="VT">Vermont</option>
+                                      <option value="VA">Virginia</option>
+                                      <option value="WA">Washington</option>
+                                      <option value="WV">West Virginia</option>
+                                      <option value="WI">Wisconsin</option>
+                                      <option value="WY">Wyoming</option>
+                                  </select>
+                          </div>
+
+                          <div class="clearfix"></div><!--ROW 4-->
+
+                          <div class="col-md-6">
+                                <label class="mylabel"><span class="red">* </span>Postal Code</label>
+                                <input name="zip" id="zip" type="text" required><br>
+                          </div>
+
+                          <div class="col-md-6">
+                                <label class="mylabel"><span class="red">* </span>Country</label>
+                                <select id="country" required>
+                                      <option value="">Select One...</option>
+                                      <option>Afghanistan</option>
+                                      <option>Albania</option>
+                                      <option>Algeria</option>
+                                      <option>Andorra</option>
+                                      <option>Angola</option>
+                                      <option>Antigua & Deps</option>
+                                      <option>Argentina</option>
+                                      <option>Armenia</option>
+                                      <option>Australia</option>
+                                      <option>Austria</option>
+                                      <option>Azerbaijan</option>
+                                      <option>Bahamas</option>
+                                      <option>Bahrain</option>
+                                      <option>Bangladesh</option>
+                                      <option>Barbados</option>
+                                      <option>Belarus</option>
+                                      <option>Belgium</option>
+                                      <option>Belize</option>
+                                      <option>Benin</option>
+                                      <option>Bhutan</option>
+                                      <option>Bolivia</option>
+                                      <option>Bosnia Herzegovina</option>
+                                      <option>Botswana</option>
+                                      <option>Brazil</option>
+                                      <option>Brunei</option>
+                                      <option>Bulgaria</option>
+                                      <option>Burkina</option>
+                                      <option>Burundi</option>
+                                      <option>Cambodia</option>
+                                      <option>Cameroon</option>
+                                      <option>Canada</option>
+                                      <option>Cape Verde</option>
+                                      <option>Central African Rep</option>
+                                      <option>Chad</option>
+                                      <option>Chile</option>
+                                      <option>China</option>
+                                      <option>Colombia</option>
+                                      <option>Comoros</option>
+                                      <option>Congo</option>
+                                      <option>Congo {Democratic Rep}</option>
+                                      <option>Costa Rica</option>
+                                      <option>Croatia</option>
+                                      <option>Cuba</option>
+                                      <option>Cyprus</option>
+                                      <option>Czech Republic</option>
+                                      <option>Denmark</option>
+                                      <option>Djibouti</option>
+                                      <option>Dominica</option>
+                                      <option>Dominican Republic</option>
+                                      <option>East Timor</option>
+                                      <option>Ecuador</option>
+                                      <option>Egypt</option>
+                                      <option>El Salvador</option>
+                                      <option>Equatorial Guinea</option>
+                                      <option>Eritrea</option>
+                                      <option>Estonia</option>
+                                      <option>Ethiopia</option>
+                                      <option>Fiji</option>
+                                      <option>Finland</option>
+                                      <option>France</option>
+                                      <option>Gabon</option>
+                                      <option>Gambia</option>
+                                      <option>Georgia</option>
+                                      <option>Germany</option>
+                                      <option>Ghana</option>
+                                      <option>Greece</option>
+                                      <option>Grenada</option>
+                                      <option>Guatemala</option>
+                                      <option>Guinea</option>
+                                      <option>Guinea-Bissau</option>
+                                      <option>Guyana</option>
+                                      <option>Haiti</option>
+                                      <option>Honduras</option>
+                                      <option>Hungary</option>
+                                      <option>Iceland</option>
+                                      <option>India</option>
+                                      <option>Indonesia</option>
+                                      <option>Iran</option>
+                                      <option>Iraq</option>
+                                      <option>Ireland {Republic}</option>
+                                      <option>Israel</option>
+                                      <option>Italy</option>
+                                      <option>Ivory Coast</option>
+                                      <option>Jamaica</option>
+                                      <option>Japan</option>
+                                      <option>Jordan</option>
+                                      <option>Kazakhstan</option>
+                                      <option>Kenya</option>
+                                      <option>Kiribati</option>
+                                      <option>Korea North</option>
+                                      <option>Korea South</option>
+                                      <option>Kosovo</option>
+                                      <option>Kuwait</option>
+                                      <option>Kyrgyzstan</option>
+                                      <option>Laos</option>
+                                      <option>Latvia</option>
+                                      <option>Lebanon</option>
+                                      <option>Lesotho</option>
+                                      <option>Liberia</option>
+                                      <option>Libya</option>
+                                      <option>Liechtenstein</option>
+                                      <option>Lithuania</option>
+                                      <option>Luxembourg</option>
+                                      <option>Macedonia</option>
+                                      <option>Madagascar</option>
+                                      <option>Malawi</option>
+                                      <option>Malaysia</option>
+                                      <option>Maldives</option>
+                                      <option>Mali</option>
+                                      <option>Malta</option>
+                                      <option>Marshall Islands</option>
+                                      <option>Mauritania</option>
+                                      <option>Mauritius</option>
+                                      <option>Mexico</option>
+                                      <option>Micronesia</option>
+                                      <option>Moldova</option>
+                                      <option>Monaco</option>
+                                      <option>Mongolia</option>
+                                      <option>Montenegro</option>
+                                      <option>Morocco</option>
+                                      <option>Mozambique</option>
+                                      <option>Myanmar, {Burma}</option>
+                                      <option>Namibia</option>
+                                      <option>Nauru</option>
+                                      <option>Nepal</option>
+                                      <option>Netherlands</option>
+                                      <option>New Zealand</option>
+                                      <option>Nicaragua</option>
+                                      <option>Niger</option>
+                                      <option>Nigeria</option>
+                                      <option>Norway</option>
+                                      <option>Oman</option>
+                                      <option>Pakistan</option>
+                                      <option>Palau</option>
+                                      <option>Panama</option>
+                                      <option>Papua New Guinea</option>
+                                      <option>Paraguay</option>
+                                      <option>Peru</option>
+                                      <option>Philippines</option>
+                                      <option>Poland</option>
+                                      <option>Portugal</option>
+                                      <option>Qatar</option>
+                                      <option>Romania</option>
+                                      <option>Russian Federation</option>
+                                      <option>Rwanda</option>
+                                      <option>St Kitts & Nevis</option>
+                                      <option>St Lucia</option>
+                                      <option>Saint Vincent & the Grenadines</option>
+                                      <option>Samoa</option>
+                                      <option>San Marino</option>
+                                      <option>Sao Tome & Principe</option>
+                                      <option>Saudi Arabia</option>
+                                      <option>Senegal</option>
+                                      <option>Serbia</option>
+                                      <option>Seychelles</option>
+                                      <option>Sierra Leone</option>
+                                      <option>Singapore</option>
+                                      <option>Slovakia</option>
+                                      <option>Slovenia</option>
+                                      <option>Solomon Islands</option>
+                                      <option>Somalia</option>
+                                      <option>South Africa</option>
+                                      <option>South Sudan</option>
+                                      <option>Spain</option>
+                                      <option>Sri Lanka</option>
+                                      <option>Sudan</option>
+                                      <option>Suriname</option>
+                                      <option>Swaziland</option>
+                                      <option>Sweden</option>
+                                      <option>Switzerland</option>
+                                      <option>Syria</option>
+                                      <option>Taiwan</option>
+                                      <option>Tajikistan</option>
+                                      <option>Tanzania</option>
+                                      <option>Thailand</option>
+                                      <option>Togo</option>
+                                      <option>Tonga</option>
+                                      <option>Trinidad & Tobago</option>
+                                      <option>Tunisia</option>
+                                      <option>Turkey</option>
+                                      <option>Turkmenistan</option>
+                                      <option>Tuvalu</option>
+                                      <option>Uganda</option>
+                                      <option>Ukraine</option>
+                                      <option>United Arab Emirates</option>
+                                      <option>United Kingdom</option>
+                                      <option>United States</option>
+                                      <option>Uruguay</option>
+                                      <option>Uzbekistan</option>
+                                      <option>Vanuatu</option>
+                                      <option>Vatican City</option>
+                                      <option>Venezuela</option>
+                                      <option>Vietnam</option>
+                                      <option>Yemen</option>
+                                      <option>Zambia</option>
+                                      <option>Zimbabwe</option>
+                                  </select>
+                          </div>
+
+                          <div class="clearfix"></div><!--ROW 5-->
+
+                          <div class="col-md-6">
+                                <label class="mylabel"><span class="red">* </span>Phone</label>
+                                <input name="phone" id="phone" type="tel" required><br>
+                          </div>
+
+                          <div class="clearfix"></div><!--ROW 6-->
+                          <hr />
+                          <div class="col-md-12">
+                            <h4 class="modal-title" id="myModalLabel">If you have an existing account, please fill out the fields below:</h4>
+                          </div>
+                          <div class="col-md-4">
+                            <label class="mylabel">Account Type</label>
+                            <select name="accountType" id="accountType">
+                              <option>Customer</option>
+                              <option>Vendor</option>
+                              <option>APS Associate</option>
+                              <option>Other</option>
+                            </select>
+                          </div>
+
+                          <div class="col-md-4">
+                            <label class="mylabel">APS Account Number</label>
+                            <input name="accountNumber" id="accountNumber"><br>
+                          </div>
+
+                          <div class="col-md-4">
+                            <label class="mylabel">APS Account Manager</label>
+                            <input name="accountMgr" id="accountMgr"><br>
+                          </div>
+
+                          <div class="clearfix"></div><!--ALREADY HAVE ACCOUNT ROW-->
+
+                          <hr />
+
+                          <div class="col-md-12 checkboxes">
+                            <h4 class="modal-title" id="myModalLabel">I would like more information about...</h4>
+                            <div class="clearfix"></div>
+                            <div class="col-md-6">
+                              <input type="checkbox" id="eStorefront" name="eStorefront">
+                              <label class="mylabel2">eStorefront</label><br>
+                              <input type="checkbox" id="mw" name="mw"><label class="mylabel2">Mobile Warehouse</label><br>
+                              <input type="checkbox" id="rc" name="rc"><label class="mylabel2">Reservation System</label><br>
+                              <input type="checkbox" id="dts" name="dts"><label class="mylabel2">Delivery Tracking System</label><br>
+                            </div>
+
+                            <div class="col-md-6">
+                              <input type="checkbox" id="performanceDashboard" name="performanceDashboard"><label class="mylabel2">Performance Dashboard</label><br>
+                              <input type="checkbox" id="quoteXchange" name="quoteXchange"><label class="mylabel2">Quote Exchange</label><br>
+                              <input type="checkbox" id="invGateway" name="invGateway"><label class="mylabel2">Invoice Gateway</label><br>
+                            </div>
+                          </div><!--checkboxes-->
+                          <div class="clearfix"></div>
+                        </div>
+
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="registerBtn">Submit Your Information</button>
+                      </div>
+                    </div>
+                  </div>
+                </div><!--MODAL-->
+
+                <div class="clearfix"></div>
+            <hr />
+            <a href="mailto:aps-ApplicationSupport@anixter.com"><img class="subscribe" src="images/talk.jpg" alt="Contact Support" /></a>
+            </div><!--if not signed in-->
+
+            <div style="display:none;" class="if-signed-in">
+              <h3 id="lblWelcomeName">Welcome</h3>
+              <p>Please choose the application you want to open below or use the change/reset password tool.</p>
+
+              <h2><img src="images/app-icon.png" alt="My Apps" width="20" /> My Apps</h2>
+
+              <div class="row" id="websiteList">
+
+               <div class="col-md-6"> 
+                <a target="_blank" href="https://utilesource.hdsupply.com/storefrontCommerce/">
+                  <div class="btn btn-primary"><span class="glyphicon glyphicon-expand"></span> Storefront</div>
+                </a>
+               </div>
+
+               <div class="col-md-6"> 
+                <a target="_blank" href="https://utilesource.hdsupply.com/storefrontCommerce/">
+                  <div class="btn btn-primary"><span class="glyphicon glyphicon-expand"></span> Demand Bridge</div>
+                </a>
+               </div>
+
+              <div class="col-md-6"> 
+                <a target="_blank" href="https://utilesource.hdsupply.com/storefrontCommerce/">
+                  <div class="btn btn-primary"><span class="glyphicon glyphicon-expand"></span> Web Order Entry</div>
+                </a>
+               </div>
+             </div><!--row-->
+
+             <h2><img src="http://utilidevinternal.hdsupply.com/SSOFace/images/users.png" alt="Manage Your Account" width="20" /> Manage Your Account <a href=""><span id="signoutBtn" class="tiny">(Sign Out)</span></a></h2>
+             <div class="row">
+              <div class="col-md-10">
+               <div class="btn btn-danger" data-toggle="modal" data-target="#resetpassword" >
+                <span class="glyphicon glyphicon-exclamation-sign"></span> Change/Reset Password
+               </div>
+             </div>
+             </div>
+             <!-- Button trigger modal -->
+              
+
+               <!-- Modal -->
+                <div class="modal fade" id="resetpassword" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Reset/Change Password</h4>
+                      </div>
+                      <div class="modal-body">
+                       <p>Use the form below to reset/change your password. If you encounter any issues, please e-mail support at <a href="mailto:aps-ApplicationSupport@anixter.com?subject=Forgot Password/Reset Password">aps-ApplicationSupport@anixter.com</a>.</p>
+
+                      <div class="form-group">
+                        <label class="control-label" for="emailFP">Current Password</label>
+                        <div class="input-group">
+                          <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                          <input type="text" class="form-control" id="currentPassword" aria-describedby="inputGroupSuccess1Status">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label" for="emailFP">New Password</label>
+                        <div class="input-group">
+                          <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                          <input type="text" class="form-control" id="newPassword" aria-describedby="inputGroupSuccess1Status">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="control-label" for="emailFP">Confirm New Password</label>
+                        <div class="input-group">
+                          <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                          <input type="text" class="form-control" id="confirmNewPassword" aria-describedby="inputGroupSuccess1Status">
+                        </div>
+                      </div>
+            <p class="has-error" id="invalid-pwd"></p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" id="resetPWBtn">Change/Reset Your Password</button>
+                      </div>
+                    </div>
+                  </div>
+                </div><!--MODAL-->
+
+            </div><!--if signed in-->
+
+          </div><!--LOGIN COLUMN-->
+          <div class="clearfix"></div>
+        </div><!--SECTION-->
+        <!--<a onclick="$('#locations').animatescroll();" href="#locations"><div class="divider"><img src="images/down-arrow.png" /></div></a>-->
+      </div><!--PAGE-->
+
+      <div id="tagline">
+        <div class="container">
+          
+        </div>
+      </div><!--tagline-->
+
+      <a id="locations" class="smooth"></a>
+      <div id="page2">
+        <div class="sectional container">
+          <h3>Location Finder</h3>
+           <iframe frameborder="0" width="100%" height="835px" scrolling="no" src="map.html"></iframe>
+        </div>
+        <!--<a onclick="$('#contact').animatescroll();" href="#contact"><div class="divider"><img src="images/down-arrow.png" /></div></a>-->
+      </div>
+
+      <div id="tagline2">
+        <div class="container">
+          
+        </div>
+      </div><!--tagline-->
+
+      <a id="contact" class="smooth"></a>
+      <div id="page4">
+        <div class="sectional container">
+          <h3>Contact Us</h3>
+          <div class="form-wrapper">
+              <form role="form" data-toggle="validator">
+              <div class="contact-form-row">
+                <p class="form-element form-group">
+                  <span id="main_0_center_1_lblLast" class="contact_li"><font color="red">* </font>First Name </span>
+                  <input class="form-control" name="main_0$center_1$txtName" type="text" id="txtName" required >
+                </p>
+
+                 <p class="form-element form-group">
+                    <span id="main_0_center_1_lblLast" class="contact_li"><font color="red">* </font>Last Name </span>
+                    <input class="form-control" name="main_0$center_1$txtLast" type="text" id="txtLast" required >
+                  </p>
+                  <div class="clearfix"></div>
+                </div><!--FORM ROW-->
+
+                <div class="clearfix"></div>
+
+                <div class="contact-form-row">
+                  <p class="form-element form-group">
+                    <span id="main_0_center_1_lblEmail" class="contact_li"><font color="red">* </font>Email </span><br />
+                    <input class="form-control" name="main_0$center_1$txtEmail" type="text" id="txtEmail" required>
+                  </p>
+
+                  
+                  <p class="form-element">
+                    <span id="main_0_center_1_lblCoName" class="contact_li">Company Name </span>
+                    <input class="form-control" name="main_0$center_1$txtCoName" type="text" id="txtCoName">
+                  </p>
+                  <div class="clearfix"></div>
+                </div><!--FORM ROW-->
+
+                <div class="clearfix"></div>
+
+
+                <div class="contact-form-row">
+                  <p class="form-element">
+                    <span id="main_0_center_1_lblAcctNum" class="contact_li">Account Number</span>
+                    <input class="form-control" name="main_0$center_1$txtAcctNum" type="text" id="txtAcctNum">
+                  </p>
+
+                  <p class="form-element">
+                  <span id="main_0_center_1_lblIndustry" class="contact_li">Industry </span>
+                    <select class="form-control" name="main_0$center_1$ddIndustry" id="ddIndustry" >
+                        <option value="">Select One</option>
+                        <option value="Construction">Construction</option>
+                        <option value="Industrial">Industrial</option>
+                        <option value="Investor-owned Utility">Investor-owned Utility</option>
+                        <option value="Public Power">Public Power</option>
+                        <option value="Other">Other</option>
+                      </select>
+                      </p>
+                    <div class="clearfix"></div>
+                  </div>
+
+                  <div class="clearfix"></div>
+
+                  <div class="contact-form-row">
+                    <p class="form-element">
+                      <span id="main_0_center_1_lblAddress" class="contact_li">Address </span>
+                      <input class="form-control" name="main_0$center_1$txtAddress" type="text" id="txtAddress" >
+                    </p>
+
+                    <p class="form-element">
+                      <span id="main_0_center_1_lblCity" class="contact_li">City </span><br />
+                      <input class="form-control" name="main_0$center_1$txtCity" type="text" id="txtCity" >
+                    </p>
+                    <div class="clearfix"></div>
+                  </div><!--FORM ROW-->
+
+                  <div class="clearfix"></div>
+
+                  <div class="contact-form-row">
+                    <p class="form-element">
+                  <span id="main_0_center_1_lblState" class="contact_li">State </span><br />
+                    <input name="main_0$center_1$txtState" type="text" id="txtState" >
+                    </p>
+
+                    <p class="form-element">
+                      <span id="main_0_center_1_lblZip" class="contact_li">Zip: </span><br />
+                      <input name="main_0$center_1$txtZip" type="text" id="txtZip" >
+                    </p>
+                    <div class="clearfix"></div>
+                  </div><!--FORM ROW-->
+
+                <div class="clearfix"></div>
+
+                <div class="contact-form-row">
+                  <p class="form-element">
+                    <span id="main_0_center_1_lblCoPhone" class="contact_li">Company Phone </span>
+                    <input class="form-control" name="main_0$center_1$txtCoPhone" type="text" id="txtCoPhone" >
+                  </p>
+
+                  <p class="form-element">
+                    <span id="main_0_center_1_lblCellPhone" class="contact_li">Cell Phone </span>
+                    <input class="form-control" name="main_0$center_1$txtCellPhone" type="text" id="txtCellPhone" >
+                  </p>
+
+                  <div class="clearfix"></div>
+
+                </div><!--FORM ROW-->
+
+                  <div class="clearfix"></div>
+
+                <div class="contact-form-row">
+
+                  <p class="form-element bottom-form form-group">
+                  <span id="main_0_center_1_lblDD1" class=""><font color="red">*</font>Let Us Know How We Can Help You?<br /></span>
+                    <select class="form-control" multiple name="main_0$center_1$ddHelp" id="ddHelp" required>
+                        <option value="">Select All That Apply</option>
+                        <option value="Export">Export Sales and Services </option>
+                        <option value="Quote">Request for Quote</option>
+                        <option value="Product Support">Product Support</option>
+                        <option value="Website Support">Website Support</option>
+                        <option value="Customer Service">Customer Service</option>
+                        <option value="General Inquiries">General Inquiries</option>
+                        <option value="I need assistance with something else">I need assistance with something else</option>
+                      </select>
+                       <span class="shorten-for-mobile"><em>Hold the CTRL or APPLE Key for Multiple Selections.</em></span>
+                    </p>
+
+                  <p class="form-element bottom-form">
+                    <span id="main_0_center_1_lblComments" class="contact_li">Message </span>
+                    <textarea class="form-control" name="main_0$center_1$txtComments" rows="2" cols="20" id="txtComments"></textarea>
+                  </p>
+                <div class="clearfix"></div>
+               </div>
+              <div class="clearfix"></div>
+              <div class="contact-form-row last-row">
+               <p class="light">
+                <p><strong>Would you like to receive updates from Anixter Power Solutions?</strong></p>
+                <br />
+                <input id="rdUpdates_0" type="radio" name="main_0$center_1$rdUpdates" value="Yes">
+                <label class="checkbox-label" for="main_0_center_1_rdUpdates_0">Yes</label>
+
+                <input id="rdUpdates_1" type="radio" name="main_0$center_1$rdUpdates" value="No" checked="checked">
+                <label class="checkbox-label" for="main_0_center_1_rdUpdates_1">No</label>
+
+                <div class="clearfix"></div>
+               <input type="submit" name="main_0$center_1$btnSubmit" value="Submit" class="contact-form-submit btn btn-primary" id="contactUsBtn"></div></div></div>
+             </form>
+          </div>
+        </div></div>
+        </div>
+         
+      </div>
+
+      <div id="tagline3">
+        <div class="container">
+          
+        </div>
+      </div><!--tagline-->
+
+      <a id="edi" class="smooth"></a>
+      <div id="edi-page">
+        <div class="sectional container">
+          <h3>EDI <span class="shorten-for-mobile">(Electronic Data Interchange)</span></h3>
+          <p>Anixter Power Solutions is committed to extending the benefits of electronic connectivity across our supplier base. This initiative is a critical component of our efforts to control the costs associated with handling paper transactions. Your support and understanding of the strategic value of EDI processing for both our companies will help make this a mutual success.</p>
+
+          <p>If you have EDI capabilities but are not yet exchanging an 850 Purchase Order, 855 Purchase Order Acknowledgment, and an 810 Invoice document with Anixter Power Solutions, please review our EDI forms sections below and contact us directly for detailed EDI Testing Procedures.</p>
+
+          <div class="row">
+            <div class="col-md-6">
+              <h2>Electrical</h2>
+              <ul class="edi-list">
+                  <li class="dark"><a target="_blank" href="supplier-forms/810_4010_Electrical_Mapping.pdf"><img src="images/acrobat-icon.png" width="26" alt="PDF File" /> PS 810 - 4010 Electrical Mapping</a></li>
+                  <li class="light"><a target="_blank" href="supplier-forms/850_4010_Electrical_Mapping.pdf"><img src="images/acrobat-icon.png" width="26" alt="PDF File" /> PS 850 - 4010 Electrical Mapping</a></li>
+                  <li class="dark"><a target="_blank" href="supplier-forms/855_4010_Electrical_Mapping.pdf"><img src="images/acrobat-icon.png" width="26" alt="PDF File" /> PS 855 - 4010 Electrical Mapping</a></li>
+                </ul>
+                <img src="images/bubble-tagline.jpg" alt="Market Innovator" class="bubble-tagline" />
+            </div>
+
+            <div class="col-md-6 util-column">
+              <h2>Utilities</h2>
+              <ul class="edi-list">
+                  <li class="dark"><a target="_blank" href="supplier-forms/810_Inbound_from_Vendor.pdf"><img src="images/acrobat-icon.png" width="26" alt="PDF File" /> PS 810 Inbound from Vendor</a></li>
+                  <li class="light"><a target="_blank" href="supplier-forms/850_Outbound_to_Vendor.pdf"><img src="images/acrobat-icon.png" width="26" alt="PDF File" /> PS 850 Outbound to Vendor</a></li>
+                  <li class="dark"><a target="_blank" href="supplier-forms/852_Outbound_to_Vendor.pdf"><img src="images/acrobat-icon.png" width="26" alt="PDF File" /> PS 852 Outbound to Vendor</a></li>
+                  <li class="light"><a target="_blank" href="supplier-forms/855_Inbound_from_Vendor.pdf"><img src="images/acrobat-icon.png" width="26" alt="PDF File" /> PS 855 Inbound from Vendor</a></li>
+                  <li class="dark"><a target="_blank" href="supplier-forms/856_Inbound_from_Vendor.pdf"><img src="images/acrobat-icon.png" width="26" alt="PDF File" /> PS 856 Inbound from Vendor</a></li>
+                  <li class="light"><a target="_blank" href="supplier-forms/AnixterUtilitiesISA_GSEDIInfo.docx"><img src="images/word-icon.png" width="26" alt="Word File" /> PS ISA Information</a></li>
+                </ul>
+            </div>
+
+            <div class="clearfix"></div>
+          </div>
+
+          </div>
+      </div><!--EDI PAGE-->
+
+      <div id="tagline4">
+        <div class="container">
+          
+        </div>
+      </div><!--tagline-->
+      
+      <a id="terms-and-conditions" class="smooth"></a> 
+      <div id="page3">
+        <div class="sectional container">
+          <h3>Terms and Conditions</h3>
+            <img src="images/terms-image.jpg" alt="Anixter Terms and Conditions" title="Anixter Terms and Conditions" class="float-image" />
+            <ul id="doc-list">
+              <a target="_blank" href="legal/terms-and-conditions-of-use.html"><li><img src="images/doc-icon.png" alt="View Terms and Conditions of Use" /> Terms and Conditions of Use</li></a>
+              <a target="_blank" href="legal/terms-and-conditions-of-sale.html"><li><img src="images/doc-icon.png" alt="View Terms and Conditions of Sale" /> Terms and Conditions of Sale</li></a>
+              <a target="_blank" href="legal/terms-and-conditions-of-purchase.pdf"><li><img src="images/doc-icon.png" alt="View Terms and Conditions of Purchase PDF" /> Terms and Conditions of Purchase</li></a>
+              <a target="_blank" href="legal/PS_FIN_CustomerAgreementToPurchaseTermsAndConditions-PublicCompaniesAPS.pdf" alt="View Customer Agreement PDF"><li><img src="images/doc-icon.png" /> Customer Agreement for US Publicly Traded Companies Only</li></a>
+              <a target="_blank" href="legal/Terms_Conditions_Agreement_Public_Companies.pdf"><li><img src="images/doc-icon.png" alt="View Canada Terms and Conditions PDF" /> Anixter Canada Inc. Terms and Conditions</li></a>
+              <a target="_blank" href="legal/privacy-policy.html"><li><img src="images/doc-icon.png" alt="View Privac Policy" /> Privacy Policy</li></a>
+            </ul>
+        </div>
+      </div><!--TERMS PAGE-->
+
+    </div><!-- /.container -->
+
+    <div class="mobile-sticky-footer container">
+
+      <div class="col-xs-3">
+        <a href="mailto:aps-ApplicationSupport@anixter.com">
+          <img title="E-Mail Support" alt="E-Mail Support" src="images/support-icon.png" />
+          <p>Support</p>
+        </a>
+      </div>
+
+      <div class="col-xs-3">
+        <a target="_blank" href="../one-page/canada/">
+          <img title="Power Solutions Canada" alt="Power Solutions Canada" src="images/canada-icon.png" />
+          <p>Canada</p>
+        </a>
+      </div> 
+
+      <div class="col-xs-3">
+        <a target="_blank" href="http://utilidevinternal.hdsupply.com/SSOFace/weather/">
+          <img title="Power Solutions Weather Center" alt="Power Solutions Weather Center" src="images/weather-icon.png" />
+          <p>Weather</p>
+        </a>
+      </div>
+
+      <div class="col-xs-3">
+          <a target="_blank" href="http://www.anixter.com">
+            <img title="Anixter.com" alt="Anixter.com" src="images/new-window-icon.png" />
+            <p>Anixter</p>
+          </a>
+      </div>
+       
+    </div><!--mobile sticky footer-->
+
+    <div id="lang-trans" data-step="5" data-intro="Use this menu to translate this website into a different language." data-position='top'>
+    <p>Translate this Website</p>
+    <div id="google_translate_element"></div><script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'de,es,fr,it', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+        }
+    </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </div>
+
+  
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script async src="scripts/bootstrap.min.js"></script>
+    <script async src="scripts/validator.min.js"></script>
+    <script async src="scripts/animatescroll.min.js"></script>
+  	<script async src="scripts/ErrorHandler.js"></script>
+  	<script async src="scripts/login.js"></script>
+      <script>
+      $('.smooth').on('click', function() {
+          $.smoothScroll({
+              scrollElement: $('body'),
+              scrollTarget: '#' + this.id
+          });
+          
+          return false;
+      });
+      </script>
+
+      <script>
+        $(function(){
+          $('#navbar li').click(function () {
+              $('#navbar li').removeClass('active');
+              $(this).addClass('active');
+           });
+       });
+      </script>
+
+      <script src="scripts/hideShowPassword.min.js"></script>
+
+  <script>
+  // - When checkbox changes, toggle password
+  //   visibility based on its 'checked' property
+  $('#show-password').change(function(){
+    $('#password').hideShowPassword($(this).prop('checked'));
+  });
+
+  </script>
+
+  <script>
+  // - When checkbox changes, toggle password
+  //   visibility based on its 'checked' property
+  $("#signoutBtn").click(function(){
+      $( ".if-not-signed-in" ).show();
+      $( ".if-signed-in" ).hide();
+      $( "#signIn" ).show();
+      $( "#signoutBtn" ).hide();
+  });
+
+  </script>
+
+  <script type="text/javascript" src="scripts/intro.js"></script>
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-86254711-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </body>
+</html>
