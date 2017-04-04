@@ -91,7 +91,7 @@ footer {border-bottom:100px solid #DEDDDD;}
 .intro-copy {border-right:1px solid #ccc; padding-right:10px;}
 .login-form {margin-top:50px;}
 .shop-banner {width:100%; height:auto;}
-#lang-trans {position:absolute; top:5px; left:250px;}
+#lang-trans {position:absolute; top:30px; left:250px;}
 
 /*-- TEXT -- */
 h1,h3 {color:#0078c0; border-bottom:1px solid #0078c0; font-size:24px; margin-top:0px;}
