@@ -41,7 +41,7 @@ box-shadow: 6px 9px 38px -15px rgba(0,0,0,0.75);}
 #registerBtn {width:40%;}
 hr {background-color:#0078c0; color:#0078c0; border-color:#0078c0;}
 footer {border-bottom:100px solid #DEDDDD;}
-.footer-wrapper {padding:30px 0;}
+.footer-wrapper {padding:50px 0;}
 .footer-topper {background:url(../images/topper.gif) repeat;  height:37px;}
 
 /* hack to fix bootstrap bug with modal windows and fixed navs */
