@@ -84,7 +84,7 @@ footer {border-bottom:100px solid #DEDDDD;}
       .top-nav ul li {display:inline-block; padding:0 10px; border-left:1px solid #fff;}
         .top-nav ul li a {color:#fff; font-weight:normal;}
 .no-border {border-left:0px !important;}
-.special {background-color:#0078C1;}
+.special {background-color:#0078C1 !important;}
 
 /*-- HOMEPAGE --*/
 .intro-copy {border-right:1px solid #ccc; padding-right:10px;}
