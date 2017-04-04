@@ -64,7 +64,7 @@ footer {border-bottom:100px solid #DEDDDD;}
 .tgl-light:checked + .tgl-btn {background: #0078c0;}
 
 /*-- NAVIGATION -- */
-.navbar {background-color:#333; margin-bottom:0px; min-height:0px; border-radius:0px; border:0px;}
+.navbar {background-color:#333; margin-bottom:0px; min-height:0px; border-radius:0px; border:0px;padding-bottom:20px;}
 .nav > li > a {padding:8px 30px; font-family arial; font-weight:bold !important; font-size:12px; text-align:center; text-transform:uppercase; color:#333; display:block; width:auto;}
   .nav > li > a:focus, .nav > li > a:hover {color:#fff;}
 .navbar-brand {color:#fff; display:none;}
@@ -84,6 +84,7 @@ footer {border-bottom:100px solid #DEDDDD;}
       .top-nav ul li {display:inline-block; padding:0 10px; border-left:1px solid #fff;}
         .top-nav ul li a {color:#fff; font-weight:normal;}
 .no-border {border-left:0px !important;}
+.special {background-color:#0078C1;}
 
 /*-- HOMEPAGE --*/
 .intro-copy {border-right:1px solid #ccc; padding-right:10px;}
