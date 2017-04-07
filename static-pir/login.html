@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="../images/favicon.ico">
 
-    <title>Project Inventory Request (PIR) | Anixter | Login</title>
+    <title>Project Inventory Request (PIR) | Anixter | Choose Location and Business Unit</title>
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/screen.css" rel="stylesheet">
@@ -36,23 +36,32 @@
     <div class="container white">
 
       <div id="intro">
-        <p><strong>Please login to continue.</strong></p>
+        <p><strong>Please select the location and business unit.</strong></p>
 
         <form class="form-horizontal">
           <div class="form-group">
-             <label for="username" class="col-sm-2 control-label">User Name:</label>
+             <label for="username" class="col-sm-2 control-label">Please Choose a Business Unit</label>
               <div class="col-sm-4">
-                <input type="text" class="form-control" id="username" placeholder="">
+                <select class="form-control">
+                  <option>NSS</option>
+                  <option>NAS</option>
+                </select>
               </div>
           </div><!--group-->
 
           <div class="form-group">
-            <label for="password" class="col-sm-2 control-label">Password</label>
+            <label for="password" class="col-sm-2 control-label">Please Choose the Geography</label>
             <div class="col-sm-4">
-              <input type="text" class="form-control" id="password" placeholder="">
+              <select class="form-control">
+                <option>US</option>
+                <option>CA</option>
+                <option>CALA</option>
+                <option>EMEA</option>
+                <option>AS</option>
+              </select>
             </div>
           </div><!--group-->
-          <button type="submit" class="btn btn-primary mobile-button"><span class="glyphicon glyphicon-log-in"></span> Login</button>
+          <button type="submit" class="btn btn-primary mobile-button"><span class="glyphicon glyphicon-arrow-right"></span> Continue</button>
         </form><!--end form-->
       </div><!--intro-->
     </div><!--container-->
