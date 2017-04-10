@@ -59,101 +59,156 @@
             <form class="form-horizontal">
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="inputEmail3" class="col-sm-6 control-label">IRF For Part Setup Only? (Yes/No)</label>
-                  <div class="col-sm-6">
-                     <select class="form-control" id="part-setup">
-                      <option>- SELECT ONE - </option>
-                      <option>YES</option>
-                      <option>NO</option>
-                    </select>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label for="inside-sales-rep" class="col-sm-6 control-label">Inside Sales Rep Name</label>
+                  <label for="inside-sales-rep" class="col-sm-6 control-label">Requestor*</label>
                   <div class="col-sm-6">
                     <input type="text" class="form-control" id="inside-sales-rep" placeholder="">
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <label for="project-name" class="col-sm-6 control-label">Project Name</label>
+                  <label for="project-name" class="col-sm-6 control-label">Date Requested</label>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" id="project-name" placeholder="">
+                     <div class="input-group">
+                      <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
+                      <input type="text" class="form-control" id="date-requested" required>
+                    </div>
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <label for="project-total" class="col-sm-6 control-label">Project Total ($)</label>
+                  <label for="project-total" class="col-sm-6 control-label">Sales Location</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" maxlength="3" id="project-total" placeholder="">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="inventory-request-total" class="col-sm-6 control-label">Customer Number</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" maxlength="6" id="inventory-request-total" placeholder="">
+                  </div>
+                </div>
+              </div><!--right side-->
+
+              <div class="col-md-6">
+                 <div class="form-group">
+                  <label for="sales-location" class="col-sm-6 control-label">Customer/End User</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" maxlength="255" id="sales-location" placeholder="">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="customer-name" class="col-sm-6 control-label">Contractor/Integrator</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" maxlength="255" id="customer-name" placeholder="">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="customer-number" class="col-sm-6 control-label">Inside Rep.</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" maxlength="40" id="customer-number" placeholder="">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="first-release-date" class="col-sm-6 control-label">Outside Rep.</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" maxlength="40" id="project-total" placeholder="">
+                  </div>
+                </div>
+              </div><!--left side-->
+
+              <div class="clearfix"></div>
+
+              <hr />
+
+              <h4>Project Scope</h4>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="first-release-date" class="col-sm-6 control-label">Project Name*</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" maxlength="255" id="project-total" placeholder="">
+                  </div>
+                </div>
+              </div><!--left side-->
+
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="additional-pricing" class="col-sm-6 control-label">Scope of Request*</label>
+                  <div class="clearfix"></div>
+                  <div class="col-md-12">
+                    <textarea id="request-scope" rows="5" placeholder="Enter the scope of this request."></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+               <div class="form-group">
+                 <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Services Opportunity?
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="services-op-wrapper">
+                <div class="col-md-5">
+                  <div class="form-group">
+                    <label for="first-release-date" class="col-sm-6 control-label">SCS Project Board Number</label>
+                    <div class="col-sm-6">
+                      <input type="text" class="form-control" maxlength="10" id="project-total" placeholder="">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label for="first-release-date" class="col-sm-6 control-label">Signed SCS Proposal?</label>
+                    <div class="col-sm-6">
+                      <input type="text" class="form-control" id="project-total" placeholder="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="first-release-date" class="col-sm-6 control-label">Material Deployment Start (Month/Year)</label>
                   <div class="col-sm-6">
                     <input type="text" class="form-control" id="project-total" placeholder="">
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <label for="inventory-request-total" class="col-sm-6 control-label">Inventory Request Total ($)</label>
+                  <label for="first-release-date" class="col-sm-6 control-label">Material Deployment End (Month/Year)</label>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" id="inventory-request-total" placeholder="">
+                    <input type="text" class="form-control" id="project-total" placeholder="">
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <label for="sales-location" class="col-sm-6 control-label">Sales Location</label>
+                  <label for="first-release-date" class="col-sm-6 control-label">Requested Stock Location(s)</label>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" id="sales-location" placeholder="">
+                    <input type="text" class="form-control" id="project-total" placeholder="">
                   </div>
                 </div>
+
               </div><!--right side-->
 
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="customer-name" class="col-sm-6 control-label">Customer Name</label>
+                  <label for="first-release-date" class="col-sm-6 control-label">Overall GP %</label>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" id="customer-name" placeholder="">
+                    <input type="text" class="form-control" id="project-total" placeholder="">
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <label for="customer-number" class="col-sm-6 control-label">Customer Number</label>
+                  <label for="first-release-date" class="col-sm-6 control-label">Potential GP $</label>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" id="customer-number" placeholder="">
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label for="first-release-date" class="col-sm-6 control-label">First Release Date</label>
-                  <div class="col-sm-6">
-                     <div class="input-group">
-                      <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
-                      <input type="text" class="form-control" id="first-release-date" placeholder="MM/DD/YYYY" required>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label for="date-requested" class="col-sm-6 control-label">Date Requested</label>
-                  <div class="col-sm-6">
-                    <div class="input-group">
-                      <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
-                      <input type="text" class="form-control" id="date-requested" placeholder="MM/DD/YYYY" required>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label for="completion-date" class="col-sm-6 control-label">Completion Date</label>
-                  <div class="col-sm-6">
-                    <div class="input-group">
-                      <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
-                      <input type="text" class="form-control" id="completion-date" placeholder="MM/DD/YYYY" required>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label for="customer-credit-limit" class="col-sm-6 control-label">Customer Credit Limit</label>
-                  <div class="col-sm-6">
-                    <input type="text" class="form-control" id="customer-credit-limit" placeholder="">
+                    <input type="text" class="form-control" id="project-total" placeholder="">
                   </div>
                 </div>
               </div><!--left side-->
@@ -162,157 +217,142 @@
 
               <div class="col-md-12">
                 <div class="form-group">
-                  <label for="scope-of-request" class="col-sm-3 control-label">Scope Of Request</label>
-                  <div class="col-sm-9">
-                    <textarea placeholder="Enter your Scope of Request" id="scope-of-request" rows="5"></textarea>
+                 <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Multiple Releases
+                    </label>
                   </div>
                 </div>
-              </div><!--full width text area-->
+              </div>
 
-              <div class="clearfix"></div>
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="first-release-date" class="col-sm-6 control-label">Month 1</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" id="project-total" placeholder="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="first-release-date" class="col-sm-6 control-label">Month 2</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" id="project-total" placeholder="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="first-release-date" class="col-sm-6 control-label">Month 3</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" id="project-total" placeholder="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="first-release-date" class="col-sm-6 control-label">Beyond</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" id="project-total" placeholder="">
+                  </div>
+                </div>
+              </div>
 
               <hr />
 
-              <div class="col-md-6">
+              <h4>Customer Commitment</h4>
 
-                 <div class="form-group">
-                  <label for="specs-attached" class="col-sm-6 control-label">Specs Attached For New Parts?</label>
-                  <div class="col-sm-6">
-                    <select class="form-control" id="specs-attached">
-                      <option>- SELECT ONE - </option>
-                      <option>YES</option>
-                      <option>NO</option>
-                    </select>
-                  </div>
-                </div>
-
-                 <div class="form-group">
-                  <label for="firm-copper-placement" class="col-sm-6 control-label">Firm Copper At Placement?</label>
-                  <div class="col-sm-6">
-                     <select class="form-control" id="firm-copper-placement">
-                      <option>- SELECT ONE - </option>
-                      <option>YES</option>
-                      <option>NO</option>
-                    </select>
-                  </div>
-                </div>
-
-                 <div class="form-group">
-                  <label for="attached-vendor-quote" class="col-sm-6 control-label">Vendor Quote Or SPA Attached?</label>
-                  <div class="col-sm-6">
-                     <select class="form-control" id="attached-vendor-quote">
-                      <option>- SELECT ONE - </option>
-                      <option>YES</option>
-                      <option>NO</option>
-                    </select>
-                  </div>
-                </div>
-
-                 <div class="form-group">
-                  <label for="provide-source-of-pricing" class="col-sm-6 control-label">If Not, Provide Source Of Pricing</label>
-                  <div class="col-sm-6">
-                    <input type="text" class="form-control" id="provide-source-of-pricing" placeholder="">
-                  </div>
-                </div>
-
-                 <div class="form-group">
-                  <label for="carrying-delay" class="col-sm-6 control-label">Inv Carrying Provision If Delayed</label>
-                  <div class="col-sm-6">
-                     <select class="form-control" id="carrying-delay">
-                      <option>- SELECT ONE - </option>
-                      <option>YES</option>
-                      <option>NO</option>
-                    </select>
-                  </div>
-                </div>
-
-                 <div class="form-group">
-                  <label for="explain-carrying-delay" class="col-sm-6 control-label">If Not, Explain</label>
-                  <div class="col-sm-6">
-                    <input type="text" class="form-control" id="explain-carrying-delay" placeholder="">
-                  </div>
-                </div>
-
-                 <div class="form-group">
-                  <label for="quoted-cu-basew" class="col-sm-6 control-label">Quoted CU Base</label>
-                  <div class="col-sm-6">
-                    <input type="text" class="form-control" id="quoted-cu-base" placeholder="">
-                  </div>
-                </div>
-
-              </div><!--left side-->
-
-              <div class="col-md-6">
-
-                 <div class="form-group">
-                  <label for="requested-warehouse" class="col-sm-6 control-label">Requested Warehouse(s)</label>
-                  <div class="col-sm-6">
-                    <input type="text" class="form-control" id="requested-warehouse" placeholder="">
-                  </div>
-                </div>
-
-                 <div class="form-group">
-                  <label for="how-to-replenish" class="col-sm-6 control-label">How To Replenish</label>
-                  <div class="col-sm-6">
-                    <input type="text" class="form-control" id="how-to-replenish" placeholder="">
-                  </div>
-                </div>
-
-                 <div class="form-group">
-                  <label for="attached-customer-po" class="col-sm-6 control-label">Attached Customer PO?</label>
-                  <div class="col-sm-6">
-                     <select class="form-control" id="attached-customer-po">
-                      <option>- SELECT ONE - </option>
-                      <option>YES</option>
-                      <option>NO</option>
-                    </select>
-                  </div>
-                </div>
-
-                 <div class="form-group">
-                  <label for="explain-why-no-po" class="col-sm-6 control-label">If Not, Explain Why</label>
-                  <div class="col-sm-6">
-                    <input type="text" class="form-control" id="explain-why-no-po" placeholder="">
-                  </div>
-                </div>
-
-                 <div class="form-group">
-                  <label for="signed-ncnr" class="col-sm-6 control-label">Signed NCNR Attached?</label>
-                  <div class="col-sm-6">
-                     <select class="form-control" id="signed-ncnr">
-                      <option>- SELECT ONE - </option>
-                      <option>YES</option>
-                      <option>NO</option>
-                    </select>
-                  </div>
-                </div>
-
-                 <div class="form-group">
-                  <label for="explain-no-ncnr" class="col-sm-6 control-label">If Not, Explain Why</label>
-                  <div class="col-sm-6">
-                    <input type="text" class="form-control" id="explain-no-ncnr" placeholder="">
-                  </div>
-                </div>
-
-                 <div class="form-group">
-                  <label for="upload-part-numbers" class="col-sm-6 control-label">Upload Part Numbers (XLS or CSV)</label>
-                  <div class="col-sm-6">
-                    <div class="input-group file-upload">
-                      <label class="input-group-btn">
-                          <span class="btn btn-primary">
-                              <span class="glyphicon glyphicon-export"></span> Browse&hellip; <input type="file" style="display: none;" multiple>
-                          </span>
+                <div class="col-md-6">
+                  <div class="form-group">
+                   <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Does a Purchase Order exist from the customer?  
                       </label>
-                      <input type="text" class="form-control" readonly>
                     </div>
                   </div>
                 </div>
 
-              </div><!--right side-->
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="first-release-date" class="col-sm-6 control-label">Customer P.O. #</label>
+                    <div class="col-sm-6">
+                      <input type="text" class="form-control" id="project-total" placeholder="">
+                    </div>
+                  </div>
+                </div>
 
-              <div class="clearfix"></div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                   <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Is there a firm ship date/end date on PO?  
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                   <div class="form-group">
+                    <label for="first-release-date" class="col-sm-6 control-label">Date</label>
+                    <div class="col-sm-6">
+                      <input type="text" class="form-control" id="project-total" placeholder="">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-group">
+                   <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Signed Customer NCNR Material Agreement, or Special Order Form, with end date?   
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                   <div class="form-group">
+                    <label for="first-release-date" class="col-sm-6 control-label">Customer NCNR, or Special Order, End Date</label>
+                    <div class="col-sm-6">
+                      <input type="text" class="form-control" id="project-total" placeholder="">
+                    </div>
+                  </div>
+                </div>
+
+                 <div class="col-md-6">
+                  <div class="form-group">
+                   <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Has customer acknowledged material is NCNR?
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                   <div class="form-group">
+                    <label for="first-release-date" class="col-sm-6 control-label">NCNR MaterialCustomer  Acknowledgement Date</label>
+                    <div class="col-sm-6">
+                      <input type="text" class="form-control" id="project-total" placeholder="">
+                    </div>
+                  </div>
+                </div>
 
               <br />
+
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="additional-pricing" class="col-sm-6 control-label">Additional Notes</label>
+                  <div class="clearfix"></div>
+                  <div class="col-md-12">
+                    <textarea id="request-scope" rows="5" placeholder="Enter any additional notes."></textarea>
+                  </div>
+                </div>
+              </div>
+
               <div class="col-md-12">
                 <div class="pull-right">
                   <button type="submit" class="btn btn-primary mobile-button"><span class="glyphicon glyphicon-thumbs-up"></span> Submit</button>
@@ -500,30 +540,25 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/field-controls.js"></script>
     <script src="scripts/datepicker.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            $('#date-reported').datepicker({
-                format: "mm/dd/yyyy"
-            });
-
-             $('#first-release-date').datepicker({
-                format: "mm/dd/yyyy"
-            });
-
             $('#date-requested').datepicker({
-                format: "mm/dd/yyyy"
-            });
-
-            $('#completion-date').datepicker({
-                format: "mm/dd/yyyy"
-            });
-
-            $('#date').datepicker({
                 format: "mm/dd/yyyy"
             });
 
         });
       </script>
+
+      <script type="text/javascript">
+        function valueChanged()
+        {
+            if($('.coupon_question').is(":checked"))   
+                $(".answer").show();
+            else
+                $(".answer").hide();
+        }
+        </script>
   </body>
 </html>
