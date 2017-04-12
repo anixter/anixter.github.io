@@ -23,7 +23,7 @@
     <div id="topper">
       <div class="container">
         <p class="pull-left"><span class="glyphicon glyphicon-user"></span> Welcome, John Doe (083215)</p>
-        <p class="pull-right"><a href="queue.html">View Your Request Queue</a></p>
+        <p class="pull-right"><a href="">Approval Workflow</a> | <a href="">Document History</a></p>
       </div>
     </div><!--topper-->
 
@@ -403,7 +403,7 @@
             <h4>Item 1</h4>
             <div class="col-md-4">
               <div class="form-group">
-                <label for="axePartNumber1" class="col-sm-6 control-label">AXE Part #</label>
+                <label for="axePartNumber1" class="col-sm-6 control-label">AXE Part #<span class="warning">*</span></label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" id="axePartNumber1" placeholder="">
                 </div>
@@ -412,7 +412,7 @@
 
             <div class="col-md-4">
               <div class="form-group">
-                <label for="vendor1" class="col-sm-6 control-label">Vendor</label>
+                <label for="vendor1" class="col-sm-6 control-label">Vendor<span class="warning">*</span></label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" id="vendor1" placeholder="">
                 </div>
@@ -421,7 +421,7 @@
 
             <div class="col-md-4">
               <div class="form-group">
-                <label for="vendorPartNumber1" class="col-sm-6 control-label">Vendor Part #</label>
+                <label for="vendorPartNumber1" class="col-sm-6 control-label">Vendor Part #<span class="warning">*</span></label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" id="vendorPartNumber1" placeholder="">
                 </div>
@@ -430,7 +430,7 @@
 
             <div class="col-md-4">
               <div class="form-group">
-                <label for="axePurchaseCost1" class="col-sm-6 control-label">AXE Purchase Cost</label>
+                <label for="axePurchaseCost1" class="col-sm-6 control-label">AXE Purchase Cost<span class="warning">*</span></label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" id="axePurchaseCost1" placeholder="">
                 </div>
@@ -439,16 +439,27 @@
 
             <div class="col-md-4">
               <div class="form-group">
-                <label for="unitOfMeasure1" class="col-sm-6 control-label">Unit of Measure</label>
+                <label for="unitOfMeasure1" class="col-sm-6 control-label">Unit of Measure<span class="warning">*</span></label>
                 <div class="col-sm-6">
-                  <input type="text" class="form-control" id="unitOfMeasure1" placeholder="">
+                  <select id="unitOfMeasure1" class="form-control">
+                    <option> - SELECT ONE - </option>
+                    <option>EA</option>
+                    <option>LOT</option>
+                    <option>MF</option>
+                    <option>FT</option>
+                    <option>M</option>
+                    <option>G</option>
+                    <option>LB</option>
+                    <option>OZ</option>
+                    <option>KM</option>
+                  </select>
                 </div>
               </div>
             </div>
 
             <div class="col-md-4">
               <div class="form-group">
-                <label for="quantity1" class="col-sm-6 control-label">Quantity</label>
+                <label for="quantity1" class="col-sm-6 control-label">Quantity<span class="warning">*</span></label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" id="quantity1" placeholder="">
                 </div>
@@ -457,7 +468,7 @@
 
             <div class="col-md-4">
               <div class="form-group">
-                <label for="totalItemCost1" class="col-sm-6 control-label">Total Item Cost</label>
+                <label for="totalItemCost1" class="col-sm-6 control-label">Total Item Cost<span class="warning">*</span></label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" id="totalItemCost1" onblur="findTotal()" name="qty" placeholder="">
                 </div>
@@ -471,7 +482,7 @@
             <h4>Item 2</h4>
             <div class="col-md-4">
               <div class="form-group">
-                <label for="axePartNumber2" class="col-sm-6 control-label">AXE Part #</label>
+                <label for="axePartNumber2" class="col-sm-6 control-label">AXE Part #<span class="warning">*</span></label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" id="axePartNumber2" placeholder="">
                 </div>
@@ -480,7 +491,7 @@
 
             <div class="col-md-4">
               <div class="form-group">
-                <label for="vendor2" class="col-sm-6 control-label">Vendor</label>
+                <label for="vendor2" class="col-sm-6 control-label">Vendor<span class="warning">*</span></label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" id="vendor2" placeholder="">
                 </div>
@@ -489,7 +500,7 @@
 
             <div class="col-md-4">
               <div class="form-group">
-                <label for="vendorPartNumber2" class="col-sm-6 control-label">Vendor Part #</label>
+                <label for="vendorPartNumber2" class="col-sm-6 control-label">Vendor Part #<span class="warning">*</span></label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" id="vendorPartNumber2" placeholder="">
                 </div>
@@ -498,7 +509,7 @@
 
             <div class="col-md-4">
               <div class="form-group">
-                <label for="axePurchaseCost2" class="col-sm-6 control-label">AXE Purchase Cost</label>
+                <label for="axePurchaseCost2" class="col-sm-6 control-label">AXE Purchase Cost<span class="warning">*</span></label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" id="axePurchaseCost2" placeholder="">
                 </div>
@@ -507,16 +518,27 @@
 
             <div class="col-md-4">
               <div class="form-group">
-                <label for="unitOfMeasure2" class="col-sm-6 control-label">Unit of Measure</label>
+                <label for="unitOfMeasure2" class="col-sm-6 control-label">Unit of Measure<span class="warning">*</span></label>
                 <div class="col-sm-6">
-                  <input type="text" class="form-control" id="unitOfMeasure2" placeholder="">
+                  <select id="unitOfMeasure2" class="form-control">
+                    <option> - SELECT ONE - </option>
+                    <option>EA</option>
+                    <option>LOT</option>
+                    <option>MF</option>
+                    <option>FT</option>
+                    <option>M</option>
+                    <option>G</option>
+                    <option>LB</option>
+                    <option>OZ</option>
+                    <option>KM</option>
+                  </select>
                 </div>
               </div>
             </div>
 
             <div class="col-md-4">
               <div class="form-group">
-                <label for="quantity2" class="col-sm-6 control-label">Quantity</label>
+                <label for="quantity2" class="col-sm-6 control-label">Quantity<span class="warning">*</span></label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" id="quantity2" placeholder="">
                 </div>
@@ -525,7 +547,7 @@
 
             <div class="col-md-4">
               <div class="form-group">
-                <label for="totalItemCost2" class="col-sm-6 control-label">Total Item Cost</label>
+                <label for="totalItemCost2" class="col-sm-6 control-label">Total Item Cost<span class="warning">*</span></label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" id="totalItemCost2" onblur="findTotal()" name="qty" placeholder="">
                 </div>
@@ -539,7 +561,7 @@
             <h4>Item 3</h4>
             <div class="col-md-4">
               <div class="form-group">
-                <label for="axePartNumber3" class="col-sm-6 control-label">AXE Part #</label>
+                <label for="axePartNumber3" class="col-sm-6 control-label">AXE Part #<span class="warning">*</span></label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" id="axePartNumber3" placeholder="">
                 </div>
@@ -548,7 +570,7 @@
 
             <div class="col-md-4">
               <div class="form-group">
-                <label for="vendor3" class="col-sm-6 control-label">Vendor</label>
+                <label for="vendor3" class="col-sm-6 control-label">Vendor<span class="warning">*</span></label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" id="vendor3" placeholder="">
                 </div>
@@ -557,7 +579,7 @@
 
             <div class="col-md-4">
               <div class="form-group">
-                <label for="vendorPartNumber3" class="col-sm-6 control-label">Vendor Part #</label>
+                <label for="vendorPartNumber3" class="col-sm-6 control-label">Vendor Part #<span class="warning">*</span></label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" id="vendorPartNumber3" placeholder="">
                 </div>
@@ -566,7 +588,7 @@
 
             <div class="col-md-4">
               <div class="form-group">
-                <label for="axePurchaseCost3" class="col-sm-6 control-label">AXE Purchase Cost</label>
+                <label for="axePurchaseCost3" class="col-sm-6 control-label">AXE Purchase Cost<span class="warning">*</span></label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" id="axePurchaseCost3" placeholder="">
                 </div>
@@ -575,16 +597,27 @@
 
             <div class="col-md-4">
               <div class="form-group">
-                <label for="unitOfMeasure3" class="col-sm-6 control-label">Unit of Measure</label>
+                <label for="unitOfMeasure3" class="col-sm-6 control-label">Unit of Measure<span class="warning">*</span></label>
                 <div class="col-sm-6">
-                  <input type="text" class="form-control" id="unitOfMeasure3" placeholder="">
+                  <select id="unitOfMeasure3" class="form-control">
+                    <option> - SELECT ONE - </option>
+                    <option>EA</option>
+                    <option>LOT</option>
+                    <option>MF</option>
+                    <option>FT</option>
+                    <option>M</option>
+                    <option>G</option>
+                    <option>LB</option>
+                    <option>OZ</option>
+                    <option>KM</option>
+                  </select>
                 </div>
               </div>
             </div>
 
             <div class="col-md-4">
               <div class="form-group">
-                <label for="quantity3" class="col-sm-6 control-label">Quantity</label>
+                <label for="quantity3" class="col-sm-6 control-label">Quantity<span class="warning">*</span></label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" id="quantity3" placeholder="">
                 </div>
@@ -593,7 +626,7 @@
 
             <div class="col-md-4">
               <div class="form-group">
-                <label for="totalItemCost3" class="col-sm-6 control-label">Total Item Cost</label>
+                <label for="totalItemCost3" class="col-sm-6 control-label">Total Item Cost<span class="warning">*</span></label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" id="totalItemCost3" onblur="findTotal()" name="qty" placeholder="">
                 </div>
@@ -607,7 +640,7 @@
             <h4>Item 4</h4>
             <div class="col-md-4">
               <div class="form-group">
-                <label for="axePartNumber4" class="col-sm-6 control-label">AXE Part #</label>
+                <label for="axePartNumber4" class="col-sm-6 control-label">AXE Part #<span class="warning">*</span></label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" id="axePartNumber4" placeholder="">
                 </div>
@@ -616,7 +649,7 @@
 
             <div class="col-md-4">
               <div class="form-group">
-                <label for="vendor4" class="col-sm-6 control-label">Vendor</label>
+                <label for="vendor4" class="col-sm-6 control-label"><span class="warning">*</span></label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" id="vendor4" placeholder="">
                 </div>
@@ -625,7 +658,7 @@
 
             <div class="col-md-4">
               <div class="form-group">
-                <label for="vendorPartNumber4" class="col-sm-6 control-label">Vendor Part #</label>
+                <label for="vendorPartNumber4" class="col-sm-6 control-label">Vendor Part #<span class="warning">*</span></label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" id="vendorPartNumber4" placeholder="">
                 </div>
@@ -634,7 +667,7 @@
 
             <div class="col-md-4">
               <div class="form-group">
-                <label for="axePurchaseCost4" class="col-sm-6 control-label">AXE Purchase Cost</label>
+                <label for="axePurchaseCost4" class="col-sm-6 control-label">AXE Purchase Cost<span class="warning">*</span></label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" id="axePurchaseCost4" placeholder="">
                 </div>
@@ -643,16 +676,27 @@
 
             <div class="col-md-4">
               <div class="form-group">
-                <label for="unitOfMeasure4" class="col-sm-6 control-label">Unit of Measure</label>
+                <label for="unitOfMeasure4" class="col-sm-6 control-label">Unit of Measure<span class="warning">*</span></label>
                 <div class="col-sm-6">
-                  <input type="text" class="form-control" id="unitOfMeasure4" placeholder="">
+                  <select id="unitOfMeasure4" class="form-control">
+                    <option> - SELECT ONE - </option>
+                    <option>EA</option>
+                    <option>LOT</option>
+                    <option>MF</option>
+                    <option>FT</option>
+                    <option>M</option>
+                    <option>G</option>
+                    <option>LB</option>
+                    <option>OZ</option>
+                    <option>KM</option>
+                  </select>
                 </div>
               </div>
             </div>
 
             <div class="col-md-4">
               <div class="form-group">
-                <label for="quantity4" class="col-sm-6 control-label">Quantity</label>
+                <label for="quantity4" class="col-sm-6 control-label">Quantity<span class="warning">*</span></label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" id="quantity4" placeholder="">
                 </div>
@@ -661,7 +705,7 @@
 
             <div class="col-md-4">
               <div class="form-group">
-                <label for="totalItemCost4" class="col-sm-6 control-label">Total Item Cost</label>
+                <label for="totalItemCost4" class="col-sm-6 control-label">Total Item Cost<span class="warning">*</span></label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" id="totalItemCost4" onblur="findTotal()" name="qty" placeholder="">
                 </div>
@@ -675,7 +719,7 @@
             <h4>Item 5</h4>
             <div class="col-md-4">
               <div class="form-group">
-                <label for="axePartNumber5" class="col-sm-6 control-label">AXE Part #</label>
+                <label for="axePartNumber5" class="col-sm-6 control-label">AXE Part #<span class="warning">*</span></label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" id="axePartNumber5" placeholder="">
                 </div>
@@ -684,7 +728,7 @@
 
             <div class="col-md-4">
               <div class="form-group">
-                <label for="vendor5" class="col-sm-6 control-label">Vendor</label>
+                <label for="vendor5" class="col-sm-6 control-label">Vendor<span class="warning">*</span></label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" id="vendor5" placeholder="">
                 </div>
@@ -693,7 +737,7 @@
 
             <div class="col-md-4">
               <div class="form-group">
-                <label for="vendorPartNumber5" class="col-sm-6 control-label">Vendor Part #</label>
+                <label for="vendorPartNumber5" class="col-sm-6 control-label">Vendor Part #<span class="warning">*</span></label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" id="vendorPartNumber5" placeholder="">
                 </div>
@@ -702,7 +746,7 @@
 
             <div class="col-md-4">
               <div class="form-group">
-                <label for="axePurchaseCost5" class="col-sm-6 control-label">AXE Purchase Cost</label>
+                <label for="axePurchaseCost5" class="col-sm-6 control-label">AXE Purchase Cost<span class="warning">*</span></label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" id="axePurchaseCost5" placeholder="">
                 </div>
@@ -711,16 +755,27 @@
 
             <div class="col-md-4">
               <div class="form-group">
-                <label for="unitOfMeasure5" class="col-sm-6 control-label">Unit of Measure</label>
+                <label for="unitOfMeasure5" class="col-sm-6 control-label">Unit of Measure<span class="warning">*</span></label>
                 <div class="col-sm-6">
-                  <input type="text" class="form-control" id="unitOfMeasure5" placeholder="">
+                  <select id="unitOfMeasure5" class="form-control">
+                    <option> - SELECT ONE - </option>
+                    <option>EA</option>
+                    <option>LOT</option>
+                    <option>MF</option>
+                    <option>FT</option>
+                    <option>M</option>
+                    <option>G</option>
+                    <option>LB</option>
+                    <option>OZ</option>
+                    <option>KM</option>
+                  </select>
                 </div>
               </div>
             </div>
 
             <div class="col-md-4">
               <div class="form-group">
-                <label for="quantity5" class="col-sm-6 control-label">Quantity</label>
+                <label for="quantity5" class="col-sm-6 control-label">Quantity<span class="warning">*</span></label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" id="quantity5" placeholder="">
                 </div>
@@ -729,7 +784,7 @@
 
             <div class="col-md-4">
               <div class="form-group">
-                <label for="totalItemCost5" class="col-sm-6 control-label">Total Item Cost</label>
+                <label for="totalItemCost5" class="col-sm-6 control-label">Total Item Cost<span class="warning">*</span></label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" id="totalItemCost5" onblur="findTotal()" name="qty" placeholder="">
                 </div>
@@ -785,80 +840,13 @@
             <br />
             <p class="warning">NOTE: ANY MISSING INFORMATION WILL RESULT IN DELAYS</p>
 
-            <div class="col-md-4 col-sm-12">
-              <div class="form-group">
-                  <label for="is-material-returnable" class="col-sm-6 control-label">Is Material Returnable To Vendor On The Annual Stock Rotation?</label>
-                  <div class="col-sm-6">
-                    <select class="form-control" id="is-material-returnable">
-                      <option>- SELECT ONE - </option>
-                      <option>YES</option>
-                      <option>NO</option>
-                    </select>
-                  </div>
-                </div>
-            </div>
+            <h4>Inventory Assessment</h4>
 
-            <div class="col-md-4 col-sm-12">
-              <div class="form-group">
-                  <label for="additional-followup" class="col-sm-6 control-label">Additional Followup Needed?</label>
-                  <div class="col-sm-6">
-                    <select class="form-control" id="additional-followup">
-                      <option>- SELECT ONE - </option>
-                      <option>YES</option>
-                      <option>NO</option>
-                    </select>
-                  </div>
-                </div>
-            </div>
+            <h4>Return concerns</h4>
+
+            <h4>Risk Assessment</h4>
 
             <div class="clearfix"></div>
-
-            <div class="col-md-4 col-sm-12">
-              <div class="form-group">
-                  <label for="reels-reversed" class="col-sm-6 control-label">Reels Need To Be Reversed?</label>
-                  <div class="col-sm-6">
-                    <select class="form-control" id="reels-reversed">
-                      <option>- SELECT ONE - </option>
-                      <option>YES</option>
-                      <option>NO</option>
-                    </select>
-                  </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-sm-12">
-              <div class="form-group">
-                  <label for="location-restricted" class="col-sm-6 control-label">Location To Be Restricted?</label>
-                  <div class="col-sm-6">
-                    <select class="form-control" id="location-restricted">
-                      <option>- SELECT ONE - </option>
-                      <option>YES</option>
-                      <option>NO</option>
-                    </select>
-                  </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-sm-12">
-               <div class="form-group">
-                <label for="po-number" class="col-sm-6 control-label">PO Number</label>
-                <div class="col-sm-6">
-                  <input type="text" class="form-control" id="po-number" placeholder="">
-                </div>
-              </div>
-            </div>
-
-            <div class="clearfix"></div>
-
-             <div class="col-md-12">
-              <div class="form-group">
-                <label for="risk-dollars" class="col-sm-6 control-label">Risk Dollars And Details</label>
-                <div class="clearfix"></div>
-                <div class="col-md-12">
-                  <textarea id="risk-dollars" rows="5" placeholder="Enter your Risk Dollars and Details"></textarea>
-                </div>
-              </div>
-            </div>
 
             <div class="col-md-12">
               <div class="pull-right button-adj">
