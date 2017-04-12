@@ -148,12 +148,12 @@
                <div class="form-group">
                  <div class="checkbox">
                     <label>
-                      <input type="checkbox"> Services Opportunity?
+                      <input type="checkbox" class="services-op-check" id="services-op"> Services Opportunity?
                     </label>
                   </div>
                 </div>
               </div>
-              <div class="services-op-wrapper">
+              <div id="services-op-wrapper">
                 <div class="col-md-5">
                   <div class="form-group">
                     <label for="first-release-date" class="col-sm-6 control-label">SCS Project Board Number</label>
@@ -173,6 +173,8 @@
                 </div>
               </div>
 
+              <div class="clearfix"></div>
+
               <div class="col-md-6">
                 <div class="form-group">
                   <label for="first-release-date" class="col-sm-6 control-label">Material Deployment Start (Month/Year)</label>
@@ -188,10 +190,17 @@
                   </div>
                 </div>
 
-                <div class="form-group">
+                 <div class="form-group">
                   <label for="first-release-date" class="col-sm-6 control-label">Requested Stock Location(s)</label>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" id="project-total" placeholder="">
+                    <input type="text" class="form-control" id="project-total" maxlength="255" placeholder="">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="first-release-date" class="col-sm-6 control-label">Total Project Cost</label>
+                  <div class="col-sm-6">
+                    <input type="number" class="form-control" pattern=" 0+\.[0-9]*[1-9][0-9]*$" name="itemConsumption" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" id="project-total" placeholder="">
                   </div>
                 </div>
 
@@ -211,6 +220,13 @@
                     <input type="text" class="form-control" id="project-total" placeholder="">
                   </div>
                 </div>
+
+                <div class="form-group">
+                  <label for="first-release-date" class="col-sm-6 control-label">Total Inventory Request Amount</label>
+                  <div class="col-sm-6">
+                    <input type="number" class="form-control" pattern=" 0+\.[0-9]*[1-9][0-9]*$" name="itemConsumption" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57">
+                  </div>
+                </div>
               </div><!--left side-->
 
               <div class="clearfix"></div>
@@ -219,48 +235,51 @@
                 <div class="form-group">
                  <div class="checkbox">
                     <label>
-                      <input type="checkbox"> Multiple Releases
+                      <input type="checkbox" class="multiple-releases"> Multiple Releases
                     </label>
                   </div>
                 </div>
               </div>
 
-              <div class="col-md-3">
-                <div class="form-group">
-                  <label for="first-release-date" class="col-sm-6 control-label">Month 1</label>
-                  <div class="col-sm-6">
-                    <input type="text" class="form-control" id="project-total" placeholder="">
+              <div id="release-options">
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label for="first-release-date" class="col-sm-6 control-label">Month 1</label>
+                    <div class="col-sm-6">
+                      <input type="text" class="form-control" id="project-total" placeholder="">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label for="first-release-date" class="col-sm-6 control-label">Month 2</label>
+                    <div class="col-sm-6">
+                      <input type="text" class="form-control" id="project-total" placeholder="">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label for="first-release-date" class="col-sm-6 control-label">Month 3</label>
+                    <div class="col-sm-6">
+                      <input type="text" class="form-control" id="project-total" placeholder="">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-3">
+                  <div class="form-group">
+                    <label for="first-release-date" class="col-sm-6 control-label">Beyond</label>
+                    <div class="col-sm-6">
+                      <input type="text" class="form-control" id="project-total" placeholder="">
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div class="col-md-3">
-                <div class="form-group">
-                  <label for="first-release-date" class="col-sm-6 control-label">Month 2</label>
-                  <div class="col-sm-6">
-                    <input type="text" class="form-control" id="project-total" placeholder="">
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-3">
-                <div class="form-group">
-                  <label for="first-release-date" class="col-sm-6 control-label">Month 3</label>
-                  <div class="col-sm-6">
-                    <input type="text" class="form-control" id="project-total" placeholder="">
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-md-3">
-                <div class="form-group">
-                  <label for="first-release-date" class="col-sm-6 control-label">Beyond</label>
-                  <div class="col-sm-6">
-                    <input type="text" class="form-control" id="project-total" placeholder="">
-                  </div>
-                </div>
-              </div>
-
+              <div class="clearfix"></div>
               <hr />
 
               <h4>Customer Commitment</h4>
@@ -269,74 +288,89 @@
                   <div class="form-group">
                    <div class="checkbox">
                       <label>
-                        <input type="checkbox"> Does a Purchase Order exist from the customer?  
+                        <input class="purchase-order" type="checkbox"> Does a Purchase Order exist from the customer?  
                       </label>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-md-6">
-                  <div class="form-group">
+                  <div class="form-group" id="customerPo">
                     <label for="first-release-date" class="col-sm-6 control-label">Customer P.O. #</label>
                     <div class="col-sm-6">
-                      <input type="text" class="form-control" id="project-total" placeholder="">
+                      <input type="text" class="form-control" maxlength="25" id="project-total" placeholder="">
                     </div>
                   </div>
                 </div>
+
+                <div class="clearfix"></div>
 
                 <div class="col-md-6">
                   <div class="form-group">
                    <div class="checkbox">
                       <label>
-                        <input type="checkbox"> Is there a firm ship date/end date on PO?  
+                        <input class="firmShipDate" type="checkbox"> Is there a firm ship date/end date on PO?  
                       </label>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-md-6">
-                   <div class="form-group">
+                   <div class="form-group" id="firmShipDate">
                     <label for="first-release-date" class="col-sm-6 control-label">Date</label>
                     <div class="col-sm-6">
-                      <input type="text" class="form-control" id="project-total" placeholder="">
+                      <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
+                        <input type="text" class="form-control" id="date-requested" required>
+                      </div>
                     </div>
                   </div>
                 </div>
+
+                <div class="clearfix"></div>
 
                 <div class="col-md-6">
                   <div class="form-group">
                    <div class="checkbox">
                       <label>
-                        <input type="checkbox"> Signed Customer NCNR Material Agreement, or Special Order Form, with end date?   
+                        <input class="signedAgreement" type="checkbox"> Signed Customer NCNR Material Agreement, or Special Order Form, with end date?   
                       </label>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-md-6">
-                   <div class="form-group">
+                   <div class="form-group" id="signedAgreement">
                     <label for="first-release-date" class="col-sm-6 control-label">Customer NCNR, or Special Order, End Date</label>
                     <div class="col-sm-6">
-                      <input type="text" class="form-control" id="project-total" placeholder="">
+                      <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
+                        <input type="text" class="form-control" id="date-requested" required>
+                      </div>
                     </div>
                   </div>
                 </div>
+
+                <div class="clearfix"></div>
 
                  <div class="col-md-6">
                   <div class="form-group">
                    <div class="checkbox">
                       <label>
-                        <input type="checkbox"> Has customer acknowledged material is NCNR?
+                        <input class="customerAcknow" type="checkbox"> Has customer acknowledged material is NCNR?
                       </label>
                     </div>
                   </div>
                 </div>
 
                 <div class="col-md-6">
-                   <div class="form-group">
-                    <label for="first-release-date" class="col-sm-6 control-label">NCNR MaterialCustomer  Acknowledgement Date</label>
+                   <div class="form-group" id="customerAcknow">
+                    <label for="first-release-date" class="col-sm-6 control-label">NCNR Material Customer Acknowledgement Date</label>
                     <div class="col-sm-6">
-                      <input type="text" class="form-control" id="project-total" placeholder="">
+                      <div class="input-group">
+                        <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
+                        <input type="text" class="form-control" id="date-requested" required>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -364,83 +398,381 @@
 
           <div role="tabpanel" class="tab-pane" id="pm-team">
             <br />
-            <p class="warning">NOTE: ANY MISSING INFORMATION WILL RESULT IN DELAYS</p>
+            <p><strong>For BOM with 5 items or less, complete the following table.</strong></p>
 
-            <div class="col-md-4 col-sm-12">
+            <h4>Item 1</h4>
+            <div class="col-md-4">
               <div class="form-group">
-                  <label for="type-of-contract" class="col-sm-6 control-label">Type Of Contract</label>
-                  <div class="col-sm-6">
-                    <input type="text" class="form-control" id="type-of-contract" placeholder="">
-                  </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-sm-12">
-              <div class="form-group">
-                  <label for="contract-setup-needed" class="col-sm-6 control-label">Contract Setup Needed?</label>
-                  <div class="col-sm-6">
-                    <select class="form-control" id="contract-setup-needed">
-                      <option>- SELECT ONE - </option>
-                      <option>YES</option>
-                      <option>NO</option>
-                    </select>
-                  </div>
-                </div>
-            </div>
-
-            <div class="col-md-4 col-sm-12">
-              <div class="form-group">
-                  <label for="followup-needed" class="col-sm-6 control-label">Additional Followup Needed?</label>
-                  <div class="col-sm-6">
-                    <select class="form-control" id="followup-needed">
-                      <option>- SELECT ONE - </option>
-                      <option>YES</option>
-                      <option>NO</option>
-                    </select>
-                  </div>
-                </div>
-            </div>
-
-            <div class="clearfix"></div>
-
-            <div class="col-md-4 col-sm-12">
-              <div class="form-group">
-                <label for="type-of-contract" class="col-sm-6 control-label">Type Of Contract</label>
+                <label for="axePartNumber1" class="col-sm-6 control-label">AXE Part #</label>
                 <div class="col-sm-6">
-                  <input type="text" class="form-control" id="type-of-contract" placeholder="">
+                  <input type="text" class="form-control" id="axePartNumber1" placeholder="">
                 </div>
               </div>
             </div>
 
-            <div class="col-md-4 col-sm-12">
-              <label for="date" class="col-sm-6 control-label">Date</label>
-              <div class="input-group pm-date">
-                <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
-                <input type="text" class="form-control" id="date" placeholder="MM/DD/YYYY" required>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="vendor1" class="col-sm-6 control-label">Vendor</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="vendor1" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="vendorPartNumber1" class="col-sm-6 control-label">Vendor Part #</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="vendorPartNumber1" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="axePurchaseCost1" class="col-sm-6 control-label">AXE Purchase Cost</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="axePurchaseCost1" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="unitOfMeasure1" class="col-sm-6 control-label">Unit of Measure</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="unitOfMeasure1" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="quantity1" class="col-sm-6 control-label">Quantity</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="quantity1" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="totalItemCost1" class="col-sm-6 control-label">Total Item Cost</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="totalItemCost1" onblur="findTotal()" name="qty" placeholder="">
+                </div>
               </div>
             </div>
 
             <div class="clearfix"></div>
 
-             <div class="col-md-12">
+            <hr /><!--FORM ROW-->
+
+            <h4>Item 2</h4>
+            <div class="col-md-4">
               <div class="form-group">
-                <label for="additional-pricing" class="col-sm-6 control-label">Additional Pricing/General Details</label>
-                <div class="clearfix"></div>
-                <div class="col-md-12">
-                  <textarea id="additional-pricing" rows="5" placeholder="Enter your Additional Pricing/General Details"></textarea>
+                <label for="axePartNumber2" class="col-sm-6 control-label">AXE Part #</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="axePartNumber2" placeholder="">
                 </div>
               </div>
             </div>
 
-            <div class="col-md-12">
+            <div class="col-md-4">
               <div class="form-group">
-                <label for="marketing-memo" class="col-sm-6 control-label">Marketing Memo</label>
-                <div class="clearfix"></div>
-                <div class="col-md-12">
-                  <textarea rows="5" id="marketing-memo" placeholder="Enter Your Marketing Memo"></textarea>
+                <label for="vendor2" class="col-sm-6 control-label">Vendor</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="vendor2" placeholder="">
                 </div>
               </div>
             </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="vendorPartNumber2" class="col-sm-6 control-label">Vendor Part #</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="vendorPartNumber2" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="axePurchaseCost2" class="col-sm-6 control-label">AXE Purchase Cost</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="axePurchaseCost2" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="unitOfMeasure2" class="col-sm-6 control-label">Unit of Measure</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="unitOfMeasure2" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="quantity2" class="col-sm-6 control-label">Quantity</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="quantity2" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="totalItemCost2" class="col-sm-6 control-label">Total Item Cost</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="totalItemCost2" onblur="findTotal()" name="qty" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <hr />
+
+            <h4>Item 3</h4>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="axePartNumber3" class="col-sm-6 control-label">AXE Part #</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="axePartNumber3" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="vendor3" class="col-sm-6 control-label">Vendor</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="vendor3" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="vendorPartNumber3" class="col-sm-6 control-label">Vendor Part #</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="vendorPartNumber3" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="axePurchaseCost3" class="col-sm-6 control-label">AXE Purchase Cost</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="axePurchaseCost3" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="unitOfMeasure3" class="col-sm-6 control-label">Unit of Measure</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="unitOfMeasure3" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="quantity3" class="col-sm-6 control-label">Quantity</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="quantity3" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="totalItemCost3" class="col-sm-6 control-label">Total Item Cost</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="totalItemCost3" onblur="findTotal()" name="qty" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <hr />
+
+            <h4>Item 4</h4>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="axePartNumber4" class="col-sm-6 control-label">AXE Part #</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="axePartNumber4" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="vendor4" class="col-sm-6 control-label">Vendor</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="vendor4" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="vendorPartNumber4" class="col-sm-6 control-label">Vendor Part #</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="vendorPartNumber4" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="axePurchaseCost4" class="col-sm-6 control-label">AXE Purchase Cost</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="axePurchaseCost4" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="unitOfMeasure4" class="col-sm-6 control-label">Unit of Measure</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="unitOfMeasure4" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="quantity4" class="col-sm-6 control-label">Quantity</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="quantity4" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="totalItemCost4" class="col-sm-6 control-label">Total Item Cost</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="totalItemCost4" onblur="findTotal()" name="qty" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <hr />
+
+            <h4>Item 5</h4>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="axePartNumber5" class="col-sm-6 control-label">AXE Part #</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="axePartNumber5" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="vendor5" class="col-sm-6 control-label">Vendor</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="vendor5" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="vendorPartNumber5" class="col-sm-6 control-label">Vendor Part #</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="vendorPartNumber5" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="axePurchaseCost5" class="col-sm-6 control-label">AXE Purchase Cost</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="axePurchaseCost5" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="unitOfMeasure5" class="col-sm-6 control-label">Unit of Measure</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="unitOfMeasure5" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="quantity5" class="col-sm-6 control-label">Quantity</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="quantity5" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="totalItemCost5" class="col-sm-6 control-label">Total Item Cost</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="totalItemCost5" onblur="findTotal()" name="qty" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <hr />
+
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="totalBOMCost" class="col-sm-6 control-label">Total BOM Cost</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="totalBOMCost" name="totalBOMCost" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-8">
+              <div class="form-group">
+                <label for="first-release-date" class="col-sm-6 control-label">Special Instructions For Ordering</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" maxlength="255" id="project-total" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <div class="col-md-12 file-upload-box">
+              <p>For BOM with more than 5 items, attach an Excel spreadsheet and click on submit at the bottom of this page.</p>
+                <div class="input-group file-upload">
+                  <label class="input-group-btn">
+                      <span class="btn btn-primary">
+                          <span class="glyphicon glyphicon-export"></span> Browse&hellip; <input type="file" style="display: none;" multiple>
+                      </span>
+                  </label>
+                  <input type="text" class="form-control" readonly>
+                </div>
+            </div>
+
+            <div class="clearfix"></div>
 
             <div class="col-md-12">
               <div class="pull-right button-adj">
@@ -548,17 +880,68 @@
                 format: "mm/dd/yyyy"
             });
 
+            $('.services-op-check').click(function() {
+             if( $(this).is(':checked')) {
+                $("#services-op-wrapper").show();
+             } else {
+                $("#services-op-wrapper").hide();
+             }
+            });
+
+            $('.multiple-releases').click(function() {
+             if( $(this).is(':checked')) {
+                $("#release-options").show();
+             } else {
+                $("#release-options").hide();
+             }
+            });
+
+            $('.purchase-order').click(function() {
+             if( $(this).is(':checked')) {
+                $("#customerPo").show();
+             } else {
+                $("#customerPo").hide();
+             }
+            });
+
+             $('.firmShipDate').click(function() {
+             if( $(this).is(':checked')) {
+                $("#firmShipDate").show();
+             } else {
+                $("#firmShipDate").hide();
+             }
+            });
+
+             $('.signedAgreement').click(function() {
+             if( $(this).is(':checked')) {
+                $("#signedAgreement").show();
+             } else {
+                $("#signedAgreement").hide();
+             }
+            });
+
+             $('.customerAcknow').click(function() {
+             if( $(this).is(':checked')) {
+                $("#customerAcknow").show();
+             } else {
+                $("#customerAcknow").hide();
+             }
+            });
+
         });
       </script>
 
       <script type="text/javascript">
-        function valueChanged()
-        {
-            if($('.coupon_question').is(":checked"))   
-                $(".answer").show();
-            else
-                $(".answer").hide();
+        function findTotal(){
+            var arr = document.getElementsByName('qty');
+            var tot=0;
+            for(var i=0;i<arr.length;i++){
+                if(parseInt(arr[i].value))
+                    tot += parseInt(arr[i].value);
+            }
+            document.getElementById('totalBOMCost').value = tot;
         }
-        </script>
+    </script>
+
   </body>
 </html>

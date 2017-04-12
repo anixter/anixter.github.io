@@ -9,5 +9,5 @@ startDate: today,
   });
 
   $('#date-requested').datepicker('setDate', today);
-  
+
 });
