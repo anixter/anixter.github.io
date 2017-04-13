@@ -46,6 +46,11 @@ textarea {width:100%;}
 #firmShipDate {display:none;}
 #customerAcknow {display:none;}
 #signedAgreement {display:none;}
+#returnableMaterial {display:none;}
+#restockFee {display:none;}
+#valueOfInventory {display:none;}
+#returnOffset {display:none;}
+#vendorRelationship {display:none;}
 .checkbox {margin-left:15px;}
 
 /* -- TEXT STYLES -- */

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" href="../images/favicon.ico">
+    <link rel="icon" href="images/favicon.ico">
 
     <title>Project Inventory Request (PIR) | Anixter</title>
 
@@ -59,63 +59,63 @@
             <form class="form-horizontal">
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="inside-sales-rep" class="col-sm-6 control-label">Requestor*</label>
+                  <label for="requestor" class="col-sm-6 control-label">Requestor*</label>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" id="inside-sales-rep" placeholder="">
+                    <input type="text" class="form-control" id="requestor" placeholder="">
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <label for="project-name" class="col-sm-6 control-label">Date Requested</label>
+                  <label for="dateRequested" class="col-sm-6 control-label">Date Requested</label>
                   <div class="col-sm-6">
                      <div class="input-group">
                       <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
-                      <input type="text" class="form-control" id="date-requested" required>
+                      <input type="text" class="form-control" id="dateRequested" required>
                     </div>
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <label for="project-total" class="col-sm-6 control-label">Sales Location</label>
+                  <label for="salesLocation" class="col-sm-6 control-label">Sales Location</label>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" maxlength="3" id="project-total" placeholder="">
+                    <input type="text" class="form-control" maxlength="3" id="salesLocation" placeholder="">
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <label for="inventory-request-total" class="col-sm-6 control-label">Customer Number</label>
+                  <label for="customerNumber" class="col-sm-6 control-label">Customer Number</label>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" maxlength="6" id="inventory-request-total" placeholder="">
+                    <input type="text" class="form-control" maxlength="6" id="customerNumber" placeholder="">
                   </div>
                 </div>
               </div><!--right side-->
 
               <div class="col-md-6">
                  <div class="form-group">
-                  <label for="sales-location" class="col-sm-6 control-label">Customer/End User</label>
+                  <label for="customerEndUser" class="col-sm-6 control-label">Customer/End User</label>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" maxlength="255" id="sales-location" placeholder="">
+                    <input type="text" class="form-control" maxlength="255" id="customerEndUser" placeholder="">
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <label for="customer-name" class="col-sm-6 control-label">Contractor/Integrator</label>
+                  <label for="contractorIntegrator" class="col-sm-6 control-label">Contractor/Integrator</label>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" maxlength="255" id="customer-name" placeholder="">
+                    <input type="text" class="form-control" maxlength="255" id="contractorIntegrator" placeholder="">
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <label for="customer-number" class="col-sm-6 control-label">Inside Rep.</label>
+                  <label for="insideRep" class="col-sm-6 control-label">Inside Rep.</label>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" maxlength="40" id="customer-number" placeholder="">
+                    <input type="text" class="form-control" maxlength="40" id="insideRep" placeholder="">
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <label for="first-release-date" class="col-sm-6 control-label">Outside Rep.</label>
+                  <label for="outsideRep" class="col-sm-6 control-label">Outside Rep.</label>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" maxlength="40" id="project-total" placeholder="">
+                    <input type="text" class="form-control" maxlength="40" id="outsideRep" placeholder="">
                   </div>
                 </div>
               </div><!--left side-->
@@ -128,19 +128,19 @@
 
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="first-release-date" class="col-sm-6 control-label">Project Name*</label>
+                  <label for="projectName" class="col-sm-6 control-label">Project Name*</label>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" maxlength="255" id="project-total" placeholder="">
+                    <input type="text" class="form-control" maxlength="255" id="projectName" placeholder="">
                   </div>
                 </div>
               </div><!--left side-->
 
               <div class="col-md-12">
                 <div class="form-group">
-                  <label for="additional-pricing" class="col-sm-6 control-label">Scope of Request*</label>
+                  <label for="requestScope" class="col-sm-6 control-label">Scope of Request*</label>
                   <div class="clearfix"></div>
                   <div class="col-md-12">
-                    <textarea id="request-scope" rows="5" placeholder="Enter the scope of this request."></textarea>
+                    <textarea id="requestScope" rows="5" placeholder="Enter the scope of this request."></textarea>
                   </div>
                 </div>
               </div>
@@ -148,7 +148,7 @@
                <div class="form-group">
                  <div class="checkbox">
                     <label>
-                      <input type="checkbox" class="services-op-check" id="services-op"> Services Opportunity?
+                      <input type="checkbox" class="services-op-check" id="servicesOp"> Services Opportunity?
                     </label>
                   </div>
                 </div>
@@ -156,18 +156,18 @@
               <div id="services-op-wrapper">
                 <div class="col-md-5">
                   <div class="form-group">
-                    <label for="first-release-date" class="col-sm-6 control-label">SCS Project Board Number</label>
+                    <label for="projectBoardNumber" class="col-sm-6 control-label">SCS Project Board Number</label>
                     <div class="col-sm-6">
-                      <input type="text" class="form-control" maxlength="10" id="project-total" placeholder="">
+                      <input type="text" class="form-control" maxlength="10" id="projectBoardNumber" placeholder="">
                     </div>
                   </div>
                 </div>
 
                 <div class="col-md-4">
                   <div class="form-group">
-                    <label for="first-release-date" class="col-sm-6 control-label">Signed SCS Proposal?</label>
+                    <label for="signedProposal" class="col-sm-6 control-label">Signed SCS Proposal?</label>
                     <div class="col-sm-6">
-                      <input type="text" class="form-control" id="project-total" placeholder="">
+                      <input type="text" class="form-control" id="signedProposal" placeholder="">
                     </div>
                   </div>
                 </div>
@@ -177,30 +177,30 @@
 
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="first-release-date" class="col-sm-6 control-label">Material Deployment Start (Month/Year)</label>
+                  <label for="materialDeploymentStart" class="col-sm-6 control-label">Material Deployment Start (Month/Year)</label>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" id="project-total" placeholder="">
+                    <input type="text" class="form-control" id="materialDeploymentStart" placeholder="">
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <label for="first-release-date" class="col-sm-6 control-label">Material Deployment End (Month/Year)</label>
+                  <label for="materialDeploymentEnd" class="col-sm-6 control-label">Material Deployment End (Month/Year)</label>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" id="project-total" placeholder="">
+                    <input type="text" class="form-control" id="materialDeploymentEnd" placeholder="">
                   </div>
                 </div>
 
                  <div class="form-group">
-                  <label for="first-release-date" class="col-sm-6 control-label">Requested Stock Location(s)</label>
+                  <label for="requestedStockLocation" class="col-sm-6 control-label">Requested Stock Location(s)</label>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" id="project-total" maxlength="255" placeholder="">
+                    <input type="text" class="form-control" id="requestedStockLocation" maxlength="255" placeholder="">
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <label for="first-release-date" class="col-sm-6 control-label">Total Project Cost</label>
+                  <label for="totalProjectCost" class="col-sm-6 control-label">Total Project Cost</label>
                   <div class="col-sm-6">
-                    <input type="number" class="form-control" pattern=" 0+\.[0-9]*[1-9][0-9]*$" name="itemConsumption" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" id="project-total" placeholder="">
+                    <input type="number" class="form-control" pattern=" 0+\.[0-9]*[1-9][0-9]*$" name="totalProjectCost" id="totalProjectCost" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" id="project-total" placeholder="">
                   </div>
                 </div>
 
@@ -208,23 +208,23 @@
 
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="first-release-date" class="col-sm-6 control-label">Overall GP %</label>
+                  <label for="overallGP" class="col-sm-6 control-label">Overall GP %</label>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" id="project-total" placeholder="">
+                    <input type="text" class="form-control" id="overallGP" placeholder="">
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <label for="first-release-date" class="col-sm-6 control-label">Potential GP $</label>
+                  <label for="potentialGP" class="col-sm-6 control-label">Potential GP $</label>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" id="project-total" placeholder="">
+                    <input type="text" class="form-control" id="potentialGP" placeholder="">
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <label for="first-release-date" class="col-sm-6 control-label">Total Inventory Request Amount</label>
+                  <label for="totalInvReqAmount" class="col-sm-6 control-label">Total Inventory Request Amount</label>
                   <div class="col-sm-6">
-                    <input type="number" class="form-control" pattern=" 0+\.[0-9]*[1-9][0-9]*$" name="itemConsumption" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57">
+                    <input type="number" class="form-control" pattern=" 0+\.[0-9]*[1-9][0-9]*$" id="totalInvReqAmount" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57">
                   </div>
                 </div>
               </div><!--left side-->
@@ -235,7 +235,7 @@
                 <div class="form-group">
                  <div class="checkbox">
                     <label>
-                      <input type="checkbox" class="multiple-releases"> Multiple Releases
+                      <input type="checkbox" class="multipleReleases"> Multiple Releases
                     </label>
                   </div>
                 </div>
@@ -244,36 +244,36 @@
               <div id="release-options">
                 <div class="col-md-3">
                   <div class="form-group">
-                    <label for="first-release-date" class="col-sm-6 control-label">Month 1</label>
+                    <label for="month1" class="col-sm-6 control-label">Month 1</label>
                     <div class="col-sm-6">
-                      <input type="text" class="form-control" id="project-total" placeholder="">
+                      <input type="text" class="form-control" id="month1" placeholder="">
                     </div>
                   </div>
                 </div>
 
                 <div class="col-md-3">
                   <div class="form-group">
-                    <label for="first-release-date" class="col-sm-6 control-label">Month 2</label>
+                    <label for="month2" class="col-sm-6 control-label">Month 2</label>
                     <div class="col-sm-6">
-                      <input type="text" class="form-control" id="project-total" placeholder="">
+                      <input type="text" class="form-control" id="month2" placeholder="">
                     </div>
                   </div>
                 </div>
 
                 <div class="col-md-3">
                   <div class="form-group">
-                    <label for="first-release-date" class="col-sm-6 control-label">Month 3</label>
+                    <label for="month3" class="col-sm-6 control-label">Month 3</label>
                     <div class="col-sm-6">
-                      <input type="text" class="form-control" id="project-total" placeholder="">
+                      <input type="text" class="form-control" id="month3" placeholder="">
                     </div>
                   </div>
                 </div>
 
                 <div class="col-md-3">
                   <div class="form-group">
-                    <label for="first-release-date" class="col-sm-6 control-label">Beyond</label>
+                    <label for="multipleReleaseBeyond" class="col-sm-6 control-label">Beyond</label>
                     <div class="col-sm-6">
-                      <input type="text" class="form-control" id="project-total" placeholder="">
+                      <input type="text" class="form-control" id="multipleReleaseBeyond" placeholder="">
                     </div>
                   </div>
                 </div>
@@ -296,9 +296,9 @@
 
                 <div class="col-md-6">
                   <div class="form-group" id="customerPo">
-                    <label for="first-release-date" class="col-sm-6 control-label">Customer P.O. #</label>
+                    <label for="customerPurchaseOrder" class="col-sm-6 control-label">Customer P.O. #</label>
                     <div class="col-sm-6">
-                      <input type="text" class="form-control" maxlength="25" id="project-total" placeholder="">
+                      <input type="text" class="form-control" maxlength="25" id="customerPurchaseOrder" placeholder="">
                     </div>
                   </div>
                 </div>
@@ -317,11 +317,11 @@
 
                 <div class="col-md-6">
                    <div class="form-group" id="firmShipDate">
-                    <label for="first-release-date" class="col-sm-6 control-label">Date</label>
+                    <label for="poFirmEndDate" class="col-sm-6 control-label">Date</label>
                     <div class="col-sm-6">
                       <div class="input-group">
                         <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
-                        <input type="text" class="form-control" id="date-requested" required>
+                        <input type="text" class="form-control" id="poFirmEndDate" required>
                       </div>
                     </div>
                   </div>
@@ -341,11 +341,11 @@
 
                 <div class="col-md-6">
                    <div class="form-group" id="signedAgreement">
-                    <label for="first-release-date" class="col-sm-6 control-label">Customer NCNR, or Special Order, End Date</label>
+                    <label for="specialOrderEndDate" class="col-sm-6 control-label">Customer NCNR, or Special Order, End Date</label>
                     <div class="col-sm-6">
                       <div class="input-group">
                         <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
-                        <input type="text" class="form-control" id="date-requested" required>
+                        <input type="text" class="form-control" id="specialOrderEndDate" required>
                       </div>
                     </div>
                   </div>
@@ -365,11 +365,11 @@
 
                 <div class="col-md-6">
                    <div class="form-group" id="customerAcknow">
-                    <label for="first-release-date" class="col-sm-6 control-label">NCNR Material Customer Acknowledgement Date</label>
+                    <label for="dateRequested" class="col-sm-6 control-label">NCNR Material Customer Acknowledgement Date</label>
                     <div class="col-sm-6">
                       <div class="input-group">
                         <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
-                        <input type="text" class="form-control" id="date-requested" required>
+                        <input type="text" class="form-control" id="dateRequested" required>
                       </div>
                     </div>
                   </div>
@@ -379,10 +379,10 @@
 
               <div class="col-md-12">
                 <div class="form-group">
-                  <label for="additional-pricing" class="col-sm-6 control-label">Additional Notes</label>
+                  <label for="additionalNotes" class="col-sm-6 control-label">Additional Notes</label>
                   <div class="clearfix"></div>
                   <div class="col-md-12">
-                    <textarea id="request-scope" rows="5" placeholder="Enter any additional notes."></textarea>
+                    <textarea id="additionalNotes" rows="5" placeholder="Enter any additional notes."></textarea>
                   </div>
                 </div>
               </div>
@@ -806,9 +806,9 @@
 
             <div class="col-md-8">
               <div class="form-group">
-                <label for="first-release-date" class="col-sm-6 control-label">Special Instructions For Ordering</label>
+                <label for="specialInstructions" class="col-sm-6 control-label">Special Instructions For Ordering</label>
                 <div class="col-sm-6">
-                  <input type="text" class="form-control" maxlength="255" id="project-total" placeholder="">
+                  <input type="text" class="form-control" maxlength="255" id="specialInstructions" placeholder="">
                 </div>
               </div>
             </div>
@@ -840,11 +840,180 @@
             <br />
             <p class="warning">NOTE: ANY MISSING INFORMATION WILL RESULT IN DELAYS</p>
 
-            <h4>Inventory Assessment</h4>
+             <h4>Inventory Assessment</h4>
+
+             <div class="col-md-6">
+                <div class="form-group">
+                 <div class="checkbox">
+                    <label>
+                      <input class="returnableMaterial" type="checkbox"> Is material returnable to vendor on the annual stock rotation?  
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group" id="returnableMaterial">
+                  <label for="nonReturnableInventory" class="col-sm-6 control-label">Value of non-returnable inventory</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" maxlength="25" id="nonReturnableInventory" placeholder="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="clearfix"></div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="valueReturnableInventory" class="col-sm-6 control-label">Value of returnable inventory</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" maxlength="255" id="valueReturnableInventory" placeholder="">
+                  </div>
+                </div>
+              </div>
+
+            <div class="clearfix"></div>
 
             <h4>Return concerns</h4>
 
+             <div class="col-md-6">
+                <div class="form-group">
+                 <div class="checkbox">
+                    <label>
+                      <input class="restockFee" type="checkbox"> A restock fee will apply?  
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group" id="restockFee">
+                  <label for="restockExplain" class="col-sm-6 control-label">Explain</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" maxlength="255" id="restockExplain" placeholder="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="clearfix"></div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                 <div class="checkbox">
+                    <label>
+                      <input class="valueOfInventory" type="checkbox"> Value of inventory greater than return allowance?  
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group" id="valueOfInventory">
+                  <label for="inventoryAmount" class="col-sm-6 control-label">Amount</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" pattern=" 0+\.[0-9]*[1-9][0-9]*$" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" maxlength="25" id="inventoryAmount" placeholder="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="clearfix"></div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                 <div class="checkbox">
+                    <label>
+                      <input class="returnOffset" type="checkbox"> Return will require and offset PO?  
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group" id="returnOffset">
+                  <label for="explainReturnOffset" class="col-sm-6 control-label">Explain</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" maxlength="25" id="explainReturnOffset" placeholder="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="clearfix"></div>
+
+              <div class="col-md-6">
+                <div class="form-group">
+                 <div class="checkbox">
+                    <label>
+                      <input class="vendorRelationship" type="checkbox"> Vendor Relationship?  
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-group" id="vendorRelationship">
+                  <label for="first-release-date" class="col-sm-6 control-label">Explain</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" maxlength="25" id="explainVendorRelationship" placeholder="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="clearfix"></div>
+
             <h4>Risk Assessment</h4>
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="valueRiskInventory" class="col-sm-6 control-label">Value of Risk Inventory</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" id="valueRiskInventory" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+             <div class="col-md-12">
+              <div class="form-group">
+                <label for="riskAssessmentNotes" class="col-sm-6 control-label">Additional Notes</label>
+                <div class="clearfix"></div>
+                <div class="col-md-12">
+                  <textarea id="riskAssessmentNotes" rows="5" placeholder="Enter any additional notes."></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <h4>To Be Completed By Credit Team</h4>
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="completedBy" class="col-sm-6 control-label">Credit Risk Assessment Completed by:</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" maxlength="40" id="completedBy" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="riskRating" class="col-sm-6 control-label">Risk Rating</label>
+                <div class="col-sm-6">
+                  <input type="text" class="form-control" maxlength="10" id="riskRating" placeholder="">
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="creditComments" class="col-sm-6 control-label">Comments</label>
+                <div class="clearfix"></div>
+                <div class="col-md-12">
+                  <textarea id="creditComments" rows="5" placeholder="Enter any additional notes."></textarea>
+                </div>
+              </div>
+            </div>
 
             <div class="clearfix"></div>
 
@@ -862,74 +1031,5 @@
     <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/field-controls.js"></script>
     <script src="scripts/datepicker.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('#date-requested').datepicker({
-                format: "mm/dd/yyyy"
-            });
-
-            $('.services-op-check').click(function() {
-             if( $(this).is(':checked')) {
-                $("#services-op-wrapper").show();
-             } else {
-                $("#services-op-wrapper").hide();
-             }
-            });
-
-            $('.multiple-releases').click(function() {
-             if( $(this).is(':checked')) {
-                $("#release-options").show();
-             } else {
-                $("#release-options").hide();
-             }
-            });
-
-            $('.purchase-order').click(function() {
-             if( $(this).is(':checked')) {
-                $("#customerPo").show();
-             } else {
-                $("#customerPo").hide();
-             }
-            });
-
-             $('.firmShipDate').click(function() {
-             if( $(this).is(':checked')) {
-                $("#firmShipDate").show();
-             } else {
-                $("#firmShipDate").hide();
-             }
-            });
-
-             $('.signedAgreement').click(function() {
-             if( $(this).is(':checked')) {
-                $("#signedAgreement").show();
-             } else {
-                $("#signedAgreement").hide();
-             }
-            });
-
-             $('.customerAcknow').click(function() {
-             if( $(this).is(':checked')) {
-                $("#customerAcknow").show();
-             } else {
-                $("#customerAcknow").hide();
-             }
-            });
-
-        });
-      </script>
-
-      <script type="text/javascript">
-        function findTotal(){
-            var arr = document.getElementsByName('qty');
-            var tot=0;
-            for(var i=0;i<arr.length;i++){
-                if(parseInt(arr[i].value))
-                    tot += parseInt(arr[i].value);
-            }
-            document.getElementById('totalBOMCost').value = tot;
-        }
-    </script>
-
   </body>
 </html>
