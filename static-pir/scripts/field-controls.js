@@ -12,31 +12,36 @@ $(document).ready(function() {
 
 	$('#dateRequested').datepicker('setDate', today);
 
-	$('#dateRequested').datepicker({
-		format: "mm/dd/yyyy"
-	});
-
-	$('#dateRequested').datepicker({
-		format: "mm/dd/yyyy",
+	$('#materialDeploymentStart').datepicker({
+		format: "mm/yyyy",
+		viewMode: "months",
+		minViewMode: "months",
 		startDate: today,
 	});
+
+	$('#materialDeploymentStart').datepicker('setDate', today);
+
+	$('#materialDeploymentEnd').datepicker({
+		format: "mm/yyyy",
+		viewMode: "months",
+		minViewMode: "months",
+		startDate: today,
+	});
+
+	$('#materialDeploymentEnd').datepicker('setDate', today);
 
 	$('#poFirmEndDate').datepicker('setDate', today);
 
 	$('#poFirmEndDate').datepicker({
-		format: "mm/dd/yyyy"
-	});
-
-	$('#poFirmEndDate').datepicker({
 		format: "mm/dd/yyyy",
 		startDate: today,
 	});
 
-  $('#dateRequested').datepicker('setDate', today);
+  	$('#dateRequested').datepicker('setDate', today);
 
-  $('#dateRequested').datepicker({
-  	format: "mm/dd/yyyy"
-   });
+  	$('#dateRequested').datepicker({
+  		format: "mm/dd/yyyy"
+   	});
 
 //TOGGLE CHECKBOX CONTROLS
 

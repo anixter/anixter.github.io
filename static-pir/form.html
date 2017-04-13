@@ -179,14 +179,20 @@
                 <div class="form-group">
                   <label for="materialDeploymentStart" class="col-sm-6 control-label">Material Deployment Start (Month/Year)</label>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" id="materialDeploymentStart" placeholder="">
+                    <div class="input-group">
+                      <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
+                      <input type="text" class="form-control" id="materialDeploymentStart" required>
+                    </div>
                   </div>
                 </div>
 
                 <div class="form-group">
                   <label for="materialDeploymentEnd" class="col-sm-6 control-label">Material Deployment End (Month/Year)</label>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" id="materialDeploymentEnd" placeholder="">
+                    <div class="input-group">
+                      <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
+                      <input type="text" class="form-control" id="materialDeploymentEnd" required>
+                    </div>
                   </div>
                 </div>
 
@@ -242,7 +248,17 @@
               </div>
 
               <div id="release-options">
+
                 <div class="col-md-3">
+                  <div class="form-group">
+                    <label for="shipmentMoneyPerMonth" class="col-sm-6 control-label">Shipment $ Per Month</label>
+                    <div class="col-sm-6">
+                      <input type="text" class="form-control" pattern=" 0+\.[0-9]*[1-9][0-9]*$" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" id="shipmentMoneyPerMonth" placeholder="">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-2">
                   <div class="form-group">
                     <label for="month1" class="col-sm-6 control-label">Month 1</label>
                     <div class="col-sm-6">
@@ -251,7 +267,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-2">
                   <div class="form-group">
                     <label for="month2" class="col-sm-6 control-label">Month 2</label>
                     <div class="col-sm-6">
@@ -260,7 +276,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-2">
                   <div class="form-group">
                     <label for="month3" class="col-sm-6 control-label">Month 3</label>
                     <div class="col-sm-6">
@@ -269,7 +285,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-3">
+                <div class="col-md-2">
                   <div class="form-group">
                     <label for="multipleReleaseBeyond" class="col-sm-6 control-label">Beyond</label>
                     <div class="col-sm-6">
@@ -856,7 +872,7 @@
                 <div class="form-group" id="returnableMaterial">
                   <label for="nonReturnableInventory" class="col-sm-6 control-label">Value of non-returnable inventory</label>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" maxlength="25" id="nonReturnableInventory" placeholder="">
+                    <input type="text" class="form-control" pattern=" 0+\.[0-9]*[1-9][0-9]*$" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" id="nonReturnableInventory" placeholder="">
                   </div>
                 </div>
               </div>
@@ -867,7 +883,7 @@
                 <div class="form-group">
                   <label for="valueReturnableInventory" class="col-sm-6 control-label">Value of returnable inventory</label>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" maxlength="255" id="valueReturnableInventory" placeholder="">
+                    <input type="text" class="form-control" pattern=" 0+\.[0-9]*[1-9][0-9]*$" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" id="valueReturnableInventory" placeholder="">
                   </div>
                 </div>
               </div>
@@ -911,7 +927,7 @@
                 <div class="form-group" id="valueOfInventory">
                   <label for="inventoryAmount" class="col-sm-6 control-label">Amount</label>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" pattern=" 0+\.[0-9]*[1-9][0-9]*$" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" maxlength="25" id="inventoryAmount" placeholder="">
+                    <input type="text" class="form-control" pattern=" 0+\.[0-9]*[1-9][0-9]*$" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" id="inventoryAmount" placeholder="">
                   </div>
                 </div>
               </div>
@@ -932,7 +948,7 @@
                 <div class="form-group" id="returnOffset">
                   <label for="explainReturnOffset" class="col-sm-6 control-label">Explain</label>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" maxlength="25" id="explainReturnOffset" placeholder="">
+                    <input type="text" class="form-control" maxlength="255" id="explainReturnOffset" placeholder="">
                   </div>
                 </div>
               </div>
@@ -953,7 +969,7 @@
                 <div class="form-group" id="vendorRelationship">
                   <label for="first-release-date" class="col-sm-6 control-label">Explain</label>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" maxlength="25" id="explainVendorRelationship" placeholder="">
+                    <input type="text" class="form-control" maxlength="255" id="explainVendorRelationship" placeholder="">
                   </div>
                 </div>
               </div>
