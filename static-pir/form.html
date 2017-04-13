@@ -54,19 +54,18 @@
         <div class="tab-content">
           <div role="tabpanel" class="tab-pane active" id="sales-team">
             <br />
-            <p class="warning">NOTE: ANY MISSING INFORMATION WILL RESULT IN DELAYS</p>
 
             <form class="form-horizontal">
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="requestor" class="col-sm-6 control-label">Requestor*</label>
+                  <label for="requestor" class="col-sm-6 control-label">Requestor<span class="warning">*</span></label>
                   <div class="col-sm-6">
                     <input type="text" class="form-control" id="requestor" placeholder="">
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <label for="dateRequested" class="col-sm-6 control-label">Date Requested</label>
+                  <label for="dateRequested" class="col-sm-6 control-label">Date Requested<span class="warning">*</span></label>
                   <div class="col-sm-6">
                      <div class="input-group">
                       <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
@@ -76,14 +75,14 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="salesLocation" class="col-sm-6 control-label">Sales Location</label>
+                  <label for="salesLocation" class="col-sm-6 control-label">Sales Location<span class="warning">*</span></label>
                   <div class="col-sm-6">
                     <input type="text" class="form-control" maxlength="3" id="salesLocation" placeholder="">
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <label for="customerNumber" class="col-sm-6 control-label">Customer Number</label>
+                  <label for="customerNumber" class="col-sm-6 control-label">Customer Number<span class="warning">*</span></label>
                   <div class="col-sm-6">
                     <input type="text" class="form-control" maxlength="6" id="customerNumber" placeholder="">
                   </div>
@@ -92,7 +91,7 @@
 
               <div class="col-md-6">
                  <div class="form-group">
-                  <label for="customerEndUser" class="col-sm-6 control-label">Customer/End User</label>
+                  <label for="customerEndUser" class="col-sm-6 control-label">Customer/End User<span class="warning">*</span></label>
                   <div class="col-sm-6">
                     <input type="text" class="form-control" maxlength="255" id="customerEndUser" placeholder="">
                   </div>
@@ -128,7 +127,7 @@
 
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="projectName" class="col-sm-6 control-label">Project Name*</label>
+                  <label for="projectName" class="col-sm-6 control-label">Project Name<span class="warning">*</span></label>
                   <div class="col-sm-6">
                     <input type="text" class="form-control" maxlength="255" id="projectName" placeholder="">
                   </div>
@@ -137,7 +136,7 @@
 
               <div class="col-md-12">
                 <div class="form-group">
-                  <label for="requestScope" class="col-sm-6 control-label">Scope of Request*</label>
+                  <label for="requestScope" class="col-sm-6 control-label">Scope of Request<span class="warning">*</span></label>
                   <div class="clearfix"></div>
                   <div class="col-md-12">
                     <textarea id="requestScope" rows="5" placeholder="Enter the scope of this request."></textarea>
@@ -148,13 +147,16 @@
                <div class="form-group">
                  <div class="checkbox">
                     <label>
-                      <input type="checkbox" class="services-op-check" id="servicesOp"> Services Opportunity?
+                      <input type="checkbox" class="services-op-check" id="servicesOp">Services Opportunity?
                     </label>
                   </div>
                 </div>
               </div>
+
+              <div class="clearfix"></div>
+
               <div id="services-op-wrapper">
-                <div class="col-md-5">
+                <div class="col-md-6">
                   <div class="form-group">
                     <label for="projectBoardNumber" class="col-sm-6 control-label">SCS Project Board Number</label>
                     <div class="col-sm-6">
@@ -163,7 +165,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-6">
                   <div class="form-group">
                     <label for="signedProposal" class="col-sm-6 control-label">Signed SCS Proposal?</label>
                     <div class="col-sm-6">
@@ -177,7 +179,7 @@
 
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="materialDeploymentStart" class="col-sm-6 control-label">Material Deployment Start (Month/Year)</label>
+                  <label for="materialDeploymentStart" class="col-sm-6 control-label">Material Deployment Start (Month/Year)<span class="warning">*</span></label>
                   <div class="col-sm-6">
                     <div class="input-group">
                       <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
@@ -187,7 +189,7 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="materialDeploymentEnd" class="col-sm-6 control-label">Material Deployment End (Month/Year)</label>
+                  <label for="materialDeploymentEnd" class="col-sm-6 control-label">Material Deployment End (Month/Year)<span class="warning">*</span></label>
                   <div class="col-sm-6">
                     <div class="input-group">
                       <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
@@ -197,14 +199,14 @@
                 </div>
 
                  <div class="form-group">
-                  <label for="requestedStockLocation" class="col-sm-6 control-label">Requested Stock Location(s)</label>
+                  <label for="requestedStockLocation" class="col-sm-6 control-label">Requested Stock Location(s)<span class="warning">*</span></label>
                   <div class="col-sm-6">
                     <input type="text" class="form-control" id="requestedStockLocation" maxlength="255" placeholder="">
                   </div>
                 </div>
 
                 <div class="form-group">
-                  <label for="totalProjectCost" class="col-sm-6 control-label">Total Project Cost</label>
+                  <label for="totalProjectCost" class="col-sm-6 control-label">Total Project Cost<span class="warning">*</span></label>
                   <div class="col-sm-6">
                     <input type="number" class="form-control" pattern=" 0+\.[0-9]*[1-9][0-9]*$" name="totalProjectCost" id="totalProjectCost" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" id="project-total" placeholder="">
                   </div>
@@ -258,7 +260,9 @@
                   </div>
                 </div>
 
-                <div class="col-md-2">
+                <div class="clearfix"></div>
+
+                <div class="col-md-3">
                   <div class="form-group">
                     <label for="month1" class="col-sm-6 control-label">Month 1</label>
                     <div class="col-sm-6">
@@ -267,7 +271,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-2">
+                <div class="col-md-3">
                   <div class="form-group">
                     <label for="month2" class="col-sm-6 control-label">Month 2</label>
                     <div class="col-sm-6">
@@ -276,7 +280,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-2">
+                <div class="col-md-3">
                   <div class="form-group">
                     <label for="month3" class="col-sm-6 control-label">Month 3</label>
                     <div class="col-sm-6">
@@ -285,7 +289,7 @@
                   </div>
                 </div>
 
-                <div class="col-md-2">
+                <div class="col-md-3">
                   <div class="form-group">
                     <label for="multipleReleaseBeyond" class="col-sm-6 control-label">Beyond</label>
                     <div class="col-sm-6">
@@ -304,7 +308,7 @@
                   <div class="form-group">
                    <div class="checkbox">
                       <label>
-                        <input class="purchase-order" type="checkbox"> Does a Purchase Order exist from the customer?  
+                        <input class="purchase-order" type="checkbox"> Does a Purchase Order Exist From the Customer?  
                       </label>
                     </div>
                   </div>
@@ -325,7 +329,7 @@
                   <div class="form-group">
                    <div class="checkbox">
                       <label>
-                        <input class="firmShipDate" type="checkbox"> Is there a firm ship date/end date on PO?  
+                        <input class="firmShipDate" type="checkbox"> Is There a Firm Ship Date/End Date on PO?  
                       </label>
                     </div>
                   </div>
@@ -854,15 +858,14 @@
 
           <div role="tabpanel" class="tab-pane" id="im-team">
             <br />
-            <p class="warning">NOTE: ANY MISSING INFORMATION WILL RESULT IN DELAYS</p>
-
+          
              <h4>Inventory Assessment</h4>
 
              <div class="col-md-6">
                 <div class="form-group">
                  <div class="checkbox">
                     <label>
-                      <input class="returnableMaterial" type="checkbox"> Is material returnable to vendor on the annual stock rotation?  
+                      <input class="returnableMaterial" type="checkbox"> Is Material Returnable to Vendor on the Annual Stock Rotation?  
                     </label>
                   </div>
                 </div>
@@ -870,7 +873,7 @@
 
               <div class="col-md-6">
                 <div class="form-group" id="returnableMaterial">
-                  <label for="nonReturnableInventory" class="col-sm-6 control-label">Value of non-returnable inventory</label>
+                  <label for="nonReturnableInventory" class="col-sm-6 control-label">Value of Non-Returnable Inventory</label>
                   <div class="col-sm-6">
                     <input type="text" class="form-control" pattern=" 0+\.[0-9]*[1-9][0-9]*$" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" id="nonReturnableInventory" placeholder="">
                   </div>
@@ -881,7 +884,7 @@
 
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="valueReturnableInventory" class="col-sm-6 control-label">Value of returnable inventory</label>
+                  <label for="valueReturnableInventory" class="col-sm-6 control-label">Value of Returnable Inventory</label>
                   <div class="col-sm-6">
                     <input type="text" class="form-control" pattern=" 0+\.[0-9]*[1-9][0-9]*$" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" id="valueReturnableInventory" placeholder="">
                   </div>
@@ -896,7 +899,7 @@
                 <div class="form-group">
                  <div class="checkbox">
                     <label>
-                      <input class="restockFee" type="checkbox"> A restock fee will apply?  
+                      <input class="restockFee" type="checkbox"> A Restock Fee Will Apply?  
                     </label>
                   </div>
                 </div>
@@ -904,7 +907,7 @@
 
               <div class="col-md-6">
                 <div class="form-group" id="restockFee">
-                  <label for="restockExplain" class="col-sm-6 control-label">Explain</label>
+                  <label for="restockExplain" class="col-sm-2 control-label">Explain</label>
                   <div class="col-sm-6">
                     <input type="text" class="form-control" maxlength="255" id="restockExplain" placeholder="">
                   </div>
@@ -917,7 +920,7 @@
                 <div class="form-group">
                  <div class="checkbox">
                     <label>
-                      <input class="valueOfInventory" type="checkbox"> Value of inventory greater than return allowance?  
+                      <input class="valueOfInventory" type="checkbox"> Value of Inventory Greater than Return Allowance?  
                     </label>
                   </div>
                 </div>
@@ -925,7 +928,7 @@
 
               <div class="col-md-6">
                 <div class="form-group" id="valueOfInventory">
-                  <label for="inventoryAmount" class="col-sm-6 control-label">Amount</label>
+                  <label for="inventoryAmount" class="col-sm-2 control-label">Amount</label>
                   <div class="col-sm-6">
                     <input type="text" class="form-control" pattern=" 0+\.[0-9]*[1-9][0-9]*$" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" id="inventoryAmount" placeholder="">
                   </div>
@@ -938,7 +941,7 @@
                 <div class="form-group">
                  <div class="checkbox">
                     <label>
-                      <input class="returnOffset" type="checkbox"> Return will require and offset PO?  
+                      <input class="returnOffset" type="checkbox"> Return Will Require and Offset PO?  
                     </label>
                   </div>
                 </div>
@@ -946,7 +949,7 @@
 
               <div class="col-md-6">
                 <div class="form-group" id="returnOffset">
-                  <label for="explainReturnOffset" class="col-sm-6 control-label">Explain</label>
+                  <label for="explainReturnOffset" class="col-sm-2 control-label">Explain</label>
                   <div class="col-sm-6">
                     <input type="text" class="form-control" maxlength="255" id="explainReturnOffset" placeholder="">
                   </div>
@@ -967,7 +970,7 @@
 
               <div class="col-md-6">
                 <div class="form-group" id="vendorRelationship">
-                  <label for="first-release-date" class="col-sm-6 control-label">Explain</label>
+                  <label for="first-release-date" class="col-sm-2 control-label">Explain</label>
                   <div class="col-sm-6">
                     <input type="text" class="form-control" maxlength="255" id="explainVendorRelationship" placeholder="">
                   </div>
@@ -989,6 +992,8 @@
 
             <div class="clearfix"></div>
 
+            <br />
+
              <div class="col-md-12">
               <div class="form-group">
                 <label for="riskAssessmentNotes" class="col-sm-6 control-label">Additional Notes</label>
@@ -1005,8 +1010,8 @@
 
             <div class="col-md-6">
               <div class="form-group">
-                <label for="completedBy" class="col-sm-6 control-label">Credit Risk Assessment Completed by:</label>
-                <div class="col-sm-6">
+                <label for="completedBy" class="col-md-7 control-label">Credit Risk Assessment Completed by:</label>
+                <div class="col-sm-4">
                   <input type="text" class="form-control" maxlength="40" id="completedBy" placeholder="">
                 </div>
               </div>
@@ -1014,12 +1019,16 @@
 
             <div class="col-md-6">
               <div class="form-group">
-                <label for="riskRating" class="col-sm-6 control-label">Risk Rating</label>
+                <label for="riskRating" class="col-sm-4 control-label">Risk Rating</label>
                 <div class="col-sm-6">
                   <input type="text" class="form-control" maxlength="10" id="riskRating" placeholder="">
                 </div>
               </div>
             </div>
+
+           <div class="clearfix"></div>
+
+            <br />
 
             <div class="col-md-12">
               <div class="form-group">

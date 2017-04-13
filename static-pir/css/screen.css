@@ -14,7 +14,7 @@ header {background:url(../images/blue-gradient.jpg) repeat-x; height:80px; color
 .col-md-4 {margin-bottom:25px;}
 .button-adj {margin-right:15px;}
 .clearfix {clear:both;}
-hr {border-color:#ccc;}
+hr {display:none;}
 .file-upload-box {background-color:#eee; border:1px solid #ccc; padding:30px 15px; margin-bottom:15px;}
 
 /* -- QUEUE SYSTEM -- */
@@ -41,7 +41,7 @@ textarea {width:100%;}
 .file-upload {margin-right:0px !important;}
 .panel-default > .panel-heading {background-color:#eee;}
 #services-op-wrapper {display:none;}
-#release-options {display:none; background-color:#eee; border:1px solid #ccc; height:100px;}
+#release-options {display:none; background-color:#eee; border:1px solid #ccc; min-height:180px; font-size:11px;}
 #customerPo {display:none;}
 #firmShipDate {display:none;}
 #customerAcknow {display:none;}
@@ -57,7 +57,7 @@ textarea {width:100%;}
 h1 {color:#000; font-size:24px;}
 h2 {color:#555;}
 h3 {color:#0078c0;}
-h4 {color:#0078c0;}
+h4 {color:#0078c0; border-bottom:1px solid #0078c0; margin-bottom:10px; padding-bottom:5px;}
 p {color:#555;}
 a {color:#0078c0;}
 a:hover {color:#026eaf;}
@@ -87,5 +87,9 @@ label {font-weight:normal;}
 	.mobile-button {font-size:24px; margin-left:15px;}
 	.mobile-button-sm {font-size:18px;}
 	.queue-item-column {border:0px;}
+	#topper {text-align:center;}
+	#topper a {font-size:12px;}
+	.pull-left {float:none !important;}
+	.pull-right {float:none !important;}
 
 	}
