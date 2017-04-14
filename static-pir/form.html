@@ -46,6 +46,7 @@
           <li role="presentation" class="active"><a href="#sales-team" aria-controls="sales-team" role="tab" data-toggle="tab">Sales</a></li>
           <li role="presentation"><a href="#pm-team" aria-controls="pm-team" role="tab" data-toggle="tab">Project Services</a></li>
           <li role="presentation"><a href="#im-team" aria-controls="im-team" role="tab" data-toggle="tab">Inventory</a></li>
+          <li class="pull-right status-tab"><span class="status-message">Pending Approval</span></li>
         </ul><!--tabs-->
     </div><!--tabs container-->
 
@@ -56,6 +57,14 @@
 
             <form class="form-horizontal">
               <div class="col-md-6">
+
+                <div class="form-group">
+                  <label for="requestor" class="col-sm-6 control-label">Business Unit</label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" id="businessUnit" disabled placeholder="">
+                  </div>
+                </div>
+
                 <div class="form-group">
                   <label for="requestor" class="col-sm-6 control-label">Requestor<span class="warning">*</span></label>
                   <div class="col-sm-6">
@@ -74,9 +83,9 @@
                 </div>
 
                 <div class="form-group">
-                  <label for="salesLocation" class="col-sm-6 control-label">Sales Location<span class="warning">*</span></label>
+                  <label for="customerEndUser" class="col-sm-6 control-label">Customer/End User<span class="warning">*</span></label>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" maxlength="3" id="salesLocation" placeholder="">
+                    <input type="text" class="form-control" maxlength="255" id="customerEndUser" placeholder="">
                   </div>
                 </div>
 
@@ -89,10 +98,18 @@
               </div><!--right side-->
 
               <div class="col-md-6">
-                 <div class="form-group">
-                  <label for="customerEndUser" class="col-sm-6 control-label">Customer/End User<span class="warning">*</span></label>
+
+                <div class="form-group">
+                  <label for="requestor" class="col-sm-6 control-label">Geography</label>
                   <div class="col-sm-6">
-                    <input type="text" class="form-control" maxlength="255" id="customerEndUser" placeholder="">
+                    <input type="text" class="form-control" id="geography" disabled placeholder="">
+                  </div>
+                </div>
+                 
+                 <div class="form-group">
+                  <label for="salesLocation" class="col-sm-6 control-label">Sales Location<span class="warning">*</span></label>
+                  <div class="col-sm-6">
+                    <input type="text" class="form-control" maxlength="3" id="salesLocation" placeholder="">
                   </div>
                 </div>
 
@@ -126,8 +143,8 @@
 
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="projectName" class="col-sm-6 control-label">Project Name<span class="warning">*</span></label>
-                  <div class="col-sm-6">
+                  <label for="projectName" class="col-sm-3 control-label">Project Name<span class="warning">*</span></label>
+                  <div class="col-sm-9">
                     <input type="text" class="form-control" maxlength="255" id="projectName" placeholder="">
                   </div>
                 </div>
@@ -138,7 +155,7 @@
                   <label for="requestScope" class="col-sm-6 control-label">Scope of Request<span class="warning">*</span></label>
                   <div class="clearfix"></div>
                   <div class="col-md-12">
-                    <textarea id="requestScope" rows="5" placeholder="Enter the scope of this request."></textarea>
+                    <textarea class="form-control" id="requestScope" rows="5" placeholder="Enter the scope of this request."></textarea>
                   </div>
                 </div>
               </div>
@@ -168,7 +185,11 @@
                   <div class="form-group">
                     <label for="signedProposal" class="col-sm-6 control-label">Signed SCS Proposal?</label>
                     <div class="col-sm-6">
-                      <input type="text" class="form-control" id="signedProposal" placeholder="">
+                      <select class="form-control">
+                        <option>- SELECT ONE -</option>
+                        <option>YES</option>
+                        <option>NO</option>
+                      </select>
                     </div>
                   </div>
                 </div>
@@ -204,16 +225,19 @@
                   </div>
                 </div>
 
-                <div class="form-group">
-                  <label for="totalProjectCost" class="col-sm-6 control-label">Total Project Cost<span class="warning">*</span></label>
-                  <div class="col-sm-6">
-                    <input type="number" class="form-control" pattern=" 0+\.[0-9]*[1-9][0-9]*$" name="totalProjectCost" id="totalProjectCost" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" id="project-total" placeholder="">
-                  </div>
-                </div>
+                
 
               </div><!--right side-->
 
               <div class="col-md-6">
+
+                <div class="form-group">
+                  <label for="totalInvReqAmount" class="col-sm-6 control-label">Total Inventory Request Amount</label>
+                  <div class="col-sm-6">
+                    <input type="number" class="form-control" pattern=" 0+\.[0-9]*[1-9][0-9]*$" id="totalInvReqAmount" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57">
+                  </div>
+                </div>
+
                 <div class="form-group">
                   <label for="overallGP" class="col-sm-6 control-label">Overall GP %</label>
                   <div class="col-sm-6">
@@ -227,76 +251,73 @@
                     <input type="text" class="form-control" id="potentialGP" placeholder="">
                   </div>
                 </div>
-
-                <div class="form-group">
-                  <label for="totalInvReqAmount" class="col-sm-6 control-label">Total Inventory Request Amount</label>
-                  <div class="col-sm-6">
-                    <input type="number" class="form-control" pattern=" 0+\.[0-9]*[1-9][0-9]*$" id="totalInvReqAmount" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57">
-                  </div>
-                </div>
               </div><!--left side-->
 
               <div class="clearfix"></div>
 
-              <div class="col-md-12">
+              <div class="col-md-6">
                 <div class="form-group">
-                 <div class="checkbox">
-                    <label>
-                      <input type="checkbox" class="multipleReleases"> Multiple Releases
-                    </label>
-                  </div>
+                  <label for="multipleReleases" class="col-sm-6 control-label">Multiple Releases</label>
+                    <div class="col-sm-6">
+                      <select id="multipleReleasesSelect" class="form-control">
+                        <option>- SELECT ONE -</option>
+                        <option value="1">YES</option>
+                        <option value="2">NO</option>
+                      </select>
+                    </div>
                 </div>
               </div>
 
-              <div id="release-options">
-
-                <div class="col-md-3">
-                  <div class="form-group">
-                    <label for="shipmentMoneyPerMonth" class="col-sm-6 control-label">Shipment $ Per Month</label>
-                    <div class="col-sm-6">
-                      <input type="text" class="form-control" pattern=" 0+\.[0-9]*[1-9][0-9]*$" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" id="shipmentMoneyPerMonth" placeholder="">
+                <div style="display:none;" id="shipmentPerMonth">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="shipmentMoneyPerMonth" class="col-sm-6 control-label">Shipment $ Per Month</label>
+                      <div class="col-sm-6">
+                        <input type="text" class="form-control" pattern=" 0+\.[0-9]*[1-9][0-9]*$" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" id="shipmentMoneyPerMonth" placeholder="">
+                      </div>
                     </div>
                   </div>
                 </div>
 
                 <div class="clearfix"></div>
 
-                <div class="col-md-3">
-                  <div class="form-group">
-                    <label for="month1" class="col-sm-6 control-label">Month 1</label>
-                    <div class="col-sm-6">
-                      <input type="text" class="form-control" id="month1" placeholder="">
+                <div style="display:none;" id="monthReleases">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="month1" class="col-sm-6 control-label">Month 1</label>
+                      <div class="col-sm-6">
+                        <input type="text" class="form-control" id="month1" placeholder="">
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="col-md-3">
-                  <div class="form-group">
-                    <label for="month2" class="col-sm-6 control-label">Month 2</label>
-                    <div class="col-sm-6">
-                      <input type="text" class="form-control" id="month2" placeholder="">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="month2" class="col-sm-6 control-label">Month 2</label>
+                      <div class="col-sm-6">
+                        <input type="text" class="form-control" id="month2" placeholder="">
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="col-md-3">
-                  <div class="form-group">
-                    <label for="month3" class="col-sm-6 control-label">Month 3</label>
-                    <div class="col-sm-6">
-                      <input type="text" class="form-control" id="month3" placeholder="">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="month3" class="col-sm-6 control-label">Month 3</label>
+                      <div class="col-sm-6">
+                        <input type="text" class="form-control" id="month3" placeholder="">
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="col-md-3">
-                  <div class="form-group">
-                    <label for="multipleReleaseBeyond" class="col-sm-6 control-label">Beyond</label>
-                    <div class="col-sm-6">
-                      <input type="text" class="form-control" id="multipleReleaseBeyond" placeholder="">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="multipleReleaseBeyond" class="col-sm-6 control-label">Beyond</label>
+                      <div class="col-sm-6">
+                        <input type="text" class="form-control" id="multipleReleaseBeyond" placeholder="">
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
               <div class="clearfix"></div>
               <hr />
@@ -388,7 +409,7 @@
                     <div class="col-sm-6">
                       <div class="input-group">
                         <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
-                        <input type="text" class="form-control" id="dateRequested" required>
+                        <input type="text" class="form-control" id="dateRequestedNCNR" required>
                       </div>
                     </div>
                   </div>
@@ -401,7 +422,7 @@
                   <label for="additionalNotes" class="col-sm-6 control-label">Additional Notes</label>
                   <div class="clearfix"></div>
                   <div class="col-md-12">
-                    <textarea id="additionalNotes" rows="5" placeholder="Enter any additional notes."></textarea>
+                    <textarea class="form-control" id="additionalNotes" rows="5" placeholder="Enter any additional notes."></textarea>
                   </div>
                 </div>
               </div>
@@ -823,6 +844,8 @@
               </div>
             </div>
 
+            <div class="clearfix"></div>
+
             <div class="col-md-8">
               <div class="form-group">
                 <label for="specialInstructions" class="col-sm-6 control-label">Special Instructions For Ordering</label>
@@ -860,30 +883,18 @@
           
              <h4>Inventory Assessment</h4>
 
-             <div class="col-md-6">
-                <div class="form-group">
-                 <div class="checkbox">
-                    <label>
-                      <input class="returnableMaterial" type="checkbox"> Is Material Returnable to Vendor on the Annual Stock Rotation?  
-                    </label>
-                  </div>
-                </div>
-              </div>
-
               <div class="col-md-6">
                 <div class="form-group" id="returnableMaterial">
-                  <label for="nonReturnableInventory" class="col-sm-6 control-label">Value of Non-Returnable Inventory</label>
+                  <label for="nonReturnableInventory" class="col-sm-6 control-label">Value of Non-Returnable Inventory<span class="warning">*</span></label>
                   <div class="col-sm-6">
                     <input type="text" class="form-control" pattern=" 0+\.[0-9]*[1-9][0-9]*$" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" id="nonReturnableInventory" placeholder="">
                   </div>
                 </div>
               </div>
 
-              <div class="clearfix"></div>
-
               <div class="col-md-6">
                 <div class="form-group">
-                  <label for="valueReturnableInventory" class="col-sm-6 control-label">Value of Returnable Inventory</label>
+                  <label for="valueReturnableInventory" class="col-sm-6 control-label">Value of Returnable Inventory<span class="warning">*</span></label>
                   <div class="col-sm-6">
                     <input type="text" class="form-control" pattern=" 0+\.[0-9]*[1-9][0-9]*$" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" id="valueReturnableInventory" placeholder="">
                   </div>
@@ -998,7 +1009,7 @@
                 <label for="riskAssessmentNotes" class="col-sm-6 control-label">Additional Notes</label>
                 <div class="clearfix"></div>
                 <div class="col-md-12">
-                  <textarea id="riskAssessmentNotes" rows="5" placeholder="Enter any additional notes."></textarea>
+                  <textarea class="form-control" id="riskAssessmentNotes" rows="5" placeholder="Enter any additional notes."></textarea>
                 </div>
               </div>
             </div>
@@ -1034,7 +1045,7 @@
                 <label for="creditComments" class="col-sm-6 control-label">Comments</label>
                 <div class="clearfix"></div>
                 <div class="col-md-12">
-                  <textarea id="creditComments" rows="5" placeholder="Enter any additional notes."></textarea>
+                  <textarea class="form-control" id="creditComments" rows="5" placeholder="Enter any additional notes."></textarea>
                 </div>
               </div>
             </div>

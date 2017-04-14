@@ -12,6 +12,13 @@ $(document).ready(function() {
 
 	$('#dateRequested').datepicker('setDate', today);
 
+    $('#dateRequestedNCNR').datepicker({
+        format: "mm/dd/yyyy",
+        startDate: today,
+    });
+
+    $('#dateRequestedNCNR').datepicker('setDate', today);
+
 	$('#materialDeploymentStart').datepicker({
 		format: "mm/yyyy",
 		viewMode: "months",
@@ -42,6 +49,12 @@ $(document).ready(function() {
   	$('#dateRequested').datepicker({
   		format: "mm/dd/yyyy"
    	});
+
+    $('#specialOrderEndDate').datepicker('setDate', today);
+
+    $('#specialOrderEndDate').datepicker({
+        format: "mm/dd/yyyy"
+    });
 
 //TOGGLE CHECKBOX CONTROLS
 
@@ -132,6 +145,11 @@ $(document).ready(function() {
         $("#vendorRelationship").hide();
      }
     });
+
+        $('#multipleReleasesSelect').on('change', function () {
+            $("#shipmentPerMonth").css('display', (this.value == '1') ? 'block' : 'none');  
+            $("#monthReleases").css('display', (this.value == '2') ? 'block' : 'none'); 
+        });
 
 });
 
