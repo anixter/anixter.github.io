@@ -147,8 +147,8 @@ $(document).ready(function() {
     });
 
         $('#multipleReleasesSelect').on('change', function () {
-            $("#shipmentPerMonth").css('display', (this.value == '1') ? 'block' : 'none');  
-            $("#monthReleases").css('display', (this.value == '2') ? 'block' : 'none'); 
+            $("#monthReleases").css('display', (this.value == '1') ? 'block' : 'none');  
+            $("#shipmentPerMonth").css('display', (this.value == '2') ? 'block' : 'none'); 
         });
 
 });

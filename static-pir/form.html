@@ -22,9 +22,44 @@
     <div id="topper">
       <div class="container">
         <p class="pull-left"><span class="glyphicon glyphicon-user"></span> Welcome, John Doe (083215)</p>
-        <p class="pull-right"><a href="">Approval Workflow</a> | <a href="">Document History</a></p>
+        <p class="pull-right"><a href="">Document History</a> | <a data-toggle="modal" data-target="#signIn">Sign in as Different User</a></p>
       </div>
     </div><!--topper-->
+
+
+    <div class="modal fade" id="signIn" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Sign In as a Different User</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label for="requestor" class="col-md-6 control-label">User Name</label>
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" id="userName" disabled placeholder="">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="requestor" class="col-md-6 control-label">Password<span class="warning">*</span></label>
+                  <div class="col-md-6">
+                    <input type="text" class="form-control" id="password" placeholder="">
+                  </div>
+                </div>
+              </div>            
+            </form>
+          </div>
+          <div class="clearfix"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default">Sign In</button>
+          </div>
+        </div>
+      </div>
+    </div><!--ALTERNATE SIGN IN-->
 
     <header>
       <div class="container center-on-mobile">
@@ -46,7 +81,10 @@
           <li role="presentation" class="active"><a href="#sales-team" aria-controls="sales-team" role="tab" data-toggle="tab">Sales</a></li>
           <li role="presentation"><a href="#pm-team" aria-controls="pm-team" role="tab" data-toggle="tab">Project Services</a></li>
           <li role="presentation"><a href="#im-team" aria-controls="im-team" role="tab" data-toggle="tab">Inventory</a></li>
+          <li role="presentation"><a href="#attach-files" aria-controls="attach-files" role="tab" data-toggle="tab">Attach Files</li></a>
+          <li role="presentation"><a href="#approval-workflow" aria-controls="approval-workflow" role="tab" data-toggle="tab">Approval Workflow</li></a>
           <li class="pull-right status-tab"><span class="status-message">Pending Approval</span></li>
+          
         </ul><!--tabs-->
     </div><!--tabs container-->
 
@@ -141,11 +179,18 @@
 
               <h4>Project Scope</h4>
 
-              <div class="col-md-6">
+              <div class="col-md-12">
                 <div class="form-group">
                   <label for="projectName" class="col-sm-3 control-label">Project Name<span class="warning">*</span></label>
                   <div class="col-sm-9">
                     <input type="text" class="form-control" maxlength="255" id="projectName" placeholder="">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="projectName" class="col-sm-3 control-label">Total Project Cost<span class="warning">*</span></label>
+                  <div class="col-sm-3">
+                    <input type="text" class="form-control" id="totalProjectCost" pattern=" 0+\.[0-9]*[1-9][0-9]*$" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" placeholder="">
                   </div>
                 </div>
               </div><!--left side-->
@@ -1059,6 +1104,17 @@
             </div><!--BUTTONS-->
 
           </div><!--inventory management team-->
+
+
+          <div role="tabpanel" class="tab-pane" id="attach-files">
+
+          </div><!--ATTACH FILES-->
+
+          <div role="tabpanel" class="tab-pane" id="approval-workflow">
+
+          </div><!--APPROVAL WORKFLOW-->
+
+
         </div><!--tabs content-->
     </div><!--forms container-->
 
