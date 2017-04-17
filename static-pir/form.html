@@ -190,7 +190,10 @@
                 <div class="form-group">
                   <label for="projectName" class="col-sm-3 control-label">Total Project Cost<span class="warning">*</span></label>
                   <div class="col-sm-3">
-                    <input type="text" class="form-control" id="totalProjectCost" pattern=" 0+\.[0-9]*[1-9][0-9]*$" onkeypress="return (event.charCode == 8 || event.charCode == 0) ? null : event.charCode >= 48 && event.charCode <= 57" placeholder="">
+                    <div class="input-group">
+                      <div class="input-group-addon">$</div>
+                        <input type="text" class="form-control" id="totalProjectCost">
+                      </div>
                   </div>
                 </div>
               </div><!--left side-->
@@ -1122,5 +1125,11 @@
     <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/field-controls.js"></script>
     <script src="scripts/datepicker.js"></script>
+    <script src="scripts/jquery.maskMoney.js" type="text/javascript"></script>
+    <script>
+      $(function() {
+        $('#totalProjectCost').maskMoney();
+      })
+    </script>
   </body>
 </html>

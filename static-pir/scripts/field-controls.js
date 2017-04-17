@@ -164,3 +164,6 @@ $(document).ready(function() {
     }
     document.getElementById('totalBOMCost').value = tot;
 }
+
+
+    
