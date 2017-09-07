@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/chocolat.css" />
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+        <script type="text/javascript" src="js/jquery.chocolat.js"></script>
+        <title>Chocolat — demo</title>
+        <script>
+            $(function(){
+
+                $('#example1').Chocolat({
+                    loop           : true,
+                    imageSize     : 'cover',
+                    overlayOpacity : 0.9
+                });
+
+            });
+        </script>
+    </head>
+    <body>
+
+        <h2>
+            Full window, cover, looping :
+        </h2>
+
+        <div id="example1">
+            <a class="chocolat-image" href="images/linecard1.jpg" title="foo">
+                C
+            </a>
+            <a class="chocolat-image" href="demo-images/2.jpg" title="bar">
+                D
+            </a>
+        </div>
+
+
+        <script>
+            $(function(){
+                var instance = $('#container3').Chocolat({
+                    setTitle : 'set title',
+                    loop: true,
+                    images : [
+                        {src : 'demo-images/1.jpg', title : 'caption 1'},
+                        {src : 'demo-images/6.jpg', title : 'caption 2'},
+                        {src : 'demo-images/8.jpg', title : 'caption 3'},
+                    ],
+                    imageSize : 'contain',
+                    container : '#container3',
+                    afterMarkup: function () {
+                        console.log('afterMarkup hook is called')
+                    },
+                    afterImageLoad: function () {
+                        console.log('afterImageLoad hook is called')
+                    },
+                    afterInitialize: function () {
+                        console.log('afterInitialize hook is called')
+                    },
+                    zoomedPaddingX: function (imgWidth, canvasWidth) {
+                        // add a padding around the zoomed image
+                        // default to 0
+                        return canvasWidth / 4;
+                    },
+                    zoomedPaddingY: function (imgHeight, canvasHeight) {
+                        // add a padding around the zoomed image
+                        // default to 0
+                        return canvasHeight / 4;
+                    }
+                }).data('chocolat');
+
+                $('.api-open').on('click', function(e) {
+                    e.preventDefault()
+
+                    console.log('open start');
+                    var def = instance.api().open()
+
+                    def.done(function(){
+                        console.log('open done');
+                    })
+                })
+                $('.api-close').on('click', function(e) {
+                    e.preventDefault()
+
+                    console.log('close start');
+                    var def = instance.api().close()
+
+                    def.done(function(){
+                        console.log('close done');
+                    })
+                })
+                $('.api-prev').on('click', function(e) {
+                    e.preventDefault()
+
+                    console.log('prev start');
+                    var def = instance.api().prev()
+
+                    def.done(function(){
+                        console.log('prev done');
+                    })
+                })
+                $('.api-next').on('click', function(e) {
+                    e.preventDefault()
+
+                    console.log('next start');
+                    var def = instance.api().next()
+
+                    def.done(function(){
+                        console.log('next done');
+                    })
+                })
+
+                $('.api-cover').on('click', function(e) {
+                    e.preventDefault()
+
+                    console.log('cover mode start')
+                    instance.api().set('imageSize', 'cover')
+                    var def = instance.api().place()
+
+                    def.done(function(){
+                        console.log('cover mode done')
+                    })
+                })
+
+                $('.api-contain').on('click', function(e) {
+                    e.preventDefault()
+
+                    console.log('contain mode start')
+                    instance.api().set('imageSize', 'contain')
+                    var def = instance.api().place()
+
+                    def.done(function(){
+                        console.log('contain mode done')
+                    })
+                })
+            });
+        </script>
+    </body>
+
+</html>
