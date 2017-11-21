@@ -12,3 +12,6 @@ body {background:url(../images/background1.png) repeat; font-family: 'Oswald', s
 .col-md-6 h1 {font-size:20px;}
 .style-tile {width:100%;}
 footer {background-color:#0078c0; width:100%; height:25px; margin-top:40px; position:fixed; bottom:0px;}
+p, li {font-family:Arial, sans-serif; font-size:14px;}
+h3 {margin-top:40px;}
+.col-md-3 {text-align:center;}
