@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <title>Anixter Power Solutions - Locations Weather Report</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/screen-city-specific.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body role="document">
+
+    <div class="container portal-home" role="main">
+      <br />
+      <div class="page-header">
+        <a href="http://www.anixterpowersolutions.com"><img src="../images/logo-white.png" alt="Anixter" /></a>
+        <h1>Weather Conditions for the Durham, NC Anixter Location</h1>
+      </div>
+      <br />
+     
+    <div id="forecast">
+
+        <div class="icon-temp">
+            <canvas id="icon" width="512" height="512"></canvas>
+            <div class="currentTemp"></div>
+        </div>
+
+        <br />
+
+        <div class="summaries">
+            <div class="hourSummary"></div>
+            <div class="daySummary"></div>
+        </div>
+
+        <br />
+
+        <div class="alerts"></div>
+
+        <br />
+
+        <div class="clearfix"></div>
+        <br />
+        <a class="btn button btn-default" target="_blank" href="http://utilidevinternal.hdsupply.com/SSOFace/weather/">Get more information and data for other locations</a>
+
+        <br />
+        <br />
+
+    </div><!-- #forecast -->
+
+  
+    <div class="clearfix"></div>
+
+  </div><!-- #site -->
+          
+</div> <!-- /container -->
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="../js/skycons.js"></script>
+<script src="../js/jquery.flot.js"></script>
+<script src="../js/jquery.flot.fillbetween.js"></script>
+<script>
+key = 'e97c06f54c5b596b245d92bdecea4bcf';
+ll = '36.03,-78.97'; // DURHAM NC
+var skycons = new Skycons({'color':'#ddd'});
+skycons.play();
+function updateForecast(key,ll){
+    jQuery.getJSON('https://api.forecast.io/forecast/'+key+'/'+ll+'?callback=?', function(data){
+        if(data.currently.temperature) // If the current temperature is available (null if no data is available)
+            jQuery('.currentTemp').html(Math.round(data.currently.temperature)+'&deg;');
+
+        if(data.currently.apparentTemperature) // Feels Like Temp
+            jQuery('.newfeature').html('<strong>Feels Like: </strong>' + data.currently.apparentTemperature + '&deg;');
+
+        if(data.alerts) {
+              for(i = 0; i < data.alerts.length; i++) {
+                jQuery(".alerts").html("<div id='has-alert'><strong><span class='alert-headline'><span class='glyphicon glyphicon-alert'></span> CAUTION:</span></strong><br /> " + data.alerts[i].description + "</div>");
+              }
+            } else {
+                jQuery(".alerts").html("<span class='col-md-12 no-alert'><span class='glyphicon glyphicon-ok'></span> No Significant Weather Advisories</span>");
+            }
+
+
+        if(data.currently.icon){ // Add icon label from the API as class on icon div (clear out previous icon if changed)
+            icon = data.currently.icon;
+            icon = icon.replace(/-/g,'_').toUpperCase();
+            icon = 'Skycons.'+icon;
+            skycons.set('icon',eval(icon));
+        }
+        if(data.minutely && data.minutely.summary) // Text summary of upcoming weather in the next hour (ex. "clear", "rain will stop in 25 min", etc.)
+            jQuery('.hourSummary').html('<strong>Upcoming hour:</strong><br> '+data.minutely.summary);
+        if(data.hourly && data.hourly.summary) // Text summary of upcoming weather for the day (ex. "clear", "likely rain until tonight", etc.)
+            jQuery('.daySummary').html('<strong>24 Hours:</strong><br> '+data.hourly.summary);
+        if(data.minutely && data.minutely.data){ // If there's graph data for the hour
+            var hourPrecipitation = data.minutely.data;
+            var hourPrecipitationPoints = [];
+            var hourPrecipitationPointsPositive = [];
+            var hourPrecipitationPointsNegative = [];
+            jQuery(hourPrecipitation).each(function(k,update){ // Run through each available update
+                hourPrecipitationPoints.push([update.time,update.precipIntensity*update.precipProbability]); // Make stuff that's more probable be more prominent & vice-versa
+                // Do the same for two additional plots that take the high & low error margins into account
+                hourPrecipitationPointsPositive.push([update.time,update.precipIntensity*update.precipProbability+update.precipIntensityError]);
+                hourPrecipitationPointsNegative.push([update.time,update.precipIntensity*update.precipProbability-update.precipIntensityError]);
+            });
+            hourPrecipOptions = {
+                series: { shadowSize: 0 },
+                yaxis: { show: false, min: 0, max: 0.5 },
+                xaxis: { show: false },
+                grid: { backgroundColor: '#f5f5f5', borderWidth: 0 }
+            };
+            var hourPrecip = jQuery.plot(jQuery('.hourPrecip'),[{ id: 'actual', data: hourPrecipitationPoints, color: '#0078c0', lines: { show: true, fill: 1 } },{ id: 'positive', data: hourPrecipitationPointsPositive, color: '#999', lines: { show: true, lineWidth: 0, fill: 1 }, fillBetween: 'actual' },{ id: 'negative', data: hourPrecipitationPointsNegative, color: '#999', lines: { show: true, lineWidth: 0, fill: 1 }, fillBetween: 'actual' }], hourPrecipOptions);
+        }
+        if(data.hourly && data.hourly.data){ // If there's graph data for the day
+            var dayPrecipitation = data.hourly.data;
+            var dayPrecipitationPoints = [];
+            var dayPrecipitationPointsPositive = [];
+            var dayPrecipitationPointsNegative = [];
+            jQuery(dayPrecipitation).each(function(k,update){ // Run through each available update
+                dayPrecipitationPoints.push([update.time,update.precipIntensity*update.precipProbability]); // Make stuff that's more probable be more prominent & vice-versa
+                // Do the same for two additional plots that take the high & low error margins into account
+                dayPrecipitationPointsPositive.push([update.time,update.precipIntensity*update.precipProbability+update.precipIntensityError]);
+                dayPrecipitationPointsNegative.push([update.time,update.precipIntensity*update.precipProbability-update.precipIntensityError]);
+            });
+            dayPrecipOptions = {
+                series: { shadowSize: 0 },
+                yaxis: { show: false, min: 0, max: 0.5 },
+                xaxis: { show: false },
+                grid: { backgroundColor: '#f5f5f5', borderWidth: 0 }
+            };
+            var dayPrecip = jQuery.plot(jQuery('.dayPrecip'),[{ id: 'actual', data: dayPrecipitationPoints, color: '#0078c0', lines: { show: true, fill: 1 } },{ id: 'positive', data: dayPrecipitationPointsPositive, color: '#999', lines: { show: true, lineWidth: 0, fill: 1 }, fillBetween: 'actual' },{ id: 'negative', data: dayPrecipitationPointsNegative, color: '#999', lines: { show: true, lineWidth: 0, fill: 1 }, fillBetween: 'actual' }], dayPrecipOptions);
+
+            var dayTemperature = data.hourly.data;
+            var dayTemperaturePoints = [];
+            jQuery(dayTemperature).each(function(k,update){ // Run through each available update
+                dayTemperaturePoints.push([update.time,update.temperature]);
+            });
+            dayTempOptions = {
+                series: { shadowSize: 0 },
+                yaxis: { show: true, min: data.daily.data[0].temperatureMin-10, max: data.daily.data[0].temperatureMax+10 },
+                xaxis: { show: false },
+                grid: { backgroundColor: '#f5f5f5', borderWidth: 0 }
+            };
+            var dayTemp = jQuery.plot(jQuery('.dayTemp'),[{ id: 'actual', data: dayTemperaturePoints, color: '#d77171', lines: { show: true, fill: 1 } }], dayTempOptions);
+        }else{ // The chart data is empty
+            blankOptions = {
+                series: { shadowSize: 0 },
+                yaxis: { show: false, min: 0, max: 1 },
+                xaxis: { show: false },
+                grid: { backgroundColor: '#f5f5f5', borderWidth: 0 }
+            };
+            var dayTemp = jQuery.plot(jQuery('.dayTemp'),[],blankOptions);
+        }
+    });
+}
+updateForecast(key,ll);
+setInterval(function(){updateForecast(key,ll);},30000);
+</script>
+
+
+
+
+  </body>
+</html>
