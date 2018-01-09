@@ -30,13 +30,18 @@
         </div><!--mobile nav-->
 
         <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
+          <ul class="nav navbar-nav navbar-left">
             <li class="active"><a class="hvr-underline-from-center" onclick="$('#home').animatescroll();" href="#home"><span class="glyphicon glyphicon-home"></span> Home</a></li>
             <li><a class="hvr-underline-from-center" onclick="$('#contact').animatescroll();" href="#contact">Web Support</a></li>
             <li><a class="hvr-underline-from-center" onclick="$('#edi').animatescroll();" href="#edi">EDI</a></li>
             <li><a id="signIn" class="hvr-underline-from-center" href="#home">Sign In</a></li>
             <li><a style="display:none;" id="signoutBtn" class="hvr-underline-from-center" href="#home" >Sign Out</a></li>
             <li><a class="hvr-underline-from-center" href="javascript:void(0);" onclick="javascript:introJs().start();">Quick Tutorial</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="hvr-underline-from-center" target="_blank" href="https://www.anixter.com/en_us/about-us/contact-us.html">Locations</a></li>
+            <li><a class="hvr-underline-from-center" target="_blank" href="https://www.anixter.com/en_us/services-and-solutions/customers/power-and-energy.html">Anixter.com</a></li>
+            <li><a class="hvr-underline-from-center" target="_blank" href="">Power Solutions Canada</a></li>
           </ul>
         </div><!--nav links -->
       </div>
@@ -54,7 +59,7 @@
           <div class="col-md-8 intro-copy">
              <img src="images/logo.png" id="logo" alt="Anixter Power Solutions" />
              <h1>Welcome to Anixter Power Solutions</h1>
-             <p>Our industry-leading portfolio of products and services help our customers realize labor and supply chain stability and efficiency. Anixter Power Solutions offers access to a vast selection of products from top-name suppliers. Our associates are skilled at sourcing hard to find and specialty items, and our individual supplier relationships ensure competitive pricing and quick turnaround time providing what you need, where you need it and when you need it.</p>
+             <p>Our industry-leading portfolio of products and services help our customers realize labor and supply chain stability and efficiency. Anixter Power Solutions offers access to a vast selection of products from top-name suppliers. Our associates are skilled at sourcing hard to find and specialty items, and our individual supplier relationships ensure competitive pricing and quick turnaround time providing what you need, where you need it and when you need it. <a target="_blank" href="https://www.anixter.com/en_us/services-and-solutions/customers/power-and-energy.html">Learn more about our services.</a></p>
              <div data-step="2" data-intro="Browse the MRO Catalog. Clicking on this banner will open the catalog in a new window. Be sure to register an account so you can begin shopping." data-position='right'>
              <a target="_blank" href="https://utilesource.hdsupply.com/storefrontCommerce/"><img class="shop-banner" src="images/mro-banner-high-res-compressor.png" alt="Browse MRO Catalog" /></a></div>
              <div data-step="3" data-intro="Use the buttons to navigate to the documents for EDI, Credit Application or Legal Documents: such as Terms and Conditions and Privacy Policies." data-position='right' id="documents">
@@ -765,15 +770,6 @@
                </div>
               <div class="clearfix"></div>
               <div class="contact-form-row last-row">
-               <p class="light">
-                <p><strong>Would you like to receive updates from Anixter Power Solutions?</strong></p>
-                <br />
-                <input id="rdUpdates_0" type="radio" name="main_0$center_1$rdUpdates" value="Yes">
-                <label class="checkbox-label" for="main_0_center_1_rdUpdates_0">Yes</label>
-
-                <input id="rdUpdates_1" type="radio" name="main_0$center_1$rdUpdates" value="No" checked="checked">
-                <label class="checkbox-label" for="main_0_center_1_rdUpdates_1">No</label>
-
                 <div class="clearfix"></div>
                <input type="submit" name="main_0$center_1$btnSubmit" value="Submit" class="contact-form-submit btn btn-primary" id="contactUsBtn"></div></div></div>
              </form>
@@ -833,30 +829,6 @@
       </div><!--tagline-->
 
     </div><!-- /.container -->
-
-    <div class="sticky-container">
-      <ul class="sticky" data-step="4" data-intro="Use these buttons to contact support, visit Power Solutions Canada, access the Anixter Location Weather Service, or visit Anixter.com" data-position='left'>
-        <a target="_blank" href="../one-page/canada/"><li> 
-          <img title="Power Solutions Canada" alt="Power Solutions Canada" src="images/canada-icon.png" />
-          <p>PS Canada</p>
-        </li></a>
-
-         <a target="_blank" href="http://utilidevinternal.hdsupply.com/SSOFace/weather/"><li> 
-          <img title="Power Solutions Weather Center" alt="Power Solutions Weather Center" src="images/weather-icon.png" />
-          <p>Weather</p>
-        </li></a>
-
-         <a target="_blank" href="https://www.anixter.com/en_us/about-us/contact-us.html"><li> 
-          <img title="Locations" alt="Anixter Locations" src="images/location-icon.png" />
-          <p>Locations</p>
-        </li></a>
-
-        <a target="_blank" href="http://www.anixter.com"><li> 
-          <img title="Anixter.com" alt="Anixter.com" src="images/new-window-icon.png" />
-          <p>Anixter.com</p>
-        </li></a>
-      </ul>
-    </div><!--side buttons-->
 
     <div class="mobile-sticky-footer container">
 

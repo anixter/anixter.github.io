@@ -80,6 +80,7 @@ hr {background-color:#0078c0; color:#0078c0; border-color:#0078c0;}
   .navbar-brand a:hover {color:#fff;}
 .navbar-inverse .navbar-nav > li > a {color:#fff;}
 .subscribe {width:100%; height:auto;}
+.navbar-right li a {font-size:14px;}
 
 /*-- HOMEPAGE --*/
 .intro-copy {border-right:1px solid #ccc; padding-right:10px;}
