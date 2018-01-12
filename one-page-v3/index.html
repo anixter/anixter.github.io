@@ -69,12 +69,34 @@
 
                  
                   <div class="col-md-12">
-                      <p><a onclick="$('#edi-page').animatescroll();" href="#edi-page"><strong>EDI</strong></a> &nbsp;|&nbsp; <a target="_blank" href="https://www.anixter.com/en_us/services-and-solutions/financial-services.html"><strong>Credit Application<strong></a> &nbsp;|&nbsp; <a target="_blank" href="https://www.anixter.com/en_us/resources/terms-of-sale.html"><strong>Terms &amp; Conditions</strong></a></p>
-                      
+                      <p><a onclick="$('#edi-page').animatescroll();" href="#edi-page"><strong>EDI</strong></a> &nbsp;|&nbsp; 
+                      <a data-toggle="modal" data-target="#creditApp"><strong>Credit Application<strong></a> &nbsp;|&nbsp; 
+                      <a target="_blank" href="https://www.anixter.com/en_us/resources/terms-of-sale.html"><strong>Terms &amp; Conditions</strong></a></p>
                   </div>
                 </a><!--card-->
 
-          
+                <!-- Credit App Modal -->
+                  <div class="modal fade" id="creditApp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          <h4 class="modal-title" id="myModalLabel">Credit Applications</h4>
+                        </div>
+                        <div class="modal-body">
+                          <p>If you have any questions, please contact the <a href="mailto:creditservicesele@anixter.com">Credit Services Team.</a></p>
+                          <ul class="edi-list">
+                            <li><a target="_blank" href="legal/Anixter_Power_Solutions_Application_for_Credit.pdf"><img src="images/acrobat-icon.png" alt="Download PDF" /> Anixter Inc. Credit Application – United States</a></li>
+                            <li><a target="_blank" href="legal/PS_FIN_CreditApplication_Canada_FINAL.pdf"><img src="images/acrobat-icon.png" alt="Download PDF" /> Anixter Inc. Credit Application – Canada</a></li>
+                          </ul>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!--modal-->
+                  
                 </div><!--documents-->
              </div>
           </div>
