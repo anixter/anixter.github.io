@@ -1,12 +1,12 @@
 /*-- STRUCTURE --*/
 body {font-family: 'Arial', sans-serif;}
 #logo {margin-bottom:15px;}
-#page1 {height:900px; position:relative;}
+#page1 {height:730px; position:relative;}
 #page2 {height:1080px;  position:relative;} 
 #page3 {height:700px; position:relative;}
-#edi-page {height:800px;  position:relative;} 
+#edi-page {height:700px;  position:relative;} 
 #services {height:800px;  position:relative;} 
-#page4 {height:980px; position:relative;}
+#page4 {height:800px; position:relative;}
 #tagline {height:100px; background:url(../images/tagline.jpg) no-repeat center center; position:relative; border:1px solid #555;}
 #tagline2 {height:100px; background:url(../images/tagline2.jpg) no-repeat center center; position:relative; border:1px solid #555;}
 #tagline3 {height:100px; background:url(../images/tagline3.jpg) no-repeat center center; position:relative; border:1px solid #555;}
