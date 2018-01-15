@@ -93,6 +93,7 @@ h2 {color:#0078c1; font-size:20px; padding-bottom:5px;}
 p {line-height:26px;}
 a {color:#0078c1;}
 a:hover {color:#23527D;}
+.btn {font-weight:bold;}
 
 /* -- ANIMATION -- */
 .hvr-underline-from-center {
@@ -167,7 +168,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#377bbf', end
   width:100%;
   padding:10px 0;
   margin-top:10px;
-background-color:#0078c1; border-left:10px solid #0367a4;}
+background-color:#0078c1;}
 
 .btn-primary:hover {color:#fff; background-color:#0367a4; }
 
@@ -176,7 +177,6 @@ background-color:#0078c1; border-left:10px solid #0367a4;}
   padding:10px 0;
   margin-top:10px;
   background-color:#ff6600;
-  border-left:10px solid #E85020;
 }
 .btn-danger:hover {color:#fff; background-color:#E85020;}
 
