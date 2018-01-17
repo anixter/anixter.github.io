@@ -6,7 +6,7 @@ body {font-family: 'Arial', sans-serif;}
 #page3 {height:700px; position:relative;}
 #edi-page {height:700px;  position:relative;} 
 #services {height:800px;  position:relative;} 
-#page4 {height:800px; position:relative;}
+#page4 {height:900px; position:relative;}
 #tagline {height:100px; background:url(../images/tagline.jpg) no-repeat center center; position:relative; border:1px solid #555;}
 #tagline2 {height:100px; background:url(../images/tagline2.jpg) no-repeat center center; position:relative; border:1px solid #555;}
 #tagline3 {height:100px; background:url(../images/tagline3.jpg) no-repeat center center; position:relative; border:1px solid #555;}
@@ -39,6 +39,7 @@ box-shadow: 6px 9px 38px -15px rgba(0,0,0,0.75);}
 #registerBtn {width:40%;}
 hr {background-color:#0078c0; color:#0078c1; border-color:#0078c0;}
 .hs-form fieldset {max-width:100% !important;}
+.hs-button {background-color:#0078c1; background-image:none; border:0px; width:15%;}
 
 /* hack to fix bootstrap bug with modal windows and fixed navs */
 .modal-open .navbar-fixed-top,
