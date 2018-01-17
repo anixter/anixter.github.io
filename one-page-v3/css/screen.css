@@ -38,7 +38,7 @@ box-shadow: 6px 9px 38px -15px rgba(0,0,0,0.75);}
 #resetPWBtn {width:30%;}
 #registerBtn {width:40%;}
 hr {background-color:#0078c0; color:#0078c1; border-color:#0078c0;}
-.hs-form-6cacd726-ebed-4671-af94-a8c5f0fc1d9f_b0186a6b-df4c-4e6c-906c-64c76aa1fd3a fieldset {width:100% !important;}
+.hs-form fieldset {max-width:100% !important;}
 
 /* hack to fix bootstrap bug with modal windows and fixed navs */
 .modal-open .navbar-fixed-top,
