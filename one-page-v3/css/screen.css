@@ -39,7 +39,7 @@ box-shadow: 6px 9px 38px -15px rgba(0,0,0,0.75);}
 #registerBtn {width:40%;}
 hr {background-color:#0078c0; color:#0078c1; border-color:#0078c0;}
 .hs-form fieldset {max-width:100% !important;}
-.hs-button {background-color:#0078c1 !important; background-image:none !important; border:0px !important; width:15%; color:#fff !important;}
+.hs-button {background-color:#0078c1 !important; background-image:none !important; border:0px !important; width:15%; color:#fff !important; padding-top:10px !important; padding-bottom:10px !important;}
 .inputs-list {list-style-type:none !important;}
 
 /* hack to fix bootstrap bug with modal windows and fixed navs */
