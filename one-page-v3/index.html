@@ -33,7 +33,7 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-left">
             <li class="active"><a class="hvr-underline-from-center" onclick="$('#home').animatescroll();" href="#home"><span class="fa fa-home"></span> Home</a></li>
-            <li><a class="hvr-underline-from-center" onclick="$('#contact').animatescroll();" href="#contact">Contact Utility Power Solutions</a></li>
+            <li><a class="hvr-underline-from-center" onclick="$('#contact').animatescroll();" href="#contact">Contact Us</a></li>
             <li><a class="hvr-underline-from-center" onclick="$('#edi').animatescroll();" href="#edi">EDI</a></li>
             <li><a id="signIn" class="hvr-underline-from-center" href="#home">Sign In</a></li>
             <li><a style="display:none;" id="signoutBtn" class="hvr-underline-from-center" href="#home" >Sign Out</a></li>
@@ -60,51 +60,20 @@
           <div class="col-md-8 intro-copy">
              <img src="images/logo.png" id="logo" alt="Anixter Power Solutions" />
              <h1>Anixter Utility Power Solutions Customer Portal</h1>
-             <p>Welcome to the Anixter Customer Portal for Utility Power Solutions customers. This portal allows you to easily reorder products, track order status and request quotes online. Our industry-leading portfolio of products and services help you meet industry challenges and realize labor and supply chain stability and efficiency. An extensive history of successful implementation and execution coupled with our collaborative and customizable approach can help you exceed the expectations of your customers and stakeholders.  <a target="_blank" href="https://www.anixter.com/en_us/services-and-solutions/customers/power-and-energy.html">Learn more about our products and services for utilities.</a></p>
+             <p>Intro Paragraph<a target="_blank" href="https://www.anixter.com/en_us/services-and-solutions/customers/power-and-energy.html">Learn more about our products and services for utilities.</a></p>
+
+             <h4>Utilities</h4>
+             <p>Intro Utilities paragraph</p>
+
+             <h4>Construction, Electrical, and Industrial</h4>
+             <p>CEI Intro paragraph</p>
              <div data-step="2" data-intro="Browse the MRO Catalog. Clicking on this banner will open the catalog in a new window. Be sure to register an account so you can begin shopping." data-position='right'>
-             <a target="_blank" href="https://utilesource.hdsupply.com/storefrontCommerce/"><img class="shop-banner" src="images/mro-banner-high-res-compressor.png" alt="Browse MRO Catalog" /></a></div>
-             <div data-step="3" data-intro="Use the buttons to navigate to the documents for EDI, Credit Application or Legal Documents: such as Terms and Conditions and Privacy Policies." data-position='right' id="documents">
-               <h2>Documents and Forms</h2>
-               <p>Use the buttons below to view or download documents relating to EDI (Electronic Data Interchange), Credit Applications, and Terms &amp; Conditions as well as our Privacy Policies.
-               <div class="row" id="websiteList">
-
-                 
-                  <div class="col-md-12">
-                      <p><a onclick="$('#edi-page').animatescroll();" href="#edi-page"><strong>EDI</strong></a> &nbsp;|&nbsp; 
-                      <a data-toggle="modal" data-target="#creditApp"><strong>Credit Application</strong></a> &nbsp;|&nbsp; 
-                      <a target="_blank" href="https://www.anixter.com/en_us/resources/terms-of-sale.html"><strong>Terms &amp; Conditions</strong></a></p>
-                  </div>
-                </a><!--card-->
-
-                <!-- Credit App Modal -->
-                  <div class="modal fade" id="creditApp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                          <h4 class="modal-title" id="myModalLabel">Credit Applications</h4>
-                        </div>
-                        <div class="modal-body">
-                          <p>If you have any questions, please contact the <a href="mailto:creditservicesele@anixter.com">Credit Services Team.</a></p>
-                          <ul class="edi-list">
-                            <li><a target="_blank" href="legal/Anixter_Power_Solutions_Application_for_Credit.pdf"><img src="images/acrobat-icon.png" alt="Download PDF" /> Anixter Inc. Credit Application – United States</a></li>
-                            <li><a target="_blank" href="legal/PS_FIN_CreditApplication_Canada_FINAL.pdf"><img src="images/acrobat-icon.png" alt="Download PDF" /> Anixter Inc. Credit Application – Canada</a></li>
-                          </ul>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div><!--modal-->
-                  
-                </div><!--documents-->
-             </div>
+             <a target="_blank" href="https://utilesource.hdsupply.com/storefrontCommerce/"><img class="shop-banner" src="images/mro-banner-high-res-compressor.png" alt="Browse MRO Catalog" /></a></div> 
           </div>
 
           <div class="col-md-4 login-form" data-step="1" data-intro="Use this form to log in to your account. Once you log in, you will see your applications in this same area. You can also change your password or register for a new account." data-position='right'>
             <div class="if-not-signed-in">
-            <h2><span class="fa fa-users"></span> Sign In</h2>
+            <h2>Sign in to your existing account</h2>
             <form role="form" data-toggle="validator">
               <div class="form-group">
                 <div class="input-group">
@@ -121,17 +90,12 @@
                 </div>
               </div>
 
-            <p class="pull-right"><em><a data-toggle="modal" data-target="#forgotpassword" href="">Forgot Your Password?</a></em></p>
-
-            <input class='tgl tgl-light' id='show-password' type='checkbox'>
-            <label class='tgl-btn' for='show-password'></label><p class="togglePassword">Show Password</p>
-
-              <div class="col-md-6">
-                <input type="submit" value="Sign In" class="btn btn-primary" id="signinBtn"></input>
+              <div class="col-md-12">
+                <input type="submit" value="Sign in to your account" class="btn btn-primary" id="signinBtn"></input>
               </div>
               
-              <div class="col-md-6">
-                <div data-toggle="modal" data-target="#register" class="btn btn-danger">Register</div>
+              <div class="col-md-12 create-account">
+                <div data-toggle="modal" data-target="#register" class=""><i class="fa fa-id-badge" aria-hidden="true"></i> Create Account</div>
               </div>
 
             </form>
@@ -554,7 +518,34 @@
 
                 <div class="clearfix"></div>
             <hr />
-            <a href="mailto:aps-ApplicationSupport@anixter.com"><img class="subscribe" src="images/talk.jpg" alt="Contact Support" /></a>
+            <h4><i class="fa fa-file-text-o" aria-hidden="true"></i> Documents and forms</h4>
+            <ul class="docs-forms">
+              <li><a onclick="$('#edi-page').animatescroll();" href="#edi-page">Electronic Data Interchange Documents (EDI)</a></li>
+              <li><a data-toggle="modal" data-target="#creditApp">Credit Application(s) U.S. and Canada</a></li>
+              <li><a target="_blank" href="https://www.anixter.com/en_us/resources/terms-of-sale.html">Terms &amp; Conditions (Opens in new window)</a></li>
+            </ul>
+
+            <!-- Credit App Modal -->
+                  <div class="modal fade" id="creditApp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                          <h4 class="modal-title" id="myModalLabel">Credit Applications</h4>
+                        </div>
+                        <div class="modal-body">
+                          <p>If you have any questions, please contact the <a href="mailto:creditservicesele@anixter.com">Credit Services Team.</a></p>
+                          <ul class="edi-list">
+                            <li><a target="_blank" href="legal/Anixter_Power_Solutions_Application_for_Credit.pdf"><img src="images/acrobat-icon.png" alt="Download PDF" /> Anixter Inc. Credit Application – United States</a></li>
+                            <li><a target="_blank" href="legal/PS_FIN_CreditApplication_Canada_FINAL.pdf"><img src="images/acrobat-icon.png" alt="Download PDF" /> Anixter Inc. Credit Application – Canada</a></li>
+                          </ul>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div><!--modal-->
             </div><!--if not signed in-->
 
             <div style="display:none;" class="if-signed-in">
@@ -758,6 +749,7 @@
   
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
    
   </body>
 </html>
