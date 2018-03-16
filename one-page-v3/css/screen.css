@@ -51,21 +51,6 @@ label {font-weight:normal !important;}
 .modal-open .navbar-fixed-top,
 .modal-open .navbar-fixed-bottom {padding-right: 17px;}
 
-/* -- TOGGLE -- */
-.tgl {display: none;}
-.tgl, .tgl:after, .tgl:before, .tgl *, .tgl *:after, .tgl *:before, .tgl + .tgl-btn {box-sizing: border-box;}
-.tgl::-moz-selection, .tgl:after::-moz-selection, .tgl:before::-moz-selection, .tgl *::-moz-selection, .tgl *:after::-moz-selection, .tgl *:before::-moz-selection, .tgl + .tgl-btn::-moz-selection { background: none;}
-.tgl::selection, .tgl:after::selection, .tgl:before::selection, .tgl *::selection, .tgl *:after::selection, .tgl *:before::selection, .tgl + .tgl-btn::selection {background: none;}
-.tgl + .tgl-btn {margin-right:5px;float:left;outline: 0;display: block;width: 4em;height: 2em;position: relative;cursor: pointer;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;
-}
-.tgl + .tgl-btn:after, .tgl + .tgl-btn:before {position: relative;display: block;content: "";width: 50%;height: 100%;}
-.tgl + .tgl-btn:after {left: 0;}
-.tgl + .tgl-btn:before {display: none;}
-.tgl:checked + .tgl-btn:after {left: 50%;}
-.tgl-light + .tgl-btn {margin-top:5px;background: #ccc;border-radius: 2em;padding: 2px;-webkit-transition: all .4s ease;transition: all .4s ease;}
-.tgl-light + .tgl-btn:after {border-radius: 50%;background: #fff;-webkit-transition: all .2s ease;transition: all .2s ease;}
-.tgl-light:checked + .tgl-btn {background: #0078c0;}
-
 /*-- NAVIGATION -- */
 .navbar {background: #377bbf;
     background: -moz-linear-gradient(top, #377bbf 0%, #23527c 100%); 
@@ -665,23 +650,6 @@ tr.introjs-showElement > th {
     opacity: 0.0;
  }
 }
-
-/* -- CANADA STYLES -- */
-.canada-homepage-tagline {margin-top:44px;}
-.canada-card p {background-color:#6d6c6c; color:#fff; text-align:center; margin-bottom:50px; padding:10px; min-height:200px; border-bottom:10px solid #555; line-height:22px; -webkit-transition: background 200ms ease-in;
--moz-transition: background 200ms ease-in;
--ms-transition: background 200ms ease-in;
--o-transition: background 200ms ease-in;
-transition: background 200ms ease-in;}
-  .canada-card p:hover {background-color:#0078c0;}
-.canada-icon {font-size:46px; margin-top:10px; }
-#page1-canada {height:900px; background:url(../images/cn-tower-bg.jpg) no-repeat; position:relative;}
-#page2-canada {height:400px; background:url(../images/texture-color.jpg) no-repeat;  position:relative;}
-#page3-canada {height:980px; background:url(../images/mountain-bg.jpg) no-repeat; position:relative;}
-#page4-canada {height:980px; background:url(../images/lake-bg.jpg) no-repeat; position:relative;}
-.vendors {font-size:16px; color:#0078c0; border-bottom:1px solid #0078c0;}
-#help-line {text-align:center; background-color:#0078c0; padding:10px; color:#fff;}
-  #help-line a {color:#fff;}
 
 
 /* -- MEDIA QUERIES -- */

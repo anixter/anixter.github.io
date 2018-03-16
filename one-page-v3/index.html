@@ -71,10 +71,10 @@
 						<a target="_blank" href="https://utilesource.hdsupply.com/storefrontCommerce/"><img class="shop-banner" src="images/mro-banner-high-res-compressor.png" alt="Browse MRO Catalog" /></a></div> 
 					</div>
 
-					<div class="col-md-4 login-form" data-step="1" data-intro="Use this form to log in to your account. Once you log in, you will see your applications in this same area. You can also change your password or register for a new account." data-position='right'>
+					<div class="col-md-4 login-form">
 						<div class="if-not-signed-in">
 							<h2>Sign in to your existing account</h2>
-							<form role="form" data-toggle="validator">
+							<form role="form" data-toggle="validator" data-step="1" data-intro="Use this form to log in to your account. Once you log in, you will see your applications in this same area. You can also change your password or register for a new account." data-position='right'>
 								<div class="form-group">
 									<div class="input-group">
 										<span class="input-group-addon"><span class="fa fa-user"></span></span>
@@ -525,7 +525,7 @@
 							<div class="clearfix"></div>
 							<hr />
 							<h4><i class="fa fa-file-text-o" aria-hidden="true"></i> Documents and forms</h4>
-							<ul class="docs-forms">
+							<ul class="docs-forms" data-step="3" data-intro="View, download, or print EDI, Credit Applications, or Terms and Conditions documents." data-position='right'>
 								<li><a onclick="$('#edi-page').animatescroll();" href="#edi-page">Electronic Data Interchange Documents (EDI)</a></li>
 								<li><a data-toggle="modal" data-target="#creditApp">Credit Application(s) U.S. and Canada</a></li>
 								<li><a target="_blank" href="https://www.anixter.com/en_us/resources/terms-of-sale.html">Terms &amp; Conditions (Opens in new window)</a></li>
@@ -756,6 +756,18 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="scripts/bootstrap.min.js"></script>
 <script async src="scripts/animatescroll.min.js"></script>
+
+<script type="text/javascript" src="scripts/intro.js"></script>
+  <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-86254711-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
 
 <script async src="scripts/login.js"></script>
 <script>
