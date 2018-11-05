@@ -15,3 +15,19 @@ footer {background-color:#0078c0; width:100%; height:25px; margin-top:40px; posi
 p, li {font-family:Arial, sans-serif; font-size:14px;}
 h3 {margin-top:40px;}
 .col-md-3 {text-align:center;}
+
+.swatch-box {min-height:100px; text-align:center; margin-right:15px;}
+.gradient-blue {background: #3399cc;
+background: -moz-linear-gradient(top, #3399cc 0%, #01679a 100%);
+background: -webkit-linear-gradient(top, #3399cc 0%,#01679a 100%);
+background: linear-gradient(to bottom, #3399cc 0%,#01679a 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3399cc', endColorstr='#01679a',GradientType=0 );}
+.gradient-gray {background: #fefefe;
+background: -moz-linear-gradient(top, #fefefe 0%, #cfcfcf 100%);
+background: -webkit-linear-gradient(top, #fefefe 0%,#cfcfcf 100%);
+background: linear-gradient(to bottom, #fefefe 0%,#cfcfcf 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#cfcfcf',GradientType=0 );}
+.solid-gray {background-color:#e0e0e0;}
+.light-blue {background-color:#6699cc;}
+.background-blue {background-color:#d8e2e9;}
+.black {background-color:#000;}
