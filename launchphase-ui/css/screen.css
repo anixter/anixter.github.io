@@ -1,43 +1,12 @@
 
 /* -- STRUCTURE -- */
 .blue-topper {background-color:#0078c1;}
-
-
-
-.bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-
-
-
-
-
-
-
-
-
-
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding below the footer and lighter body text */
-
-body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  color: #5a5a5a;
-}
-
+.bd-placeholder-img {font-size: 1.125rem;text-anchor: middle;-webkit-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+@media (min-width: 768px) {.bd-placeholder-img-lg {font-size: 3.5rem;}}
+body {padding-top: 3rem;padding-bottom: 3rem;color: #5a5a5a;}
+.content-area {margin-top:35px;}
+.font-family {width:100%;}
+.large-icon {font-size:22px;}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
