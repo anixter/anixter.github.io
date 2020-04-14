@@ -6,7 +6,13 @@
 body {padding-top: 3rem;padding-bottom: 3rem;color: #5a5a5a;}
 .content-area {margin-top:35px;}
 .font-family {width:100%;}
-.large-icon {font-size:22px;}
+.large-icon {font-size:28px; text-align:center; margin-top:15px;}
+.card {margin-left:15px; margin-bottom:15px;}
+  .primary-blue {background-color:#0078c1; color:#fff;}
+  .black {background-color:#333; color:#fff;}
+  .red {background-color:#e74c3c; color:#fff;}
+  .grey {background-color:#eee;}
+  .bright-blue {background-color:#007bff; color:#fff;}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
