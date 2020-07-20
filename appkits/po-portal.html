@@ -5,10 +5,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" href="images/favicon.ico" />
-  <title>Anixter | App Kit | Coming Soon</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet" /><link href="css/screen.css" rel="stylesheet" /><link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" /> 
+  <title>Anixter | App Kit | Customer Search Portal</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/screen.css" rel="stylesheet" />
+    <link href="css/jquery.fancybox.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" /> 
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/jquery.fancybox.min.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -46,9 +51,13 @@
         <p>Need additional information or want to request mockups, screens, or graphics? <a href="mailto:matthew.coats@anixter.com">Get in touch and we can create what you and your customer need.</a></p>
 
         <h2>Description of Application</h2>
-        <p>A search portal application that works with SX.e that gives the user to search for orders using a variety of different criteria.</p>
-        <p><strong>Development URL:</strong> <a href="https://devwebapps.anixter.com/poportal/default.aspx">https://devwebapps.anixter.com/poportal/default.aspx</a></p>
-        <p><strong>Production URL:</strong> <a href="">Coming Soon</a></p>
+        <p>A search portal application that works with SX.e that gives the user the ability to search for orders using a variety of different criteria.</p>
+       
+        <hr />
+
+        <h2>URLs</h2>
+        <p><strong><span class="glyphicon glyphicon-wrench"></span> Development URL:</strong> <a href="https://devwebapps.anixter.com/poportal/default.aspx">https://devwebapps.anixter.com/poportal/default.aspx</a></p>
+        <p><strong><span class="glyphicon glyphicon-globe"></span> Production URL:</strong> <a href="">Coming Soon</a></p>
         
         <hr />
 
@@ -60,6 +69,7 @@
             <li>Ability to search via entered date, shipped date, promised date, and invoice date.</li>
             <li>Multiple different views of search results.</li>
             <li>Ability to view details on individual orders</li>
+            <li>Connects with SX.e</li>
         </ul>
 
         <hr />
@@ -73,8 +83,7 @@
                   </div>
                   <div class="panel-body">
                     <img src="images/po-portal-thumbnail.jpg" alt="Laptop View" />
-                    <a href="po-portal.html"><div class="btn btn-default">View</div></a>
-                    <a download href="images/po-portal/po-portal-laptop.jpg"><div class="btn btn-default">Download</div></a>
+                    <a data-fancybox="gallery" href="images/po-portal/po-portal-laptop.jpg"><div class="btn btn-default">View/Download</div></a>
                   </div>
                 </div>
             </div>
@@ -86,8 +95,7 @@
                   </div>
                   <div class="panel-body">
                     <img src="images/po-portal/phone-thumbnail.jpg" alt="Phone View" />
-                    <a href="po-portal.html"><div class="btn btn-default">View</div></a>
-                    <a download href="images/po-portal/po-portal-phone.jpg"><div class="btn btn-default">Download</div></a>
+                    <a data-fancybox="gallery" href="images/po-portal/po-portal-phone.jpg"><div class="btn btn-default">View/Download</div></a>
                   </div>
                 </div>
             </div>
@@ -99,8 +107,7 @@
                   </div>
                   <div class="panel-body">
                     <img src="images/po-portal/tablet-thumbnail.jpg" alt="Tablet View" />
-                    <a href="po-portal.html"><div class="btn btn-default">View</div></a>
-                    <a download href="images/po-portal/po-portal-tablet.jpg"><div class="btn btn-default">Download</div></a>
+                    <a data-fancybox="gallery" href="images/po-portal/po-portal-tablet.jpg"><div class="btn btn-default">View/Download</div></a>
                   </div>
                 </div>
             </div>
@@ -117,8 +124,7 @@
                   </div>
                   <div class="panel-body">
                     <img src="images/po-portal/desktop-thumbnail.jpg" alt="Laptop View" />
-                    <a href="po-portal.html"><div class="btn btn-default">View</div></a>
-                    <a download href="images/po-portal/desktop-bare-screenshot.png"><div class="btn btn-default">Download</div></a>
+                    <a data-fancybox="gallery" href="images/po-portal/desktop-bare-screenshot.png"><div class="btn btn-default">View/Download</div></a>
                   </div>
                 </div>
             </div>
@@ -130,8 +136,7 @@
                   </div>
                   <div class="panel-body">
                     <img src="images/po-portal/tablet-screen-thumbnail.jpg" alt="Tablet View" />
-                    <a href="po-portal.html"><div class="btn btn-default">View</div></a>
-                    <a download href="images/po-portal/tablet-bare-screenshot.png"><div class="btn btn-default">Download</div></a>
+                    <a data-fancybox="gallery" href="images/po-portal/tablet-bare-screenshot.png"><div class="btn btn-default">View/Download</div></a>
                   </div>
                 </div>
             </div>
@@ -143,8 +148,7 @@
                   </div>
                   <div class="panel-body">
                     <img src="images/po-portal/mobile-screen-thumbnail.jpg" alt="Mobile View" />
-                    <a href="po-portal.html"><div class="btn btn-default">View</div></a>
-                    <a download href="images/po-portal/phone-bare-screenshot.png"><div class="btn btn-default">Download</div></a>
+                    <a data-fancybox="gallery" href="images/po-portal/phone-bare-screenshot.png"><div class="btn btn-default">View/Download</div></a>
                   </div>
                 </div>
             </div>
@@ -161,8 +165,7 @@
                   </div>
                   <div class="panel-body">
                     <img src="images/po-portal/desktop-promo-thumbnail.jpg" alt="Desktop Promo" />
-                    <a href="po-portal.html"><div class="btn btn-default">View</div></a>
-                    <a download href="images/po-portal/desktop-marketing-promo.jpg"><div class="btn btn-default">Download</div></a>
+                    <a data-fancybox="gallery" href="images/po-portal/desktop-marketing-promo.jpg"><div class="btn btn-default">View/Download</div></a>
                   </div>
                 </div>
             </div>
@@ -174,8 +177,7 @@
                   </div>
                   <div class="panel-body">
                     <img src="images/po-portal/mobile-promo-thumbnail.jpg" alt="Mobile Promo" />
-                    <a href="po-portal.html"><div class="btn btn-default">View</div></a>
-                    <a download href="images/po-portal/mobile-marketing-promo.jpg"><div class="btn btn-default">Download</div></a>
+                    <a data-fancybox="gallery" href="images/po-portal/mobile-marketing-promo.jpg"><div class="btn btn-default">View/Download</div></a>
                   </div>
                 </div>
             </div>
@@ -187,8 +189,7 @@
                   </div>
                   <div class="panel-body">
                     <img src="images/po-portal/showcase-thumbnail.jpg" alt="Showcase" />
-                    <a href="po-portal.html"><div class="btn btn-default">View</div></a>
-                    <a download href="images/po-portal/three-device-showcase.jpg"><div class="btn btn-default">Download</div></a>
+                    <a data-fancybox="gallery" href="images/po-portal/three-device-showcase.jpg"><div class="btn btn-default">View/Download</div></a>
                   </div>
                 </div>
             </div>
