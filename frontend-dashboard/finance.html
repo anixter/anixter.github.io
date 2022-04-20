@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Insite by Anixter Frontend Repository - Finance Dashboard</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Cache-Control" content="no-store" />
+	<!-- CSS AND FONTS -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/screen.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">  
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+	integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/css/bootstrap4-toggle.min.css" rel="stylesheet">
+	<!-- JS -->
+	<script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script	src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/js/bootstrap4-toggle.min.js"></script>
+	<script src="scripts/bootstrap-select.min.js"></script>
+	<script src="scripts/countrypicker.min.js"></script>
+</head>
+<body>
+	<div class="d-flex">
+		<nav class="sidebar">
+			<div class="sidebar-content">
+				<div id="sidebar-brand-container">
+					<a href="/EpcWeb/" 
+					class="sidebar-brand">
+					<h1 style="color:#fff; margin-top:10px;">Insite by Anixter</h1>
+				</a>
+			</div>
+			<div class="content" id="sidebar-link-container">
+
+						<div class="sidebar-box">
+							<p class="menu-headline mb-0">Menu</p>
+							<ul class="nav flex-column sidebar-ul" >
+								<li class="nav-item" id="sidebar-link-projects">
+									<a class="nav-link faa-parent animated-hover" href="index.html">
+										<i class="fas fa-home sidebar-icon"></i> Home
+									</a>
+								</li>
+								<li class="nav-item" id="sidebar-link-project-details">
+									<a class="nav-link" id="" href="styleguide.html">
+										<i class="fas fa-palette sidebar-icon"></i> Style Guide
+									</a>
+								</li>
+
+								<li class="nav-item" id="sidebar-link-project-details">
+									<a class="nav-link" id="" href="ia.html">
+										<i class="fas fa-project-diagram sidebar-icon"></i> Information Architecture
+									</a>
+								</li>
+
+								<li class="nav-item" id="sidebar-link-project-details">
+									<a class="nav-link" id="" href="wcag.html">
+										<i class="fas fa-universal-access sidebar-icon"></i> Accessiblity (WCAG)
+									</a>
+								</li>
+
+								<li class="nav-item" id="sidebar-link-project-details">
+									<a class="nav-link" id="" href="ga.html">
+										<i class="fas fa-chart-line sidebar-icon"></i> Google Analytics</i>
+									</a>
+								</li>
+
+								<li class="nav-item" id="sidebar-link-project-bom">
+									<a class="nav-link" id="lnkNavBom" href="feedback.html">
+										<i class="fas fa-comment-alt sidebar-icon"></i> Hotjar Feedback Surveys
+									</a>
+								</li>
+
+								<li class="nav-item" id="sidebar-link-project-bom">
+									<a class="nav-link" id="lnkNavBom" href="heatmaps.html">
+										<i class="fas fa-fire sidebar-icon"></i> Heat Maps
+									</a>
+								</li>
+
+								<li class="nav-item" id="sidebar-link-project-commodity">
+									<a id="commodityMaterialNavLink" class="nav-link faa-parent animated-hover" href="finance.html">
+										<i class="fas fa-chart-pie sidebar-icon"></i> Finance Dashboard
+									</a>
+								</li>
+
+								<li class="nav-item" id="sidebar-link-material-release">
+									<a class="nav-link" id="lnkNavRel" href="marketing.html">
+										<i class="fas fa-desktop sidebar-icon"></i> Marketing Graphics
+									</a>
+								</li>
+							</ul>
+						</div><!-- Main Menu -->
+
+						<div class="legal">
+							<p class="mb-0">&copy; 2022 Insite by Anixter</p>
+						</div><!-- Legal -->
+
+					</div>
+				</div>
+			</nav>
+			<div class="main" style="width: 100%;">
+				<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+			<div class="collapse navbar-collapse navbar-toggle" id="collapsibleNavbar">
+				<ul class="navbar-nav ml-auto topper-nav">
+					<img src="images/team-name.jpg" alt="Team Name" style="margin-top:-10px;" />
+				</ul>
+			</div>
+		</nav>
+		<div class="container-fluid page-container-outer pr-3 pl-0 ">
+			<input type="hidden" value="1" id="inProjectId" />
+			<div class="container-fluid page-container pt-3 pb-3">
+				<div id="divPartTracker" class="container-fluid" >			
+					<div class="container-fluid page-container-outer pr-3 pl-0 ">
+						<div class="container-fluid page-container pt-0 pb-3">
+							<div id="" class="container-fluid" >
+								<div class="mb-1">
+									<div class="circle"><i class="fas fa-chart-pie page-headline-icon"></i></div>
+									<h4 class="page-headline mb-4">Finance Dashboard</h4>
+								</div><!--Page Headline-->
+
+								<div id="" class="container-fluid" >
+									<div class="m-0">
+										<div class="p-3 form-section release-container">
+											<div class="row">
+												<div class="col-md-12">
+													<h6>Finance Data - Q1 2022</h6>
+													<img src="images/iba-data-dashboard.jpg" style="width:100%;" />
+												</div>
+											</div><!--row-->
+										</div><!--section block-->
+									</div><!--set margins to 0-->
+								</div><!--inner container-->
+							</div><!--outer container-->
+						</div><!--page container-->
+					</div><!--page container outer-->		
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	
+</div> <!-- end of the wrapper div in header.jsp -->
+
+
+
+</body>
+</html>

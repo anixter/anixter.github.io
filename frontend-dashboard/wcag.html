@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Insite by Anixter Frontend Repository</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Cache-Control" content="no-store" />
+	<!-- CSS AND FONTS -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/screen.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-select.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Roboto:wght@300;400&display=swap" rel="stylesheet">  
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+	integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/css/bootstrap4-toggle.min.css" rel="stylesheet">
+	<!-- JS -->
+	<script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script	src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" ></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.4.0/js/bootstrap4-toggle.min.js"></script>
+	<script src="scripts/bootstrap-select.min.js"></script>
+	<script src="scripts/countrypicker.min.js"></script>
+</head>
+<body>
+	<div class="d-flex">
+		<nav class="sidebar">
+			<div class="sidebar-content">
+				<div id="sidebar-brand-container">
+					<a href="/EpcWeb/" 
+					class="sidebar-brand">
+					<h1 style="color:#fff; margin-top:10px;">Insite by Anixter</h1>
+				</a>
+			</div>
+			<div class="content" id="sidebar-link-container">
+
+						<div class="sidebar-box">
+							<p class="menu-headline mb-0">Menu</p>
+							<ul class="nav flex-column sidebar-ul" >
+								<li class="nav-item" id="sidebar-link-projects">
+									<a class="nav-link faa-parent animated-hover" href="index.html">
+										<i class="fas fa-home sidebar-icon"></i> Home
+									</a>
+								</li>
+								<li class="nav-item" id="sidebar-link-project-details">
+									<a class="nav-link" id="" href="styleguide.html">
+										<i class="fas fa-palette sidebar-icon"></i> Style Guide
+									</a>
+								</li>
+
+								<li class="nav-item" id="sidebar-link-project-details">
+									<a class="nav-link" id="" href="ia.html">
+										<i class="fas fa-project-diagram sidebar-icon"></i> Information Architecture
+									</a>
+								</li>
+
+								<li class="nav-item" id="sidebar-link-project-details">
+									<a class="nav-link" id="" href="wcag.html">
+										<i class="fas fa-universal-access sidebar-icon"></i> Accessiblity (WCAG)
+									</a>
+								</li>
+
+								<li class="nav-item" id="sidebar-link-project-details">
+									<a class="nav-link" id="" href="ga.html">
+										<i class="fas fa-chart-line sidebar-icon"></i> Google Analytics</i>
+									</a>
+								</li>
+
+								<li class="nav-item" id="sidebar-link-project-bom">
+									<a class="nav-link" id="lnkNavBom" href="feedback.html">
+										<i class="fas fa-comment-alt sidebar-icon"></i> Hotjar Feedback Surveys
+									</a>
+								</li>
+
+								<li class="nav-item" id="sidebar-link-project-bom">
+									<a class="nav-link" id="lnkNavBom" href="heatmaps.html">
+										<i class="fas fa-fire sidebar-icon"></i> Heat Maps
+									</a>
+								</li>
+
+								<li class="nav-item" id="sidebar-link-project-commodity">
+									<a id="commodityMaterialNavLink" class="nav-link faa-parent animated-hover" href="finance.html">
+										<i class="fas fa-chart-pie sidebar-icon"></i> Finance Dashboard
+									</a>
+								</li>
+
+								<li class="nav-item" id="sidebar-link-material-release">
+									<a class="nav-link" id="lnkNavRel" href="marketing.html">
+										<i class="fas fa-desktop sidebar-icon"></i> Marketing Graphics
+									</a>
+								</li>
+							</ul>
+						</div><!-- Main Menu -->
+
+						<div class="legal">
+							<p class="mb-0">&copy; 2022 Insite by Anixter</p>
+						</div><!-- Legal -->
+
+					</div>
+				</div>
+			</nav>
+			<div class="main" style="width: 100%;">
+				<nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+			<div class="collapse navbar-collapse navbar-toggle" id="collapsibleNavbar">
+				<ul class="navbar-nav ml-auto topper-nav">
+					<img src="images/team-name.jpg" alt="Team Name" style="margin-top:-10px;" />
+				</ul>
+			</div>
+		</nav>
+		<div class="container-fluid page-container-outer pr-3 pl-0 ">
+			<input type="hidden" value="1" id="inProjectId" />
+			<div class="container-fluid page-container pt-3 pb-3">
+				<div id="divPartTracker" class="container-fluid" >			
+					<div class="container-fluid page-container-outer pr-3 pl-0 ">
+						<div class="container-fluid page-container pt-0 pb-3">
+							<div id="" class="container-fluid" >
+								<div class="mb-1">
+									<div class="circle"><i class="fas fa-universal-access page-headline-icon"></i></div>
+									<h4 class="page-headline mb-4">Accessibility (WCAG)</h4>
+								</div><!--Page Headline-->
+
+								<div id="" class="container-fluid" >
+									<div class="m-0">
+										<div class="p-3 form-section release-container">
+											<div class="row">
+												<div class="col-md-12">
+													<h6>WCAG 2.1 Level A</h6>
+													<table class="table table-striped table-hover">
+														<thead>
+															<tr>
+																<th>Criteria</th>
+																<th>Description</th>
+																<th>Status</th>
+															</tr>
+														</thead>
+
+														<tbody>
+															<tr>
+																<td>1.1.1 – Non-text Content</td>
+																<td>Provide text alternatives for non-text content</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+
+															<tr>
+																<td>1.2.1 – Audio-only and Video-only (Pre-recorded)</td>
+																<td>Provide an alternative to video-only and audio-only content</td>
+																<td>Not applicable</td>
+															</tr>
+															<tr>
+																<td>1.2.2 – Captions (Pre-recorded)</td>
+																<td>Provide captions for videos with audio</td>
+																<td>Not applicable</td>
+															</tr>
+															<tr>
+																<td>1.2.3 – Audio description or Media Alternative (Pre-recorded)</td>
+																<td>Video with an audio has a second alternative</td>
+																<td>Not applicable</td>
+															</tr>
+															<tr>
+																<td>1.3.1 – Info and Relationships</td>
+																<td>Logical structures</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+															<tr>
+																<td>1.3.2 – Meaningful Sequence</td>
+																<td>Present content in a meaningful order</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+															<tr>
+																<td>1.3.3 – Sensory Characteristics</td>
+																<td>Use more than one sense for instructions</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+															<tr>
+																<td>1.4.1 – Use of Colour</td>
+																<td>Don't use presentation that relies solely on color</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+															<tr>
+																<td>1.4.2 – Audio Control</td>
+																<td>Don't play audio automatically</td>
+																<td>Not applicable</td>
+															</tr>
+															<tr>
+																<td>2.1.1 – Keyboard</td>
+																<td>Accessible by keyboard only</td>
+																<td>In Progress</td>
+															</tr>
+															<tr>
+																<td>2.1.2 – No Keyboard Trap</td>
+																<td>Don't trap keyboard users</td>
+																<td>In Progress</td>
+															</tr>
+															<tr>
+																<td>2.1.4 – Character Key Shortcuts</td>
+																<td>Do not use single key shortcuts or provide a way to turn them off or change them</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+															<tr>
+																<td>2.2.1 – Timing Adjustable</td>
+																<td>Time limits have user controls</td>
+																<td>Not applicable</td>
+															</tr>
+															<tr>
+																<td>2.2.2 – Pause, Stop, Hide</td>
+																<td>Provide user controls for moving content</td>
+																<td>Not applicable</td>
+															</tr>
+															<tr>
+																<td>2.3.1 – Three Flashes or Below</td>
+																<td>No content flashes more than three times per second</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+															<tr>
+																<td>2.4.1 – Bypass Blocks</td>
+																<td>Provide a “Skip to Content” link</td>
+																<td>Not applicable</td>
+															</tr>
+															<tr>
+																<td>2.4.2 – Page Titled</td>
+																<td>Helpful and clear page title</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+															<tr>
+																<td>2.4.3 – Focus Order</td>
+																<td>Logical Order</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+															<tr>
+																<td>2.4.4 – Link Purpose (In Context)</td>
+																<td>Every link's purpose is clear from its context</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+															<tr>
+																<td>2.5.1 – Pointer Gestures</td>
+																<td>Users can perform touch functions with assistive technology or one finger</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+															<tr>
+																<td>2.5.2 – Pointer Cancellation</td>
+																<td>This requirement applies to web content that interprets pointer actions</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+															<tr>
+																<td>2.5.3 – Label in Name</td>
+																<td>The name contains the text that is presented visually</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+															<tr>
+																<td>2.5.4 – Motion Actuation</td>
+																<td>Functions that are triggered by moving a device or by gesturing towards a device can also be operated by more conventional user interface components</td>
+																<td>Not applicable</td>
+															</tr>
+															<tr>
+																<td>3.1.1 – Language of Page</td>
+																<td>Page has a language assigned</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+															<tr>
+																<td>3.2.1 – On Focus</td>
+																<td>Elements do not change when they receive focus</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+															<tr>
+																<td>3.2.2 – On Input</td>
+																<td>Elements do not change when they receive input</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+															<tr>
+																<td>3.3.1 – Error Identification</td>
+																<td>Clearly identify input errors</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+															<tr>
+																<td>3.3.2 – Labels or Instructions</td>
+																<td>Label elements and give instructions</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+															<tr>
+																<td>4.1.1 – Parsing</td>
+																<td>No major code errors</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+															<tr>
+																<td>4.1.2 – Name, Role, Value</td>
+																<td>Build all elements for accessibility</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+															
+
+														</tbody>
+													</table>
+												</div>
+											</div><!--row-->
+										</div><!--section block-->
+
+											<div class="p-3 form-section release-container">
+											<div class="row">
+												<div class="col-md-12">
+													<h6>WCAG 2.1 Level AA</h6>
+													<table class="table table-striped table-hover">
+														<thead>
+															<tr>
+																<th>Criteria</th>
+																<th>Description</th>
+																<th>Status</th>
+															</tr>
+														</thead>
+
+														<tbody>
+															<tr>
+																<td>1.2.4 – Captions (Live)</td>
+																<td>Live videos have captions</td>
+																<td>Not applicable</td>
+															</tr>
+
+															<tr>
+																<td>1.2.5 – Audio Description (Pre-recorded)</td>
+																<td>Users have access to audio description for video content</td>
+																<td>Not applicable</td>
+															</tr>
+
+															<tr>
+																<td>1.3.4 – Orientation</td>
+																<td>Requires authors not to rely on a screen orientation</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+
+															<tr>
+																<td>1.3.5 – Identify Input Purpose</td>
+																<td>Ensure common names are provided using the HTML autocomplete list</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+
+															<tr>
+																<td>1.4.3 – Contrast (Minimum)</td>
+																<td>Contrast ratio between text and background is at least 4.5:1</td>
+																<td>In Progress</td>
+															</tr>
+
+															<tr>
+																<td>1.4.4 – Resize Text</td>
+																<td>Text can be resized to 200% without loss of content or function</td>
+																<td>In Progress</td>
+															</tr>
+
+															<tr>
+																<td>1.4.5 – Images of Text</td>
+																<td>Don't use images of text</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+
+															<tr>
+																<td>1.4.10 – Reflow</td>
+																<td>Your website must be responsive</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+
+															<tr>
+																<td>1.4.11 – Non-Text Contrast</td>
+																<td>High contrast between pieces of text and their backgrounds</td>
+																<td>In Progress</td>
+															</tr>
+
+															<tr>
+																<td>1.4.12 – Text Spacing</td>
+																<td>Text spacing can be overridden to improve the reading experience</td>
+																<td>In Progress</td>
+															</tr>
+
+															<tr>
+																<td>1.4.13 – Content on Hover Focus</td>
+																<td>Ensuring content visible on hover or keyboard focus does not lead to accessibility issues</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+
+															<tr>
+																<td>2.4.5 – Multiple Ways</td>
+																<td>Offer several ways to find pages</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+
+															<tr>
+																<td>2.4.6 – Headings and Labels</td>
+																<td>Use clear headings and labels</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+
+															<tr>
+																<td>2.4.7 – Focus Visible</td>
+																<td>Keyboard focus is visible and clear</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+
+															<tr>
+																<td>3.1.2 – Language of Parts</td>
+																<td>Tell users when the language on a page changes</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+
+															<tr>
+																<td>3.2.3 – Consistent Navigation</td>
+																<td>Use menus consistently</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+
+															<tr>
+																<td>3.2.4 – Consistent Identification</td>
+																<td>Use icons and buttons consistently</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+
+															<tr>
+																<td>3.3.3 – Error Suggestion</td>
+																<td>Suggest fixes when users make errors</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+
+															<tr>
+																<td>3.3.4 – Error Prevention (Legal, Financial, Data)</td>
+																<td>Reduce the risk of input errors for sensitive data</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+
+															<tr>
+																<td>4.1.3 – Status Changes</td>
+																<td>Distances between paragraphs, rows, words and characters must be able to be increased to a certain value</td>
+																<td>In Progress</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div><!--row-->
+										</div><!--section block-->
+
+
+										<div class="p-3 form-section release-container">
+											<div class="row">
+												<div class="col-md-12">
+													<h6>WCAG 2.1 Level AAA</h6>
+													<table class="table table-striped table-hover">
+														<thead>
+															<tr>
+																<th>Criteria</th>
+																<th>Description</th>
+																<th>Status</th>
+															</tr>
+														</thead>
+
+														<tbody>
+															<tr>
+																<td>1.2.6 – Sign Language (Pre-recorded)</td>
+																<td>Provide sign language translations for videos</td>
+																<td>Not applicable</td>
+															</tr>
+
+															<tr>
+																<td>1.2.7 – Extend Audio Description (Pre-recorded)</td>
+																<td>Provide extended audio description for videos</td>
+																<td>Not applicable</td>
+															</tr>
+															<tr>
+																<td>1.2.8 – Media Alternative (Pre-recorded)</td>
+																<td>Provide a text alternative to videos</td>
+																<td>Not applicable</td>
+															</tr>
+															<tr>
+																<td>1.2.9 – Audio only (Live)</td>
+																<td>Provide alternatives for live audio</td>
+																<td>Not applicable</td>
+															</tr>
+															<tr>
+																<td>1.3.6 – Identify Purpose</td>
+																<td>Anticipates the release of cognitive metadata to be used with assistive technology to simply interfaces</td>
+																<td>Not applicable</td>
+															</tr>
+															<tr>
+																<td>1.4.6 – Contrast (Enhanced)</td>
+																<td>Contrast ratio between text and background is at least 7:1</td>
+																<td>In Progress</td>
+															</tr>
+															<tr>
+																<td>1.4.7 – Low or No Background Audio</td>
+																<td>Audio is clear for listeners to hear</td>
+																<td>Not applicable</td>
+															</tr>
+															<tr>
+																<td>1.4.8 – Visual Presentation</td>
+																<td>Offer users a range of presentation options</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+															<tr>
+																<td>1.4.9 – Images of Text (No Exception)</td>
+																<td>Don't use images of text</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+															<tr>
+																<td>2.1.3 – Keyboard (No Exception)</td>
+																<td>Accessible by keyboard only, without exception</td>
+																<td>In Progress</td>
+															</tr>
+															<tr>
+																<td>2.2.3 – No Timing</td>
+																<td>No time limits</td>
+																<td>In Progress</td>
+															</tr>
+															<tr>
+																<td>2.2.4 – Interruptions</td>
+																<td>Don't interrupt users</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+															<tr>
+																<td>2.2.5 – Re-authenticating</td>
+																<td>Save user data when re-authenticating</td>
+																<td>In Progress</td>
+															</tr>
+															<tr>
+																<td>2.2.6 – Timeouts</td>
+																<td>Users need to be warned of the duration of any inactivity that could cause data loss</td>
+																<td>In Progress</td>
+															</tr>
+															<tr>
+																<td>2.3.2 – Three Flashes</td>
+																<td>No content flashes more than three times per second</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+															<tr>
+																<td>2.3.3 – Animation from Interaction</td>
+																<td>Motion animation triggered by interaction can be disabled</td>
+																<td>Not Applicable</td>
+															</tr>
+															<tr>
+																<td>2.4.8 – Location</td>
+																<td>Let users know where they are</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+															<tr>
+																<td>2.4.9 – Link Purpose (Link Only)</td>
+																<td>Every link's purpose is clear from its text</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+															<tr>
+																<td>2.4.10 – Section Headings</td>
+																<td>Break up content with headings</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+															<tr>
+																<td>2.5.5 – Target Size</td>
+																<td>The size of the target for pointer inputs is at least 44 x 44 CSS pixels</td>
+																<td>In Progress</td>
+															</tr>
+															<tr>
+																<td>2.5.6 – Concurrent Input Mechanisms</td>
+																<td>Web content does not restrict use of input modalities available on a platform</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+															<tr>
+																<td>3.1.3 – Unusual Words</td>
+																<td>Explain any strange words</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+															<tr>
+																<td>3.1.4 – Abbreviations</td>
+																<td>Explain any abbreviations</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+															<tr>
+																<td>3.1.5 – Reading Level</td>
+																<td>Users with nine years of school can read your content</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+															<tr>
+																<td>3.1.6 – Pronunciation</td>
+																<td>Explain any words that are hard to pronounce</td>
+																<td>Not Applicable</td>
+															</tr>
+															<tr>
+																<td>3.2.5 – Change on Request</td>
+																<td>Don't change elements until users ask</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+															<tr>
+																<td>3.3.5 – Help</td>
+																<td>Provide detailed help and instructions</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+															<tr>
+																<td>3.3.6 – Error Prevention (All)</td>
+																<td>Reduce the risk of all input errors</td>
+																<td><i class="fas fa-check-circle"></i> Pass</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div><!--row-->
+										</div><!--section block-->
+
+
+									</div><!--set margins to 0-->
+								</div><!--inner container-->
+							</div><!--outer container-->
+						</div><!--page container-->
+					</div><!--page container outer-->		
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	
+</div> <!-- end of the wrapper div in header.jsp -->
+
+
+
+</body>
+</html>
