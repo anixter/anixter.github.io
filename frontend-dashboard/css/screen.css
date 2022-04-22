@@ -90,13 +90,13 @@ a {color:#0054ae; text-decoration: none;}
 .btn.btn-setup {background-color: #fdf09a; color:#333; border:1px solid #c6b64c;  min-width:80px;}
 .btn.btn-setup:hover, .btn.btn-setup:focus, .btn.btn-setup:active {}
 .btn.btn-info:active {background-color: #2077b2;}
-.btn.btn-primary {background-color: #0078c1;}
-.btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary:active {background-color: #0492e9; color:#fff !important;}
+.btn.btn-primary {background-color: #004986;}
+.btn.btn-primary:hover, .btn.btn-primary:focus, .btn.btn-primary:active {background-color: #00AA13; color:#fff !important;}
 .btn.btn-primary:active {background-color: #1e2a37;}
-.btn.btn-success {background-color: #2ecc71;}
+.btn.btn-success {background-color: #00AA13;}
 .btn.btn-success:hover, .btn.btn-success:focus, .btn.btn-success:active {background-color: #26ab5f;}
 .btn.btn-success:active {background-color: #239a55;}
-.btn.btn-warning {background-color: #f39c12;}
+.btn.btn-warning {background-color: #EAAA00;}
 .btn.btn-warning:hover, .btn.btn-warning:focus, .btn.btn-warning:active {background-color: #d2850b;}
 .btn.btn-warning:active {background-color: #be780a;}
 .btn.btn-danger {background-color: #a9271a; color:#fff !important;}
