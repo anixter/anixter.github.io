@@ -1,1 +1,5 @@
-#searchAllCategoriesButton p {background: none;}
+#searchAllCategoriesButton p {background: none; font-size: 14px; text-align: left; padding: 0px; line-height: 3.4em;}
+#searchAllCategoriesContainer:hover {background: #004986; border-radius: 0px;}
+#searchAllCategoriesButton {border-radius: 0px;}
+#browseMenuInvisible li a {background: none; font-size: 14px; font-weight: normal;}
+ul.navBar ul {border: 0px;}
