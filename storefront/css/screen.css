@@ -3,3 +3,18 @@
 #searchAllCategoriesButton {border-radius: 0px;}
 #browseMenuInvisible li a {background: none; font-size: 14px; font-weight: normal;}
 ul.navBar ul {border: 0px;}
+#search-bar {width: 500px;}
+
+
+
+/* -- Homepage -- */
+.topLevelCategoryContainer {border: 1px solid #eee; border-radius: 0px; width: auto; background: none;}
+	.topLevelCategoryContainer a {width: auto; color: #0078c1;}
+	.topLevelCategoryContainer:hover {box-shadow: 0px; border: 1px solid #ccc;}
+
+
+/* -- Buttons -- */
+.btn {border-radius: 0px;}
+
+/* -- Form Fields -- */
+.form-control {border-radius: 0px;}
