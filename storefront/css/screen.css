@@ -26,7 +26,8 @@ ul.navBar ul {border: 0px;}
 .accountTitle {background-color: #565656; border-radius: 0px; text-align: left; padding-left: 5px; font-weight: normal; font-size: 14px;}
 .toolPanel {border-radius: 0px;}
 .toolPanel a {background: none; font-size: 14px; font-weight: normal; border-bottom: 1px solid #ccc; margin-left: 0px; padding: 5px 10px;}
-
+	.toolPanel a:hover {text-underline: 0px;}
+#userSessionPanel {width: 100%;}
 
 /* -- Buttons -- */
 .btn {border-radius: 0px;}
