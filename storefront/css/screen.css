@@ -1,4 +1,6 @@
-#mainContent3ColumnWrapper {box-shadow: none;}
+/* -- Structure -- */
+#mainContent3ColumnWrapper {box-shadow: none; margin-top: -15px;}
+#centerMainColumn {border-left: 1px solid #eee; border-right: 1px solid #eee;}
 
 
 
@@ -20,7 +22,9 @@ ul.navBar ul {border: 0px;}
 
 /* -- Buttons -- */
 .btn {border-radius: 0px;}
-.btn-secondary {background-color: #DB6B30; border-color: #c5602b;}
+.btn-secondary {background-color: #DB6B30; border-color: #c5602b; padding: 15px 30px;}
+	.btn-secondary:hover {background-color: #c5602b;}
+#cartInfo {padding-top: 5px; line-height: 16px; font-size: 14px;}
 
 /* -- Form Fields -- */
 .form-control {border-radius: 0px;}
