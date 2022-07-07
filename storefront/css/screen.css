@@ -8,9 +8,9 @@ ul.navBar ul {border: 0px;}
 
 
 /* -- Homepage -- */
-.topLevelCategoryContainer {border: 1px solid #eee; border-radius: 0px; width: auto; background: none;}
+.topLevelCategoryContainer {border: 1px solid #eee; border-radius: 0px; width: auto; background: none; box-shadow: none; float: none;}
 	.topLevelCategoryContainer a {width: auto; color: #0078c1;}
-	.topLevelCategoryContainer:hover {box-shadow: 0px; border: 1px solid #ccc;}
+	.topLevelCategoryContainer:hover {box-shadow: none; border: 1px solid #ccc;}
 
 
 /* -- Buttons -- */
