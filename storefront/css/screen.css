@@ -15,8 +15,8 @@ ul.navBar ul {border: 0px;}
 
 
 /* -- Homepage -- */
-.topLevelCategoryContainer {border: 1px solid #eee; border-radius: 0px; width: auto; background: none; box-shadow: none; float: none; min-height: auto;}
-	.topLevelCategoryContainer a {width: auto; color: #0078c1;}
+.topLevelCategoryContainer {border: 1px solid #eee; border-radius: 0px; width: auto; background: none; box-shadow: none; float: none; min-height: 200px;}
+	.topLevelCategoryContainer a {width: auto; color: #0078c1; left: 0;}
 	.topLevelCategoryContainer:hover {box-shadow: none; border: 1px solid #ccc;}
 
 
