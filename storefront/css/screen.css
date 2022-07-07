@@ -1,20 +1,26 @@
+#mainContent3ColumnWrapper {box-shadow: none;}
+
+
+
+
 #searchAllCategoriesButton p {background: none; font-size: 14px; text-align: left; padding: 0px; line-height: 3.4em;}
 #searchAllCategoriesContainer:hover {background: #004986; border-radius: 0px;}
 #searchAllCategoriesButton {border-radius: 0px;}
 #browseMenuInvisible li a {background: none; font-size: 14px; font-weight: normal;}
 ul.navBar ul {border: 0px;}
-#search-bar {width: 500px;}
+#search-bar {}
 
 
 
 /* -- Homepage -- */
-.topLevelCategoryContainer {border: 1px solid #eee; border-radius: 0px; width: auto; background: none; box-shadow: none; float: none;}
+.topLevelCategoryContainer {border: 1px solid #eee; border-radius: 0px; width: auto; background: none; box-shadow: none; float: none; min-height: auto;}
 	.topLevelCategoryContainer a {width: auto; color: #0078c1;}
 	.topLevelCategoryContainer:hover {box-shadow: none; border: 1px solid #ccc;}
 
 
 /* -- Buttons -- */
 .btn {border-radius: 0px;}
+.btn-secondary {background-color: #DB6B30; border-color: #c5602b;}
 
 /* -- Form Fields -- */
 .form-control {border-radius: 0px;}
