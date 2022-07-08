@@ -18,6 +18,8 @@ h1, h2, h3, h4, h5,h6 {font-family: 'Poppins', sans-serif;}
 .breadcrumbContainer {font-size: 14px; font-weight: normal;}
 	.breadcrumbContainer a {color: #0078c1;}
 	.numberItemsPerPage {font-weight: normal;}
+	.screenHeading {background: none; color: #333; text-align: left; margin-left: 45px; margin-bottom: 40px;}
+		.screenHeading h3 {color: #333; font-size: 24px;}
 
 /* -- Homepage -- */
 .topLevelCategoryContainer {border: 1px solid #eee; border-radius: 0px; width: auto; background: none; box-shadow: none; float: none; min-height: 200px;}
