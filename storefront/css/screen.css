@@ -11,15 +11,18 @@ ul.navBar ul {border: 0px;}
 #search-bar {}
 ul.navBar ul li {line-height: 1.5em}
 #footer {background-color: #565656; font-family: 'Roboto', sans-serif; font-size: 14px; font-weight: normal; padding: 50px 0;}
-#centerMainColumnPadding {overflow: hidden;}
+#centerMainColumnPadding {overflow: hidden; padding-left: 30px; padding-right: 30px;}
+
 
 /* -- Text -- */
 h1, h2, h3, h4, h5,h6 {font-family: 'Poppins', sans-serif;}
 .breadcrumbContainer {font-size: 14px; font-weight: normal;}
 	.breadcrumbContainer a {color: #0078c1;}
 	.numberItemsPerPage {font-weight: normal;}
-	.screenHeading {background: none; color: #333; text-align: left; margin-left: 45px; margin-bottom: 40px;}
+	.screenHeading {background: none; color: #333; text-align: left; margin-bottom: 40px;}
 		.screenHeading h3 {color: #333; font-size: 24px;}
+.errorMessage {width: 100%;}
+
 
 /* -- Homepage -- */
 .topLevelCategoryContainer {border: 1px solid #eee; border-radius: 0px; width: auto; background: none; box-shadow: none; float: none; min-height: 200px;}
@@ -47,6 +50,9 @@ a.categorySidebarLink {margin: 0px;}
 #attributeSidebarList {background-color: transparent; border-radius: 7px;}
 .attribute-panel a {display: inline-block;}
 
+/* -- Order Pad -- */
+.orderpadQuantityField input, .orderpadUOMField input {width: 100px;}
+
 
 /* -- Buttons -- */
 .btn {border-radius: 0px;}
@@ -61,6 +67,8 @@ a.categorySidebarLink {margin: 0px;}
 .label {font-size: 14px;}
 
 /* -- Tables -- */
+.table td, .table th {vertical-align: middle;}
 .standardTable a {font-weight: normal;}
 .standardTable img {box-shadow: 0px; border: 0px;}
-.columnHeader td {background-color: #565656;}
+.columnHeader td {background-color: #565656 !important;}
+th {background-color: #565656;}
