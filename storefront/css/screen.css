@@ -15,6 +15,9 @@ ul.navBar ul li {line-height: 1.5em}
 
 /* -- Text -- */
 h1, h2, h3, h4, h5,h6 {font-family: 'Poppins', sans-serif;}
+.breadcrumbContainer {font-size: 14px; font-weight: normal;}
+	.breadcrumbContainer a {color: #0078c1;}
+	.numberItemsPerPage {font-weight: normal;}
 
 /* -- Homepage -- */
 .topLevelCategoryContainer {border: 1px solid #eee; border-radius: 0px; width: auto; background: none; box-shadow: none; float: none; min-height: 200px;}
@@ -33,14 +36,25 @@ h1, h2, h3, h4, h5,h6 {font-family: 'Poppins', sans-serif;}
 .toolPanel a {background: none; font-size: 14px; font-weight: normal; border-bottom: 1px solid #ccc; margin-left: 0px; padding: 10px 5px;}
 	.toolPanel a:hover {text-decoration: none;}
 #userSessionPanel {width: 100%; font-size: 14px;}
+#refineByCategoryContainer {border-radius: 0px; margin-top: 0px;}
+a.categorySidebarLink {font-weight: normal; font-size: 12px;}
+a.attributeSidebarLink {font-size: 12px; font-weight: normal;}
+#attributeSidebarList ul ul li {margin-bottom: 10px;}
+label.attributeNameLabel {font-size: 14px;}
 
 /* -- Buttons -- */
 .btn {border-radius: 0px;}
 .btn-secondary {background-color: #DB6B30; border-color: #c5602b; padding: 15px 30px;}
 	.btn-secondary:hover {background-color: #c5602b;}
-#cartInfo {padding-top: 5px; padding-bottom: 7px; line-height: 16px; font-size: 14px;}
+#cartInfo {padding-top: 5px; padding-bottom: 7px; line-height: 16px; font-size: 14px; font-weight: normal;}
 
 /* -- Form Fields -- */
 .form-control {border-radius: 0px;}
 .standardForm label {font-size: 14px;}
 .standardForm input {width: 100%;}
+.label {font-size: 14px;}
+
+/* -- Tables -- */
+.standardTable a {font-weight: normal;}
+.standardTable img {box-shadow: 0px; border: 0px;}
+.columnHeader td {background-color: #565656;}
