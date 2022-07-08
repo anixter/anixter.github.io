@@ -37,10 +37,14 @@ h1, h2, h3, h4, h5,h6 {font-family: 'Poppins', sans-serif;}
 	.toolPanel a:hover {text-decoration: none;}
 #userSessionPanel {width: 100%; font-size: 14px;}
 #refineByCategoryContainer {border-radius: 0px; margin-top: 0px;}
-a.categorySidebarLink {font-weight: normal; font-size: 12px;}
+a.categorySidebarLink {font-weight: normal; font-size: 14px;}
 a.attributeSidebarLink {font-size: 12px; font-weight: normal;}
 #attributeSidebarList ul ul li {margin-bottom: 10px;}
 label.attributeNameLabel {font-size: 14px;}
+a.categorySidebarLink {margin: 0px;}
+#attributeSidebarList {background-color: transparent; border-radius: 7px;}
+.attribute-panel a {display: inline-block;}
+
 
 /* -- Buttons -- */
 .btn {border-radius: 0px;}
