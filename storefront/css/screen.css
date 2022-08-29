@@ -38,7 +38,7 @@ h3 {font-size: 20px;}
 /* -- Sidebar -- */
 #lineItemAddPanel {background: #eee; border-radius: 0px; width: 100% !important;}
 	#lineItemAddPanel .form-group {padding-left: 5px; padding-right: 5px;}
-.accountTitle {background-color: #565656; border-radius: 0px; text-align: left; padding-left: 5px; font-weight: normal; font-size: 14px;}
+.accountTitle {background-color: #565656; border-radius: 0px; text-align: left; padding: 5px; font-weight: normal; font-size: 14px;}
 .toolPanel {border-radius: 0px;}
 .toolPanel a {background: none; font-size: 14px; font-weight: normal; border-bottom: 1px solid #ccc; margin-left: 0px; padding: 10px 5px;}
 	.toolPanel a:hover {text-decoration: none;}
@@ -51,6 +51,7 @@ label.attributeNameLabel {font-size: 14px;}
 a.categorySidebarLink {margin: 0px;}
 #attributeSidebarList {background-color: transparent; border-radius: 7px;}
 .attribute-panel a {display: inline-block;}
+#userSessionPanel {font-size: 12px; color: #000;}
 
 /* -- Order Pad -- */
 .orderpadQuantityField input, .orderpadUOMField input {width: 100px;}
@@ -81,3 +82,8 @@ th {background-color: #565656;}
 .standardForm fieldset {border: 1px solid #eee; border-radius: 0px;}
 .search-ship-to-btn {margin-top: 20px;}
 table.viewShiptoSelectionTable {min-width: 100%;}
+
+/* -- Pagination -- */
+#itemListNavigationTopUtil {width: 100%; text-align: left; padding-bottom: 0px;}
+.numberItemsPerPage {margin: 0px;}
+.itemListNavPage {font-weight: normal; margin-left: 15px;}
