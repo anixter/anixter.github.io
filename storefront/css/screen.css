@@ -22,6 +22,7 @@ h1, h2, h3, h4, h5,h6 {font-family: 'Poppins', sans-serif;}
 	.screenHeading {background: none; color: #333; text-align: left; margin-bottom: 40px;}
 		.screenHeading h3 {color: #333; font-size: 24px;}
 .errorMessage {width: 100%;}
+h3 {font-size: 20px;}
 
 
 /* -- Homepage -- */
@@ -30,7 +31,8 @@ h1, h2, h3, h4, h5,h6 {font-family: 'Poppins', sans-serif;}
 	.topLevelCategoryContainer:hover {box-shadow: none; border: 1px solid #ccc;}
 
 /* -- Login -- */
-#loginBox, #registerBox, #continueShoppingBox, #requestWholesaleAccountBox {float: none; margin: 0 auto; width: 300px; margin-top: 30px; padding: 40px;}
+#loginBox, #registerBox, #continueShoppingBox, #requestWholesaleAccountBox {float: none; width: 300px; margin-top: 30px; padding: 40px;}
+.login-form-container {border: 1px solid #eee; padding: 25px; margin-left: 25px; margin-top: 10px; min-height: 361px;}
 
 
 /* -- Sidebar -- */
@@ -58,6 +60,7 @@ a.categorySidebarLink {margin: 0px;}
 .btn {border-radius: 0px;}
 .btn-secondary {background-color: #DB6B30; border-color: #c5602b; padding: 15px 30px;}
 	.btn-secondary:hover {background-color: #c5602b;}
+.btn-primary {text-align: center !important;}
 #cartInfo {padding-top: 5px; padding-bottom: 7px; line-height: 16px; font-size: 14px; font-weight: normal;}
 
 /* -- Form Fields -- */
@@ -72,3 +75,9 @@ a.categorySidebarLink {margin: 0px;}
 .standardTable img {box-shadow: 0px; border: 0px;}
 .columnHeader td {background-color: #565656 !important;}
 th {background-color: #565656;}
+
+/* -- Ship To Screen -- */
+#shipToScreen .standardForm fieldset {width: 100%;}
+.standardForm fieldset {border: 1px solid #eee; border-radius: 0px;}
+.search-ship-to-btn {margin-top: 20px;}
+table.viewShiptoSelectionTable {min-width: 100%;}
