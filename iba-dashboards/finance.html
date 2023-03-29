@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skeleton Lab - IBA Dashboard  - Finance</title>
+  <!-- Favicons -->
+  <link rel="icon" href="images/favicon.ico" type="image/png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="manifest.json">
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#712cf9">
+  <link rel="icon" href="favicon.ico">
+  <meta name="theme-color" content="#712cf9">
+
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/screen.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&amp;family=Titillium+Web:wght@700&amp;display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  
+</head>
+<body>
+
+  <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#"><img src="images/skeleton-lab-logo.jpg" /></a>
+    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </header>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+        <div class="position-sticky pt-3 sidebar-sticky">
+          <ul class="nav flex-column mt-3">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">
+                <span data-feather="home" class="align-text-bottom"></span>
+                <i class="fas fa-home"></i> Dashboard Overview
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login-activity.html">
+                <span data-feather="file" class="align-text-bottom"></span>
+                <i class="fas fa-clipboard-check"></i> Account Activity
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="finance.html">
+                <span data-feather="shopping-cart" class="align-text-bottom"></span>
+                <i class="fas fa-landmark"></i> Financial
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="analytics.html">
+                <span data-feather="users" class="align-text-bottom"></span>
+                <i class="fas fa-chart-bar"></i> Application Analytics
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="bar-chart-2" class="align-text-bottom"></span>
+                <i class="fas fa-map-marked-alt"></i> Heat Maps
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+
+        <div class="pt-3 pb-2 mb-3">
+
+          <div class="row">
+            <div class="col-auto me-auto">
+              <h1 class="h2">Financial Dashboard</h1>
+            </div>
+
+            <!-- <div class="col-auto">
+              <div class="row mb-3">
+                <label for="inputEmail3" class="col-sm-2 col-form-label">Export</label>
+                <div class="col-sm-10">
+                  <select class="form-select">
+                    <option>-- Choose Sprint --</option>
+                    <option>IBA-23Q1Sprint 3</option>
+                    <option>IBA-23Q1Sprint 2</option>
+                    <option>IBA-23Q1Sprint 1</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>-->
+          </div>
+          
+          <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-3 mt-3">
+                <div class="card-header stats-card-header">Total Releases - New Projects</div>
+                <canvas id="customerLogons"></canvas>
+            </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-3 mt-3">
+                <div class="card-header stats-card-header">Avg. Number of Lines - New Projects</div>
+                <canvas id="salesRepLogons"></canvas>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-3 mt-3">
+                <div class="card-header stats-card-header">Total Dollars Sent to ERP - New Projects</div>
+                <canvas id="totalUserLogons"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <img src="images/divider.jpg" />
+
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card mb-3 mt-3">
+              <div class="card-header stats-card-header">Ordered Vs Sent</div>
+              <canvas id="month2MonthCustomers"></canvas>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card mb-5 mt-3">
+                <div class="card-header stats-card-header">Revenue</div>
+                <canvas id="month2MonthSalesReps"></canvas>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6">
+               <div class="card mb-3 mt-3">
+                  <div class="card-header stats-card-header">Month to Month Revenue - Year View</div>
+                  <canvas id="month2Date"></canvas>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+               <div class="card mb-3 mt-3">
+                  <div class="card-header stats-card-header">Ordered vs Sent by Project</div>
+                  <canvas id="orderSentProject"></canvas>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        </div>
+      </main>
+    </div>
+  </div>
+
+<script
+        src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+        crossorigin="anonymous"></script>
+  <script src="scripts/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
+
+  <script>
+    const customerLogons = document.getElementById('customerLogons');
+
+    new Chart(customerLogons, {
+      type: 'pie',
+      data: {
+        labels: ['Tesla Southeast', 'Tesla Northeast', 'Tesla Southwest', 'Tesla Midwest', 'Tesla NorCal'],
+        datasets: [{
+          label: '',
+          data: [10, 9, 6, 2, 1],
+          backgroundColor: [
+            '#003f5c',
+            '#58508d',
+            '#ff6361',
+            '#ffa600',
+            '#bc5090'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+
+  <script>
+    const salesRepLogons = document.getElementById('salesRepLogons');
+
+    new Chart(salesRepLogons, {
+      type: 'pie',
+      data: {
+        labels: ['Tesla Southeast', 'Tesla Northeast', 'Tesla Southwest', 'Tesla Midwest', 'Tesla NorCal'],
+        datasets: [{
+          label: '',
+          data: [15, 12, 8, 13, 11],
+          backgroundColor: [
+            '#003f5c',
+            '#58508d',
+            '#ff6361',
+            '#ffa600',
+            '#bc5090'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+
+  <script>
+    const totalUserLogons = document.getElementById('totalUserLogons');
+
+    new Chart(totalUserLogons, {
+      type: 'pie',
+      data: {
+        labels: ['Tesla Southeast', 'Tesla Northeast', 'Tesla Southwest', 'Tesla Midwest', 'Tesla NorCal'],
+        datasets: [{
+          label: '',
+          data: [229240.36, 154507.26, 105960.26, 40147.91, 4896.78],
+          backgroundColor: [
+            '#003f5c',
+            '#58508d',
+            '#ff6361',
+            '#ffa600',
+            '#bc5090'
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+
+  <script>
+    const month2MonthCustomers = document.getElementById('month2MonthCustomers');
+
+    new Chart(month2MonthCustomers, {
+      type: 'bar',
+      data: {
+        labels: ['Total Sent', 'Total Ordered'],
+        datasets: [
+        {
+          label: '2021',
+          data: [52083961.20, 6241209.14],
+          backgroundColor: '#004c6d',
+          borderWidth: 1
+        },
+
+        {
+          label: '2022',
+          data: [33148922.40, 31839931.22],
+          backgroundColor: '#5886a5',
+          borderWidth: 1
+        },
+
+        {
+          label: '2023',
+          data: [8640679.85, 8316285.99],
+          backgroundColor: '#9dc6e0',
+          borderWidth: 1
+          }
+        ]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+
+  <script>
+    const month2MonthSalesReps = document.getElementById('month2MonthSalesReps');
+
+    new Chart(month2MonthSalesReps, {
+      type: 'bar',
+      data: {
+        labels: ['2022', '2023'],
+        datasets: [{
+          label: 'January',
+          data: [1500000, 1900000],
+          backgroundColor: '#004c6d',
+          borderWidth: 1
+        },
+
+        {
+          label: 'February',
+          data: [3400000, 2700000],
+          backgroundColor: '#5886a5',
+          borderWidth: 1
+          },
+
+          {
+          label: 'March',
+          data: [5900000, 200000],
+          backgroundColor: '#9dc6e0',
+          borderWidth: 1
+          }
+        ]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+
+  <script>
+    const month2Date = document.getElementById('month2Date');
+
+    new Chart(month2Date, {
+      type: 'line',
+      data: {
+        labels: ['Jan', 'Feb', 'March', 'April', 'May','June','July', 'August', 'September', 'October', 'November', 'December'],
+        datasets: [
+        {
+          label: '2023',
+          data: [1900000, 2700000, 200000],
+          fill: true,
+          borderColor: '#003f5c'
+        },
+
+        {
+          label: '2022',
+          data: [1500000, 3400000, 5900000, 3000000,5200000,6000000,2900000,658000,2800000,715000,5100000,3000000],
+          fill: true,
+          borderColor: '#ff6361'
+        }
+
+        ]
+      },
+      
+    });
+  </script>
+
+  <script>
+    const orderSentProject = document.getElementById('orderSentProject');
+
+    new Chart(orderSentProject, {
+      type: 'line',
+      data: {
+        labels: ['Tesla Midwest', 'Tesla Northeast', 'Tesla Southeast', 'Tesla SoCal', 'Tesla Southwest','Tesla NorCal','Baker Hughes', 'Tesla Northwest'],
+        datasets: [
+        {
+          label: 'Ordered',
+          data: [799127.43,1166541.90,1784973.95,616146.30,1659728.70,483881.29,1227196.08,578690.34],
+          fill: true,
+          borderColor: '#003f5c'
+        },
+
+        {
+          label: 'Sent',
+          data: [859034.50,1264942.08,1802906.46,616146.30,1689293.11,557637.93,1227196.08,623523.39],
+          fill: true,
+          borderColor: '#ff6361'
+        }
+
+        ]
+      },
+      
+    });
+  </script>
+
+  
+  
+</body>
+</html>

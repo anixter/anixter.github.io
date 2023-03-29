@@ -1,0 +1,33 @@
+AnixterPowerSolutions.com SSO
+
+- SSO access for several applications, with ability to add/remove as needed.
+
+- Mobile, tablet friendly, and meets accessibility standards.
+
+- User friendly design to reset their password, request access, and manage their account.
+
+- Full suite of analytic tools to help us identify areas of improvement and routes to increase efficiences to improve the applications for our users.
+
+SX.e Storefront
+
+- Ecommerce frontend for the SX.e ERP.
+
+- Customized ecommerce site per customer
+
+- Some of the features include, quick order, order pad, custom shopping lists, wishlists, related items, custom facet searching, and a robust order search system
+
+Mobile Warehouse Manager
+Desktop application and separate mobile application for order entry, warehouse transactions, reel tracking, and admin tools
+
+CREST
+Customer Relationship Enhancement Tool, this is a tool for documenting, tracking, and reporting of incidents and issues with orders for the purpose of resolving those as issues as quick as possible and to be able to audit and track issues so that efficiences and improvements can be discoverd to improve the overall customer satisfaction.
+
+PO Portal
+Search tool for visibility into purchase orders, sales orders, with a wide range of search options and discovery capabilities. Can see consolidated or detailed views.
+
+Apps outside of the APS ecosystem
+WASP - Wesco Advanced Services Portal
+Storm Operations Dashboard
+Mobile Reel Inquiry Tool
+Reel Manager
+
