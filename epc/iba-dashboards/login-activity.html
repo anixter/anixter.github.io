@@ -138,7 +138,14 @@
             </div>
           </div>
 
-         
+         <div class="row">
+            <div class="col-md-6">
+               <div class="card mb-3 mt-3">
+                  <div class="card-header stats-card-header">Main and Sub Projects</div>
+                  <canvas id="mainAndSub"></canvas>
+              </div>
+            </div>
+          </div>
 
         </div>
         </div>
@@ -316,6 +323,33 @@
         }]
       },
       
+    });
+  </script>
+
+  <script>
+    const mainAndSub = document.getElementById('mainAndSub');
+
+    new Chart(mainAndSub, {
+      type: 'doughnut',
+      data: {
+        labels: ['Main Projects', 'Sub Projects'],
+        datasets: [{
+          label: '',
+          data: [2, 11],
+          backgroundColor: [
+            '#003f5c',
+            '#58508d',
+          ],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
     });
   </script>
   
