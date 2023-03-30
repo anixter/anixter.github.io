@@ -154,14 +154,7 @@
             </div>
           </div>
 
-          <div class="row">
-            <div class="col-md-6">
-               <div class="card mb-3 mt-3">
-                  <div class="card-header stats-card-header">Main and Sub Projects</div>
-                  <canvas id="mainAndSub"></canvas>
-              </div>
-            </div>
-          </div>
+          
 
         </div>
         </div>
@@ -401,35 +394,7 @@
     });
   </script>
 
-  <script>
-    const mainAndSub = document.getElementById('mainAndSub');
-
-    new Chart(mainAndSub, {
-      type: 'pie',
-      data: {
-        labels: ['Tesla Southeast', 'Tesla Northeast', 'Tesla Southwest', 'Tesla Midwest', 'Tesla NorCal'],
-        datasets: [{
-          label: '',
-          data: [10, 9, 6, 2, 1],
-          backgroundColor: [
-            '#003f5c',
-            '#58508d',
-            '#ff6361',
-            '#ffa600',
-            '#bc5090'
-          ],
-          borderWidth: 1
-        }]
-      },
-      options: {
-        scales: {
-          y: {
-            beginAtZero: true
-          }
-        }
-      }
-    });
-  </script>
+  
   
 </body>
 </html>
