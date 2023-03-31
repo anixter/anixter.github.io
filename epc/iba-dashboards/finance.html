@@ -168,12 +168,14 @@
         crossorigin="anonymous"></script>
   <script src="scripts/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
 
   <script>
     const customerLogons = document.getElementById('customerLogons');
 
     new Chart(customerLogons, {
       type: 'pie',
+      plugins: [ChartDataLabels],
       data: {
         labels: ['Tesla Southeast', 'Tesla Northeast', 'Tesla Southwest', 'Tesla Midwest', 'Tesla NorCal'],
         datasets: [{
@@ -190,12 +192,12 @@
         }]
       },
       options: {
-        scales: {
-          y: {
-            beginAtZero: true
-          }
-        }
+    plugins: {
+      datalabels: {
+        color: '#fff'
       }
+    }
+  },
     });
   </script>
 
@@ -204,6 +206,7 @@
 
     new Chart(salesRepLogons, {
       type: 'pie',
+      plugins: [ChartDataLabels],
       data: {
         labels: ['Tesla Southeast', 'Tesla Northeast', 'Tesla Southwest', 'Tesla Midwest', 'Tesla NorCal'],
         datasets: [{
@@ -220,12 +223,12 @@
         }]
       },
       options: {
-        scales: {
-          y: {
-            beginAtZero: true
-          }
-        }
+    plugins: {
+      datalabels: {
+        color: '#fff'
       }
+    }
+  },
     });
   </script>
 
@@ -249,13 +252,7 @@
           borderWidth: 1
         }]
       },
-      options: {
-        scales: {
-          y: {
-            beginAtZero: true
-          }
-        }
-      }
+     
     });
   </script>
 

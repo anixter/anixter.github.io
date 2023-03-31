@@ -159,12 +159,15 @@
         crossorigin="anonymous"></script>
   <script src="scripts/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+
 
   <script>
     const customerLogons = document.getElementById('customerLogons');
 
     new Chart(customerLogons, {
       type: 'pie',
+      plugins: [ChartDataLabels],
       data: {
         labels: ['Customer Accounts', 'At least one log in', 'Logins for 2023'],
         datasets: [{
@@ -178,13 +181,15 @@
           borderWidth: 1
         }]
       },
+
       options: {
-        scales: {
-          y: {
-            beginAtZero: true
-          }
-        }
+    plugins: {
+      datalabels: {
+        color: '#fff'
       }
+    }
+  },
+      
     });
   </script>
 
@@ -193,6 +198,7 @@
 
     new Chart(salesRepLogons, {
       type: 'pie',
+      plugins: [ChartDataLabels],
       data: {
         labels: ['Sales Rep Accounts', 'At least one log in', 'Logins for 2023'],
         datasets: [{
@@ -206,13 +212,15 @@
           borderWidth: 1
         }]
       },
+
       options: {
-        scales: {
-          y: {
-            beginAtZero: true
-          }
-        }
+    plugins: {
+      datalabels: {
+        color: '#fff'
       }
+    }
+  },
+      
     });
   </script>
 
@@ -221,6 +229,7 @@
 
     new Chart(totalUserLogons, {
       type: 'pie',
+      plugins: [ChartDataLabels],
       data: {
         labels: ['Total User Accounts', 'At least one log in', 'Logins for 2023'],
         datasets: [{
@@ -234,13 +243,15 @@
           borderWidth: 1
         }]
       },
+
       options: {
-        scales: {
-          y: {
-            beginAtZero: true
-          }
-        }
+    plugins: {
+      datalabels: {
+        color: '#fff'
       }
+    }
+  },
+      
     });
   </script>
 
@@ -309,28 +320,12 @@
   </script>
 
   <script>
-    const month2Date = document.getElementById('month2Date');
-
-    new Chart(month2Date, {
-      type: 'line',
-      data: {
-        labels: ['Jan', 'Feb', 'March', 'April', 'May','June','July', 'August', 'September', 'October', 'November', 'December'],
-        datasets: [{
-          label: 'Number of accounts',
-          data: [20, 16, 15, 10, 7, 10, 12, 10, 7, 5, 8, 23],
-          fill: false,
-          borderColor: 'rgb(75, 192, 192)'
-        }]
-      },
-      
-    });
-  </script>
-
-  <script>
     const mainAndSub = document.getElementById('mainAndSub');
+
 
     new Chart(mainAndSub, {
       type: 'doughnut',
+      plugins: [ChartDataLabels],
       data: {
         labels: ['Main Projects', 'Sub Projects'],
         datasets: [{
@@ -344,12 +339,12 @@
         }]
       },
       options: {
-        scales: {
-          y: {
-            beginAtZero: true
-          }
-        }
+    plugins: {
+      datalabels: {
+        color: '#fff'
       }
+    }
+  },
     });
   </script>
   
