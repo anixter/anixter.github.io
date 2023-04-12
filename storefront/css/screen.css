@@ -38,6 +38,7 @@ h3 {font-size: 20px;}
 /* -- Sidebar -- */
 #lineItemAddPanel {background: #eee; border-radius: 0px; width: 100% !important;}
 	#lineItemAddPanel .form-group {padding-left: 5px; padding-right: 5px;}
+	#lineItemAddPanel input {width:90%;}
 .accountTitle {background-color: #565656; border-radius: 0px; text-align: left; padding: 5px; font-weight: normal; font-size: 14px;}
 .toolPanel {border-radius: 0px;}
 .toolPanel a {background: none; font-size: 14px; font-weight: normal; border-bottom: 1px solid #ccc; margin-left: 0px; padding: 10px 5px;}
@@ -59,16 +60,21 @@ a.categorySidebarLink {margin: 0px;}
 
 /* -- Buttons -- */
 .btn {border-radius: 0px;}
-.btn-secondary {background-color: #DB6B30; border-color: #c5602b; padding: 15px 30px;}
+.btn-secondary {background-color: #db6b30; border-color: #c5602b; padding: 15px 30px;}
 	.btn-secondary:hover {background-color: #c5602b;}
-.btn-primary {text-align: center !important;}
+.btn-primary {text-align: center !important; border-radius:0px; background-color:#004986;}
+.button {text-align: center !important; border-radius:0px; background:#004986;}
 #cartInfo {padding-top: 5px; padding-bottom: 7px; line-height: 16px; font-size: 14px; font-weight: normal;}
+.text a {border-radius:0px; background:#004986;}
+	.text a:hover {background:#4f758b; text-decoration:none;}
+.addToCartButton {border-radius:0px; background-color:#00aa13;}
 
 /* -- Form Fields -- */
 .form-control {border-radius: 0px;}
 .standardForm label {font-size: 14px;}
 .standardForm input {width: 100%;}
 .label {font-size: 14px;}
+checkbox {margin-right:5px;}
 
 /* -- Tables -- */
 .table td, .table th {vertical-align: middle;}
@@ -82,6 +88,12 @@ th {background-color: #565656;}
 .standardForm fieldset {border: 1px solid #eee; border-radius: 0px;}
 .search-ship-to-btn {margin-top: 20px;}
 table.viewShiptoSelectionTable {min-width: 100%;}
+#shipto-filter th {background-color:transparent;}
+#shipto-filter table {margin:0 auto;}
+
+/* -- Review Orders Screen -- */
+#reviewOrdersEntryDateContainer th {background-color:transparent;}
+#reviewOrdersOtherQualifiersContainer th {background-color:transparent;}
 
 /* -- Pagination -- */
 #itemListNavigationTopUtil {width: 100%; text-align: left; padding-bottom: 0px;}
