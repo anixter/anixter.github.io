@@ -83,25 +83,18 @@
             </div>
           
           <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-6">
                 <div class="card mb-3 mt-3">
                 <div class="card-header stats-card-header">Customer Logons</div>
-                <canvas id="customerLogons"></canvas>
-            </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="card mb-3 mt-3">
-                <div class="card-header stats-card-header">Sales Rep Logons</div>
-                <canvas id="salesRepLogons"></canvas>
-              </div>
+                  <canvas id="accountLogons"></canvas>
+                </div>
             </div>
 
-            <div class="col-md-4">
-              <div class="card mb-3 mt-3">
-                <div class="card-header stats-card-header">Total User Logons</div>
-                <canvas id="totalUserLogons"></canvas>
-              </div>
+            <div class="col-md-6">
+                <div class="card mb-3 mt-3">
+                <div class="card-header stats-card-header">Customers Vs Sales Reps</div>
+                  <canvas id="customersVsSalesReps"></canvas>
+                </div>
             </div>
           </div>
 
@@ -146,6 +139,74 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
 
+
+    <script>
+    const customersVsSalesReps = document.getElementById('customersVsSalesReps');
+
+    new Chart(customersVsSalesReps, {
+      type: 'line',
+      data: {
+        labels: ['Jan', 'Feb', 'March', 'April', 'May','June','July', 'August', 'September', 'October', 'November', 'December'],
+        datasets: [
+        {
+          label: 'Customers',
+          data: [20, 16, 10, 3, 3],
+          fill: true,
+          borderColor: '#003f5c'
+        },
+
+        {
+          label: 'Sales Reps',
+          data: [3, 7, 4, 9, 6],
+          fill: true,
+          borderColor: '#ff6361'
+        }
+
+        ]
+      },
+      
+    });
+  </script>
+
+    <script>
+    const accountLogons = document.getElementById('accountLogons');
+
+    new Chart(accountLogons, {
+      type: 'bar',
+      data: {
+        labels: ['Customers', 'Account Reps', 'Total Users'],
+        datasets: [
+        {
+          label: 'Accounts',
+          data: [105, 67, 172],
+          backgroundColor: '#004c6d',
+          borderWidth: 1
+        },
+
+        {
+          label: 'At Least One Login',
+          data: [57, 42, 99],
+          backgroundColor: '#5886a5',
+          borderWidth: 1
+        },
+
+        {
+          label: 'Logins for 2023',
+          data: [32, 7, 39],
+          backgroundColor: '#9dc6e0',
+          borderWidth: 1
+          }
+        ]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
 
   <script>
     const customerLogons = document.getElementById('customerLogons');
