@@ -1,0 +1,87 @@
+/* -- STRUCTURE -- */
+body {color:#1d252d; font-size:16px; font-family: 'Source Sans Pro', sans-serif; line-height:32px;}
+header {background-color:#1d252d; text-align:center;}
+.jumbotron {background:url(../images/header.jpg) no-repeat; background-position:center; max-height:300px;}
+.login-container {background:#1D252D; color:#fff; padding:50px; margin-top:50px;}
+	.sign-in-container {text-align:center;}
+	.sign-in-header-text {font-family: 'Titillium Web', sans-serif; font-size:24px;}
+	.request-more-info-body-text {font-size:18px;}
+	.request-more-info-container {border-right:1px solid #00aa13; text-align:center;}
+.login-container-fields {background:#eee; color:#1d252d; border:1px solid #1d252d; color:#333; padding:50px; width:30%;}
+.change-password-fields {background:#eee; color:#1d252d; border:1px solid #1d252d; color:#333; padding:50px; width:40%;}
+#login-wrapper {margin-bottom:400px;}
+#login-wrapper-change-password {margin-bottom:500px;}
+.intro {margin-top:100px; margin-bottom:100px; padding:50px 50px 0px 50px;}
+.middle-promo {background:#1d262d url(../images/middle-promo-bg.jpg) no-repeat; background-position:center; color:#fff; min-height:450px;}
+#features-wrapper {background:#b7c9d3;}
+	.card-body {min-height:263px;}
+.footer {background-color: #1d252d; color:#b7c9d3; line-height:24px;}
+	.request-footer {text-align:right;}
+	.footer a {color:#b7c9d3;}
+		.footer a:hover,active {color:#fff;}
+
+/* -- TEXT AND LINKS -- */
+h1,h2,h3,h4,h5,h6 {font-family: 'Titillium Web', sans-serif; font-weight:700;}
+	h1 {font-size:24px; }
+p {font-family: 'Source Sans Pro', sans-serif;}
+.show-password-label {position: absolute;right: 12px;top: 50%;z-index:999;-webkit-transform: translateY(-50%);transform: translateY(-50%);}
+.show-password-label a {font-size: 90%;text-decoration: none;}
+.login-remember {margin-left:5px; margin-bottom:0px;}
+	.login-create-account {line-height:40px;}
+.underline {text-decoration:underline; cursor:pointer;}
+.login-tagline {color:#fff;}
+.card-text {list-style-type: square;}
+#change-password-rules {line-height:18px;}
+.intro-desc {font-size:18px;}
+.red {color:#eb1c1c;}
+
+/* -- BUTTONS -- */
+#back-to-top-button {display: inline-block;background-color: #fff; border:1px solid #0078c1; width: 50px;height: 50px;text-align: center;border-radius: 4px;position: fixed;bottom: 60px;right: 30px;transition: background-color .3s, opacity .5s, visibility .5s;opacity: 0;visibility: hidden; z-index: 1000;}
+#back-to-top-button img {width:50%; margin-top:12px;}
+#back-to-top-button:hover {cursor: pointer;background-color: #eee;}
+#back-to-top-button:active {background-color: #555;}
+#back-to-top-button.show {opacity: 1;visibility: visible;}
+.btn-success {background-color:#00aa13; border:0px;}
+.btn-primary {background-color:#4f758b; border:0px;}
+	.btn-primary:hover,active {background-color:#004986;}
+.sign-in-btn {width:50%;}
+.login-primary-btn {width:100%; margin-top:25px;}
+.progress {background-color:#1d252d;}
+
+/* -- Carousel -- */
+.owl-nav {position:absolute; bottom:258px; right:10px; z-index:999; color:#333; font-size:48px;}
+.owl-dots {display:none;}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {padding-bottom:10px !important; padding-left:5px !important; padding-right:5px !important;}
+.carousel {background-color:#1d252d;}
+
+/* -- TABLET -- */
+
+@media screen and (max-width: 1024px) {
+	.request-more-info-body-text {font-size:16px;}
+	.middle-promo {background-size:contain;}
+	.card-title {font-size:16px;}
+	#back-to-top-button {display:none;}
+	.login-remember {font-size:14px;}
+	.login-container-fields {width:80%;}
+	.change-password-fields {width:80%;}
+}
+
+/* -- MOBILE -- */
+@media screen and (max-width: 768px) {
+	.sign-in-header-text {font-size:22px;}
+	.request-more-info-container {margin-bottom:15px; border-right:0px;}
+	.request-more-info-body-text {font-size:16px; margin-bottom:0px;}
+	.sign-in-container {text-align:center; margin-top:15px; border-top:1px solid #6a7377; padding-top:15px;}
+	.sign-in-header-text {margin-bottom:0px;}
+	.login-container {margin-top:0px; text-align:center;}
+	.login-tagline {font-size:12px; padding-left:10px; padding-right:10px; line-height:20px;}
+	.middle-promo {text-align:center; min-height:auto; background-image:none;}
+	#back-to-top-button {display:none;}
+	.footer {text-align:center;}
+		.request-footer {text-align:center; margin-top:15px;}
+	.login-container-fields {width:90%;}
+	.change-password-fields {width:80%;}
+	
+		
+	
+	}
