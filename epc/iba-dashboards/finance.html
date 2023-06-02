@@ -111,7 +111,7 @@
             <div class="col-md-6">
               <div class="card mb-3 mt-3">
               <div class="card-header stats-card-header">Ordered Vs Sent</div>
-              <canvas id="month2MonthCustomers"></canvas>
+              <canvas id="orderedVsSent"></canvas>
               </div>
             </div>
 
@@ -242,33 +242,28 @@
   </script>
 
   <script>
-    const month2MonthCustomers = document.getElementById('month2MonthCustomers');
+    const orderedVsSent = document.getElementById('orderedVsSent');
 
-    new Chart(month2MonthCustomers, {
+    new Chart(orderedVsSent, {
       type: 'bar',
       data: {
-        labels: ['Total Sent', 'Total Ordered'],
+        labels: ['2021', '2022', '2023'],
         datasets: [
         {
-          label: '2021',
+          label: 'Sent',
           data: [52083961.20, 6241209.14],
           backgroundColor: '#004c6d',
           borderWidth: 1
         },
 
         {
-          label: '2022',
+          label: 'Ordered',
           data: [33148922.40, 31839931.22],
           backgroundColor: '#5886a5',
           borderWidth: 1
         },
 
-        {
-          label: '2023',
-          data: [8640679.85, 8316285.99],
-          backgroundColor: '#9dc6e0',
-          borderWidth: 1
-          }
+        
         ]
       },
       options: {
