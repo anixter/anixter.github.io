@@ -31,7 +31,10 @@ h3 {font-size: 20px;}
 	.topLevelCategoryContainer:hover {box-shadow: none; border: 1px solid #ccc;}
 
 /* -- Search Bar -- */
-#applicationNavigationBar {backgournd: #1d252d;}
+#applicationNavigationBar {background: #1d252d; border-radius:0px;}
+#searchAllCategoriesContainer {background-color:#4f758b;}
+
+
 
 /* -- Login -- */
 #loginBox, #registerBox, #continueShoppingBox, #requestWholesaleAccountBox {float: none; width: 300px; margin-top: 30px; padding: 40px;}
