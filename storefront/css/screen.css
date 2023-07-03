@@ -66,8 +66,8 @@ a.categorySidebarLink {margin: 0px;}
 
 /* -- Buttons -- */
 .btn {border-radius: 0px;}
-.btn-secondary {background-color: #db6b30; border-color: #c5602b; padding: 15px 30px;}
-	.btn-secondary:hover {background-color: #c5602b;}
+.btn-secondary {background-color: #00aa13; border-color: #c5602b; padding: 15px 30px;}
+	.btn-secondary:hover {background-color: #019612;}
 .btn-primary {text-align: center !important; border-radius:0px; background-color:#004986;}
 .button {text-align: center !important; border-radius:0px; background:#004986;}
 	.button:hover {text-align: center !important; border-radius:0px; background:#4f758b !important;}
