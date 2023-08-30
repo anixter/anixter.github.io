@@ -33,7 +33,7 @@ h3 {font-size: 20px;}
 /* -- Search Bar -- */
 #applicationNavigationBar {background: #1d252d; border-radius:0px;}
 #searchAllCategoriesContainer {background-color:#4f758b;}
-
+#cartLink {border:1px solid #00aa13;}
 
 
 /* -- Login -- */
@@ -75,6 +75,7 @@ a.categorySidebarLink {margin: 0px;}
 .text a {border-radius:0px; background:#004986;}
 	.text a:hover {background:#4f758b; text-decoration:none;}
 .addToCartButton {border-radius:0px; background-color:#00aa13;}
+.text {padding-top:0px; padding-bottom:20px;}
 
 /* -- Form Fields -- */
 .form-control {border-radius: 0px;}
