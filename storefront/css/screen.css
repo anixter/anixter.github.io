@@ -131,3 +131,10 @@ table.viewShiptoSelectionTable {min-width: 100%;}
 #itemDetailInfo, #itemDetailWishList {margin-top:0px;}
 #itemDetailImg, #itemDetailCart {margin-top:20%;}
 .continueShoppingContainer a {margin-bottom:0px; margin-right:60px;}
+
+/* -- Shopping List -- */
+#accountInfo {background-color:transparent; max-width:100%; border:0px;}
+#accountInfo th {background-color:transparent;}
+
+/* -- Order Pad -- */
+#orderPadTable {width:100%; font-size:14px;}
