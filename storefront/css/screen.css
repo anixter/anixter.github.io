@@ -129,7 +129,8 @@ table.viewShiptoSelectionTable {min-width: 100%;}
 
 /* -- Item Detail -- */
 #itemDetailInfo, #itemDetailWishList {margin-top:0px;}
-#itemDetailImg, #itemDetailCart {margin-top:20%;}
+#itemDetailImg, #itemDetailCart {}
+#itemDetailInfo .text {padding:0px;}
 .continueShoppingContainer a {margin-bottom:0px; margin-right:60px;}
 
 /* -- Shopping List -- */
@@ -138,3 +139,4 @@ table.viewShiptoSelectionTable {min-width: 100%;}
 
 /* -- Order Pad -- */
 #orderPadTable {width:100%; font-size:14px;}
+
