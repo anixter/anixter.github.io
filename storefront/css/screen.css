@@ -132,6 +132,14 @@ table.viewShiptoSelectionTable {min-width: 100%;}
 #itemDetailImg, #itemDetailCart {}
 #itemDetailInfo .text {padding:0px;}
 .continueShoppingContainer a {margin-bottom:0px; margin-right:60px;}
+.tabtr {background-color:#1f1f1f;}
+#itemDetailScreen #itemDetailTab img {position:relative; right:-70px; top:-2px;}
+.continueShoppingContainer a {font-weight:normal; margin:0px; position:relative; top:-45px;}
+#itemDetailInfo table {width:100%; margin-bottom:1rem; border-collapse:collapse;}
+	#itemDetailInfo tbody {font-size:14px;}
+	#itemDetailInfo tbody tr {transition: background 450ms ease-in;}
+	#itemDetailInfo tbody tr:nth-of-type(2n+1) {background-color:#eee;}
+	#itemDetailInfo td {vertical-align:middle; padding:0.45rem; border-top:1px solid #dee2e6;}
 
 /* -- Shopping List -- */
 #accountInfo {background-color:transparent; max-width:100%; border:0px;}
