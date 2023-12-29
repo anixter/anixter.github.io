@@ -145,6 +145,7 @@ table.viewShiptoSelectionTable {min-width: 100%;}
 	#itemDetailInfo .label {width:165px;}
 .item {font-family: 'Roboto', sans-serif; font-size: 14px; font-weight:normal; color:#617182;}
 #itemDetailCart {}
+.qty-input {width:25%; display:inline-block;}
 
 /* -- Shopping List -- */
 #accountInfo {background-color:transparent; max-width:100%; border:0px;}
