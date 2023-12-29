@@ -136,13 +136,15 @@ table.viewShiptoSelectionTable {min-width: 100%;}
 #itemDetailScreen #itemDetailTab img {position:relative; right:-70px; top:-2px;}
 .continueShoppingContainer a {font-weight:normal; margin:0px; position:relative; top:-45px;}
 #itemDetailInfo {background-color:#fff; border:0px;}
-#itemDetailInfo table {width:100%; margin-bottom:1rem; border-collapse:collapse; margin-top:-50px;}
+#itemDetailInfo table {width:100%; margin-bottom:1rem; border-collapse:collapse; margin-top:-50px; table-layout:fixed;}
 	#itemDetailInfo tbody {font-size:14px;}
 	#itemDetailInfo tbody tr {transition: background 450ms ease-in;}
-	#itemDetailInfo tbody tr:nth-of-type(2n+1) {background-color:#eee;}
-	#itemDetailInfo td {vertical-align:middle; padding:0.45rem; border-top:1px solid #dee2e6;}
-	#itemDetailInfo .text {padding-top:0px !important; font-size:14px;}
+	#itemDetailInfo tbody tr:nth-of-type(2n+1) {}
+	#itemDetailInfo td {vertical-align:initial; padding:0.45rem; }
+	#itemDetailInfo .text {padding-top:0px !important; font-size:14px; padding:0.45rem;}
+	#itemDetailInfo .label {width:165px;}
 .item {font-family: 'Roboto', sans-serif; font-size: 14px; font-weight:normal; color:#617182;}
+#itemDetailCart {margin-top:-100px;}
 
 /* -- Shopping List -- */
 #accountInfo {background-color:transparent; max-width:100%; border:0px;}
