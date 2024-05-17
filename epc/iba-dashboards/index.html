@@ -21,85 +21,381 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&amp;family=Titillium+Web:wght@700&amp;display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
-    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   
+  <!--SCRIPTS-->
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script src="scripts/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
+
 </head>
 <body>
 
   <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-    <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#"><img src="images/skeleton-lab-logo.jpg" /></a>
-    <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <div class="container">
+      <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3 fs-6" href="#"><img src="images/skeleton-lab-logo.jpg" /></a>
+      <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
   </header>
 
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
-      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
-        <div class="position-sticky pt-3 sidebar-sticky">
-          <ul class="nav flex-column mt-3">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">
-                <span data-feather="home" class="align-text-bottom"></span>
-                <i class="fas fa-home"></i> Home
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="login-activity.html">
-                <span data-feather="file" class="align-text-bottom"></span>
-                <i class="fas fa-clipboard-check"></i> Account Activity
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="finance.html">
-                <span data-feather="shopping-cart" class="align-text-bottom"></span>
-                <i class="fas fa-landmark"></i> Financial
-              </a>
-            </li>
-           <li class="nav-item">
-              <a class="nav-link" href="analytics.html">
-                <span data-feather="users" class="align-text-bottom"></span>
-                <i class="fas fa-chart-bar"></i> Application Analytics
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="heatmaps.html">
-                <span data-feather="bar-chart-2" class="align-text-bottom"></span>
-                <i class="fas fa-map-marked-alt"></i> Heat Maps
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <main class="col-md-12 ms-sm-auto col-lg-12 px-md-4">
 
         <div class="pt-3 pb-2 mb-3">
 
           <div class="row">
             <div class="col-auto me-auto">
-              <h1 class="h2">Dashboard Overview</h1>
+              <h1 class="h2">IBA Data Dashboard</h1>
             </div>
           </div>
           
           <div class="row">
             <div class="col-md-12">
-               <h2>Welcome to the IBA Data Dashboard</h2>
-               <p>This dashboard serves as a collection point for data collected from the application. On the links to your left, you'll find data related to user activity, financial data, and more.</p>
-            </div>
-            </div>
+             <h2>Welcome to the IBA Data Dashboard</h2>
+             <p>This dashboard serves as a collection point for data collected from the application.</p>
+           </div>
+
+
+           <div class="col-md-4">
+            <div class="card">
+              <img src="images/financials-topper.jpg" class="card-img-top" alt="Entering a credit card into a credit card machine">
+              <div class="card-body">
+                <h5 class="card-title">Financial Data</h5>
+                <p class="card-text">View financial data that is flowing thru the application such as amount ordered, amount sent, and more.</p>
+              </div>
+              <div class="card-body">
+                <a data-bs-toggle="offcanvas" href="#financial-data-shelf" role="button" class="card-link">View Data</a>
+              </div>
+            </div><!--Card-->
           </div>
-        </div>
-        </div>
-      </main>
+           
+           <div class="col-md-4">
+            <div class="card">
+              <img src="images/features-and-pages-topper.jpg" class="card-img-top" alt="2 people looking at tablet computer">
+              <div class="card-body">
+                <h5 class="card-title">Features and Pages</h5>
+                <p class="card-text">View and analyze which pages and features of the application are being used.</p>
+              </div>
+              <div class="card-body">
+                <a data-bs-toggle="offcanvas" href="#features-and-pages-shelf" role="button" class="card-link">View Data</a>
+              </div>
+            </div><!--Card-->
+          </div>
+
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="features-and-pages-shelf" aria-labelledby="features-and-pages-label">
+            <div class="offcanvas-header">
+              <h5 class="" id="">Features and Pages - 3-26-2024</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body">
+              <p><i class="fas fa-info-circle"></i> Pages represent a unique page of the application. Features represents a call to action, for example, a link or button.</p>
+              <div>
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <div class="card">
+                      <div class="card-header">
+                        Pages and Features
+                      </div>
+                      <div class="card-body">
+                        <canvas id="pagesAndFeatures"></canvas>
+                      </div>
+                    </div><!--Card-->
+                  </div><!--Column-->
+
+                  <div class="col-md-6">
+                    <div class="card">
+                      <div class="card-header">
+                        Features per Product Area
+                      </div>
+                      <div class="card-body">
+                        <canvas id="featuresPerProductArea"></canvas>
+                      </div>
+                    </div><!--Card-->
+                  </div><!--Column-->
+                </div><!--Row-->
+
+                <div class="row mb-3">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="card-header">
+                        Most Used Pages (Views)
+                      </div>
+                      <div class="card-body">
+                        <canvas id="mostUsedPages"></canvas>
+                      </div>
+                    </div><!--Card-->
+                  </div><!--Column-->
+                </div>
+
+                <div class="row mb-3">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="card-header">
+                        Most Used Features (Clicks)
+                      </div>
+                      <div class="card-body">
+                        <canvas id="mostUsedFeatures"></canvas>
+                      </div>
+                    </div><!--Card-->
+                  </div><!--Column-->
+                </div><!--Row-->
+
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <div class="card">
+                      <div class="card-header">
+                        Page Views by Product Area
+                      </div>
+                      <div class="card-body">
+                        <canvas id="pageViewsByProductArea"></canvas>
+                      </div>
+                    </div><!--Card-->
+                  </div><!--Column-->
+
+                  <div class="col-md-6">
+                    <div class="card">
+                      <div class="card-header">
+                        Feature Clicks per Product Area
+                      </div>
+                      <div class="card-body">
+                        <canvas id="featureClicksByProductArea"></canvas>
+                      </div>
+                    </div><!--Card-->
+                  </div><!--Column-->
+                </div><!--Row-->
+              </div>
+            </div>
+          </div><!--Shelf-->
+
+          <div class="col-md-4">
+            <div class="card">
+              <img src="images/user-data-topper.jpg" class="card-img-top" alt="4 people around a conference room table">
+              <div class="card-body">
+                <h5 class="card-title">User Data</h5>
+                <p class="card-text">View information about our users, such as activity, hardware/software, and activity.</p>
+              </div>
+              <div class="card-body">
+                <a data-bs-toggle="offcanvas" href="#user-data-shelf" role="button" class="card-link">View Data</a>
+              </div>
+            </div><!--Card-->
+          </div>
+
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="user-data-shelf" aria-labelledby="user-data-shelf-label">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="">User Data</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <div class="card">
+                      <div class="card-header">
+                        Devices Used
+                      </div>
+                      <div class="card-body">
+                        <canvas id="devicesUsed"></canvas>
+                      </div>
+                    </div><!--Card-->
+                  </div><!--Column-->
+
+                  <div class="col-md-6">
+                    <div class="card">
+                      <div class="card-header">
+                        Browser Usage
+                      </div>
+                      <div class="card-body">
+                        <canvas id="browserUsage"></canvas>
+                      </div>
+                    </div><!--Card-->
+                  </div><!--Column-->
+
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="card-header">
+                        Total Time On App Per Month in Hours
+                      </div>
+                      <div class="card-body">
+                        <canvas id="totalTimeOnSite"></canvas>
+                      </div>
+                    </div><!--Card-->
+                  </div><!--Column-->
+                </div><!--Row-->
+
+                <div class="row mb-3">
+                  
+
+                  <div class="col-md-6">
+                    <div class="card">
+                      <div class="card-header">
+                        Most Active Days - Unique Visitors
+                      </div>
+                      <div class="card-body">
+                        <canvas id="mostActiveDays"></canvas>
+                      </div>
+                    </div><!--Card-->
+                  </div><!--Column-->
+
+                   <div class="col-md-6">
+                    <div class="card">
+                      <div class="card-header">
+                        Total Hours On App Per Month (2024 YTD)
+                      </div>
+                      <div class="card-body">
+                        <canvas id="totalTimeOnAppPerMonth"></canvas>
+                      </div>
+                    </div><!--Card-->
+                  </div><!--Column-->
+                </div><!--Row-->
+
+                <div class="row mb-3">
+                 
+                </div><!--Row-->
+
+                
+              </div>
+            </div>
+          </div><!--Shelf-->
+
+          
+
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="financial-data-shelf" aria-labelledby="financial-data-shelf-label">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="">Financial Data - 4-10-2024</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <div class="card">
+                      <div class="card-header">
+                        Release Totals by Year (Sent)
+                      </div>
+                      <div class="card-body">
+                        <canvas id="releaseTotalsByYear"></canvas>
+                      </div>
+                    </div><!--Card-->
+                  </div><!--Column-->
+
+                  <div class="col-md-6">
+                    <div class="card">
+                      <div class="card-header">
+                        Total Dollars Sent to ERP - Last 6 Months
+                      </div>
+                      <div class="card-body">
+                        <canvas id="totalDollarsSentERP"></canvas>
+                      </div>
+                    </div><!--Card-->
+                  </div><!--Column-->
+                </div><!--Row-->
+
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <div class="card">
+                      <div class="card-header">
+                        Totals Sent vs Ordered
+                      </div>
+                      <div class="card-body">
+                        <canvas id="sentVsOrdered"></canvas>
+                      </div>
+                    </div><!--Card-->
+                  </div><!--Column-->
+
+                  <div class="col-md-6">
+                    <div class="card">
+                      <div class="card-header">
+                        Top 5 Customers - Amount Sent ($)
+                      </div>
+                      <div class="card-body">
+                       <canvas id="top5CustomersSent"></canvas>
+                      </div>
+                    </div><!--Card-->
+                  </div><!--Column-->
+                </div><!--Row-->
+
+                <div class="row mb-3">
+                  <div class="col-md-6">
+                    <div class="card">
+                      <div class="card-header">
+                        Top 5 New Projects (Amount $ Sent)
+                      </div>
+                      <div class="card-body">
+                        <canvas id="top5NewProjects"></canvas>
+                      </div>
+                    </div><!--Card-->
+                  </div><!--Column-->
+
+                  <div class="col-md-6">
+                    <div class="card">
+                      <div class="card-header">
+                        Top 5 Number of Releases
+                      </div>
+                      <div class="card-body">
+                       <canvas id="top5Releases"></canvas>
+                      </div>
+                    </div><!--Card-->
+                  </div><!--Column-->
+                </div><!--Row-->
+
+               
+
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="card">
+                      <div class="card-header">
+                        Total Sent ($) Year by Year
+                      </div>
+                      <div class="card-body">
+                       <canvas id="totalSentYearbyYear"></canvas>
+                      </div>
+                    </div><!--Card-->
+                  </div><!--Column-->
+                </div><!--Row-->
+
+                <div class="row">
+                  <div class="col-md-6 mt-3">
+                    <div class="card">
+                      <div class="card-header">
+                        2023 Top 5 Months - Total Sent ($)
+                      </div>
+                      <div class="card-body">
+                       <canvas id="biggestMonths"></canvas>
+                      </div>
+                    </div><!--Card-->
+                  </div><!--Column-->
+
+                  <div class="col-md-6 mt-3">
+                    <div class="card">
+                      <div class="card-header">
+                        2023 Bottom 5 Months - Total Sent ($)
+                      </div>
+                      <div class="card-body">
+                       <canvas id="lowestMonths"></canvas>
+                      </div>
+                    </div><!--Card-->
+                  </div><!--Column-->
+                </div><!--Row-->
+              </div>
+            </div>
+          </div><!--Shelf-->
+
+        </div><!--row-->
+      </div>
     </div>
   </div>
+</main>
+</div>
+</div>
 
-<script
-        src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
-        crossorigin="anonymous"></script>
-  <script src="scripts/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script> 
+<script src="scripts/features.js"></script>
+<script src="scripts/users.js"></script>
+<script src="scripts/financials.js"></script>
+
+
 </body>
 </html>
