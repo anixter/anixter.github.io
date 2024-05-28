@@ -26,8 +26,9 @@
   <!--SCRIPTS-->
   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   <script src="scripts/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
-
+  
 </head>
 <body>
 
@@ -87,7 +88,7 @@
 
           <div class="offcanvas offcanvas-start" tabindex="-1" id="features-and-pages-shelf" aria-labelledby="features-and-pages-label">
             <div class="offcanvas-header">
-              <h5 class="" id="">Features and Pages - 3-26-2024</h5>
+              <h5 class="" id="">Features and Pages - as of 4-10-2024</h5>
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
 
@@ -109,7 +110,7 @@
                   <div class="col-md-6">
                     <div class="card">
                       <div class="card-header">
-                        Features per Product Area
+                        Features per Product Area <i data-bs-toggle="tooltip" data-bs-placement="top" title="Product Areas are a collection of related pages. For example, Under the Material Release Product Area, you may have multiple pages related to that topic." class="fas fa-info-circle"></i> 
                       </div>
                       <div class="card-body">
                         <canvas id="featuresPerProductArea"></canvas>
@@ -122,7 +123,7 @@
                   <div class="col-md-12">
                     <div class="card">
                       <div class="card-header">
-                        Most Used Pages (Views)
+                        Most Used Pages (Views) <i data-bs-toggle="tooltip" data-bs-placement="top" title="This graph shows the most used pages in terms of page views to date. A page view is when a user navigates to a particular page and views that page." class="fas fa-info-circle"></i> 
                       </div>
                       <div class="card-body">
                         <canvas id="mostUsedPages"></canvas>
@@ -135,7 +136,7 @@
                   <div class="col-md-12">
                     <div class="card">
                       <div class="card-header">
-                        Most Used Features (Clicks)
+                        Most Used Features (Clicks) <i data-bs-toggle="tooltip" data-bs-placement="top" title="These are the most used features in terms of clicks, how many times have users clicked on a particular feature. A feature is any button, link, or other call to action within a given product area." class="fas fa-info-circle"></i> 
                       </div>
                       <div class="card-body">
                         <canvas id="mostUsedFeatures"></canvas>
@@ -148,7 +149,7 @@
                   <div class="col-md-6">
                     <div class="card">
                       <div class="card-header">
-                        Page Views by Product Area
+                        Page Views by Product Area <i data-bs-toggle="tooltip" data-bs-placement="top" title="This graph shows the page views by product area, a page view is when a user navigates to a particular page and views that page." class="fas fa-info-circle"></i> 
                       </div>
                       <div class="card-body">
                         <canvas id="pageViewsByProductArea"></canvas>
@@ -159,7 +160,7 @@
                   <div class="col-md-6">
                     <div class="card">
                       <div class="card-header">
-                        Feature Clicks per Product Area
+                        Feature Clicks per Product Area <i data-bs-toggle="tooltip" data-bs-placement="top" title="The number of times features have been clicked in a given product area. A feature is any button, link, or other call to action within a given product area." class="fas fa-info-circle"></i> 
                       </div>
                       <div class="card-body">
                         <canvas id="featureClicksByProductArea"></canvas>
@@ -186,7 +187,7 @@
 
           <div class="offcanvas offcanvas-start" tabindex="-1" id="user-data-shelf" aria-labelledby="user-data-shelf-label">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="">User Data</h5>
+              <h5 class="offcanvas-title" id="">User Data as of 4-10-2024</h5>
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
@@ -195,7 +196,7 @@
                   <div class="col-md-6">
                     <div class="card">
                       <div class="card-header">
-                        Devices Used
+                        Devices Used <i data-bs-toggle="tooltip" data-bs-placement="top" title="Breakdown of what devices users are using to access the application. Desktop includes laptops, mobile includes both tablets and phones." class="fas fa-info-circle"></i>
                       </div>
                       <div class="card-body">
                         <canvas id="devicesUsed"></canvas>
@@ -206,23 +207,25 @@
                   <div class="col-md-6">
                     <div class="card">
                       <div class="card-header">
-                        Browser Usage
+                        Browser Usage <i data-bs-toggle="tooltip" data-bs-placement="top" title="Graph showing what web browsers our users are using to access the application." class="fas fa-info-circle"></i>
                       </div>
                       <div class="card-body">
                         <canvas id="browserUsage"></canvas>
                       </div>
+                      
                     </div><!--Card-->
                   </div><!--Column-->
 
-                  <div class="col-md-12">
+                  <div class="col-md-12 mt-3">
                     <div class="card">
                       <div class="card-header">
-                        Total Time On App Per Month in Hours
+                        Total Time On App Per Month in Hours <i data-bs-toggle="tooltip" data-bs-placement="top" title="Graph showing total time on the application in terms of hours spent, totals are for charted by month." class="fas fa-info-circle"></i> 
                       </div>
                       <div class="card-body">
                         <canvas id="totalTimeOnSite"></canvas>
                       </div>
                     </div><!--Card-->
+                    
                   </div><!--Column-->
                 </div><!--Row-->
 
@@ -232,21 +235,10 @@
                   <div class="col-md-6">
                     <div class="card">
                       <div class="card-header">
-                        Most Active Days - Unique Visitors
+                        Most Active Days - Unique Visitors <i data-bs-toggle="tooltip" data-bs-placement="top" title="This graph shows what the most active days are for the application in terms of number of unique visitors. A unique vistor is a user who logs into the application." class="fas fa-info-circle"></i> 
                       </div>
                       <div class="card-body">
                         <canvas id="mostActiveDays"></canvas>
-                      </div>
-                    </div><!--Card-->
-                  </div><!--Column-->
-
-                   <div class="col-md-6">
-                    <div class="card">
-                      <div class="card-header">
-                        Total Hours On App Per Month (2024 YTD)
-                      </div>
-                      <div class="card-body">
-                        <canvas id="totalTimeOnAppPerMonth"></canvas>
                       </div>
                     </div><!--Card-->
                   </div><!--Column-->
@@ -265,7 +257,7 @@
 
           <div class="offcanvas offcanvas-start" tabindex="-1" id="financial-data-shelf" aria-labelledby="financial-data-shelf-label">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="">Financial Data - 4-10-2024</h5>
+              <h5 class="offcanvas-title" id="">Financial Data - as of 4-10-2024</h5>
               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
@@ -298,7 +290,7 @@
                   <div class="col-md-6">
                     <div class="card">
                       <div class="card-header">
-                        Totals Sent vs Ordered
+                        Totals Sent vs Ordered in 2024
                       </div>
                       <div class="card-body">
                         <canvas id="sentVsOrdered"></canvas>
@@ -309,7 +301,31 @@
                   <div class="col-md-6">
                     <div class="card">
                       <div class="card-header">
-                        Top 5 Customers - Amount Sent ($)
+                        Top 5 Projects - Amount Sent ($) in 2024
+                      </div>
+                      <div class="card-body">
+                       <canvas id="top5ProjectsSent"></canvas>
+                      </div>
+                    </div><!--Card-->
+                  </div><!--Column-->
+                </div><!--Row-->
+
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="card">
+                      <div class="card-header">
+                        Top 5 Number of Releases in 2024
+                      </div>
+                      <div class="card-body">
+                       <canvas id="top5Releases"></canvas>
+                      </div>
+                    </div><!--Card-->
+                  </div><!--Column-->
+
+                  <div class="col-md-6">
+                    <div class="card">
+                      <div class="card-header">
+                        Top 5 Customers - Amount Sent ($) in 2024
                       </div>
                       <div class="card-body">
                        <canvas id="top5CustomersSent"></canvas>
@@ -318,34 +334,10 @@
                   </div><!--Column-->
                 </div><!--Row-->
 
-                <div class="row mb-3">
-                  <div class="col-md-6">
-                    <div class="card">
-                      <div class="card-header">
-                        Top 5 New Projects (Amount $ Sent)
-                      </div>
-                      <div class="card-body">
-                        <canvas id="top5NewProjects"></canvas>
-                      </div>
-                    </div><!--Card-->
-                  </div><!--Column-->
-
-                  <div class="col-md-6">
-                    <div class="card">
-                      <div class="card-header">
-                        Top 5 Number of Releases
-                      </div>
-                      <div class="card-body">
-                       <canvas id="top5Releases"></canvas>
-                      </div>
-                    </div><!--Card-->
-                  </div><!--Column-->
-                </div><!--Row-->
-
                
 
                 <div class="row">
-                  <div class="col-md-12">
+                  <div class="col-md-12 mt-3">
                     <div class="card">
                       <div class="card-header">
                         Total Sent ($) Year by Year
@@ -395,7 +387,13 @@
 <script src="scripts/features.js"></script>
 <script src="scripts/users.js"></script>
 <script src="scripts/financials.js"></script>
+<script>
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
 
+  </script>
 
 </body>
 </html>

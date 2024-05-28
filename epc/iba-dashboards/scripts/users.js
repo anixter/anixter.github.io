@@ -37,7 +37,7 @@ const devicesUsed = document.getElementById('devicesUsed');
 
           
         {
-          label: '2024',
+          label: 'Total Time in Hours',
           data: [16, 12, 17,24,23,0,0,0,0,0,0,0],
           fill: true,
           borderColor: '#003f5c'
@@ -80,37 +80,6 @@ const devicesUsed = document.getElementById('devicesUsed');
  }
     });
 
-    const totalTimeOnAppPerMonth = document.getElementById('totalTimeOnAppPerMonth');
-
-    new Chart(totalTimeOnAppPerMonth, {
-      type: 'bar',
-      data: {
-        labels: ['January','Feburary','March', 'April', 'May'],
-        datasets: [{
-          label: 'Pages',
-          data: [16,12,17,32,31],
-          backgroundColor: [
-            '#4059AD',
-            '#6B9AC4',
-            '#97D8C4',
-            '#FB4D3D',
-            '#CA1551'
-          ],
-          borderWidth: 1
-
-        },
-
-        
-        ]
-      },
-      options: {
-  plugins:{
-   legend: {
-    display: false
-   }
-  }
- }
-    });
 
     const mostActiveDays = document.getElementById('mostActiveDays');
 
@@ -119,7 +88,7 @@ const devicesUsed = document.getElementById('devicesUsed');
       data: {
         labels: ['Sunday','Monday','Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
         datasets: [{
-          label: 'Pages',
+          label: 'Number of Unique Visitors',
           data: [8,9,16,23,20,12,0],
           backgroundColor: [
             '#4059AD',

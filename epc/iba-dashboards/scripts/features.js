@@ -5,7 +5,7 @@ const mostUsedPages = document.getElementById('mostUsedPages');
       data: {
         labels: ['Material Release', 'Material Release Details', 'Bill of Materials', 'My Projects', 'Bill of Materials Details'],
         datasets: [{
-          label: 'Pages',
+          label: 'Number of Views',
           data: [5999,3045,1777,1743,1103],
           backgroundColor: [
             '#4059AD',
@@ -37,7 +37,7 @@ const mostUsedPages = document.getElementById('mostUsedPages');
       data: {
         labels: ['Mat Release - Lines Per Page', 'Nav Menu - BoM', 'Mat Release - Pagination Bar', 'Create New Release', 'Nav Menu - Mat Release', 'BoM - View BoM'],
         datasets: [{
-          label: 'January',
+          label: 'Number of Clicks',
           data: [1232,998,765,712,682,637],
           backgroundColor: [
             '#EAC435',
@@ -69,13 +69,13 @@ const mostUsedPages = document.getElementById('mostUsedPages');
       data: {
         labels: ['Material Release', 'Bill of Materials', 'Project Config', 'Part Tracker', 'Reports Portal'],
         datasets: [{
-          label: '',
+          label: 'Page Views by Product Area',
           data: [9044,2880,440,369, 213],
           backgroundColor: [
             '#087E8B',
             '#FF5A5F',
             '#3C3C3C',
-            '#F5F5F5',
+            '#86BBD8',
             '#C1839F'
           ],
           borderWidth: 1
@@ -103,7 +103,7 @@ const mostUsedPages = document.getElementById('mostUsedPages');
       data: {
          labels: ['Material Release', 'Bill of Materials', 'Project Config', 'Part Tracker', 'Reports Portal'],
         datasets: [{
-          label: '',
+          label: 'Feature Clicks by Product Area',
           data: [6325,1507,194,557, 385],
           backgroundColor: [
             '#2F4858',
