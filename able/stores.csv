@@ -1,0 +1,16 @@
+FID,name,address,chips,crackers,blackbeanc,blackbeans,speltpasta,tortillas,adzuki beans,pintobeans,popcorn,milledprod,products,latitude,longitude,addrtype,addrlocat,index
+0,Kroger Athens,"919 E State St, Athens, OH 45701",1,1,0,1,1,0,1,1,1,0,"Chips, Crackers, Black Beans, Pinto Beans, Adzuki Beans, Popcorn",39.336,-82.069,street_address,RANGE_INTERPOLATED,"Kroger Athens|Chips, Crackers, Black Beans, Pinto Beans, Adzuki Beans, Popcorn"
+1,Athens Farmers Market,"1000 E State St,  Athens, OH 45701",1,1,1,1,1,1,1,1,1,1,"Chips, Crackers, Black Bean Chips, Spelt Pasta, Torillas, Pinto Beans, Adzuki Beans, Popcorn, Milled Products",39.337,-82.0574,street_address,RANGE_INTERPOLATED,"Athens Farmers Market|Chips, Crackers, Black Bean Chips, Spelt Pasta, Tortillas, Pinto Beans, Adzuki Beans, Popcorn, Milled Products"
+2,Village Bakery,"268 E State St, Athens, OH 45701",1,1,1,1,0,0,0,0,0,0,"Chips, Crackers, Popcorn",39.3378,-82.0922,street_address,RANGE_INTERPOLATED,"Village Bakery|Chips, Crackers, Popcorn"
+3,Seamen's Grocery,"305 W Union St,  Athens, OH 45701",1,1,1,0,0,0,0,0,0,0,"Chips, Crackers, Black Bean Chips, Masa",39.3297,-82.1145,premise,ROOFTOP,"Seamen's Grocery|Chips, Crackers, Black Bean Chips, Masa"
+4,The Farmacy,"28 W Stimson Ave, Athens, OH 45701",1,1,1,1,0,0,0,0,1,0,"Chip, Crackers, Black Beans, Popcorn",39.332668,-82.0963,premise,ROOFTOP,"The Farmacy|Chip, Crackers, Black Beans, Popcorn"
+5,Athena Cinema,"20 S Court St, Athens, OH 45701",0,0,0,0,0,0,0,0,1,0,Popcorn,39.3284385,-82.1008161,premise,ROOFTOP,Athena Cinema|Popcorn
+6,Atrium Cafe at Ohio University,"Ohio University, Athens OH 45701",1,0,0,0,0,0,0,0,0,0,Chips,39.324866,-82.102462,bus_station,APPROXIMATE,Atrium Cafe at Ohio University|Chips
+7,Busy Day Market,"30 W Stimson Ave, Athens, OH 45701",1,0,0,0,0,0,0,0,0,0,"Chips, Crackers",39.33234,-82.0952036,street_address,RANGE_INTERPOLATED,"Busy Day Market|Chips, Crackers"
+8,The Burrito Buggy,"Corner of Court and Union, Athens, OH 45701",1,0,0,1,0,1,0,0,0,0,"Chips, Black Beans, Tortillas",39.3275408,-82.1013318,intersection,APPROXIMATE,"The Burrito Buggy|Chips, Black Beans, Tortillas"
+9,Casa Nueva Restaurant,"6 W State St, Athens, OH 45701",1,0,0,1,0,1,0,1,0,0,"Chips, Black Beans, Pinto Beans, Tortillas",39.3307152,-82.1014083,street_address,RANGE_INTERPOLATED,"Casa Nueva Restaurant|Chips, Black Beans, Pinto Beans, Tortillas"
+10,Donkey Coffee,"17 W Washington St, Athens, OH 45701",1,0,0,0,0,0,0,0,0,0,Chips,39.3292252,-82.101983,street_address,RANGE_INTERPOLATED,Donkey Coffee|Chips
+11,Avalanche Pizza,"329 E State St, Athens, OH 45701",0,0,0,0,0,0,0,0,0,1,Milled Products,39.337124,-82.087102,street_address,ROOFTOP,Avalance Pizza|Milled Products
+12,Kiser's BBQ,"1002 E State St, Athens, OH 45701",1,0,0,1,0,1,0,0,0,0,"Chips, Black Beans, Tortillas",39.3371511,-82.0564578,street_address,ROOFTOP,"Kiser's BBQ|Chips, Black Beans, Tortillas"
+13,Sol Cuban Restaurant,"33 N Court St, Athens, OH 45701",1,0,0,1,0,1,0,0,0,1,Milled Products,39.330305,-82.1011081,street_address,RANGE_INTERPOLATED,Sol Cuban Restaurant|Milled Products
+14,Sol Cuban Restaurant,"700 East State St Athens, OH 45701",1,0,0,1,0,1,0,0,0,1,Milled Products,39.3378458,-82.0755295,street_address,ROOFTOP,Sol Cuban Restaurant|Milled Products
