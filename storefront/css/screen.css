@@ -155,4 +155,10 @@ table.viewShiptoSelectionTable {min-width: 100%;}
 /* -- Order Pad -- */
 #orderPadTable {width:100%; font-size:14px;}
 
+/* -- Shipping Address -- */
+.viewShiptoSelectionTable tr.selected {background: #1d252d !important;}
 
+/* -- Checkout -- */
+
+/* -- Footer -- */
+#footer {border-radius:0px; border-top:0px;}
