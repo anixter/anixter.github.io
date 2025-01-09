@@ -126,7 +126,7 @@ table.viewShiptoSelectionTable {min-width: 100%;}
 #checkoutScreen .checkoutSubmitButtonGroup {text-align:initial;}
 #checkoutScreen .standardForm > fieldset {width:100%;}
 .standardForm fieldset {border:0px; margin-bottom:20px;}
-#checkoutSubmitButtonGroupTop input {width:auto;}
+#checkoutSubmitButtonGroupTop input {width:auto !important;}
 
 /* -- Pagination -- */
 #itemListNavigationTopUtil {width: 100%; text-align: left; padding-bottom: 0px;}
