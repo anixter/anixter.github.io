@@ -86,6 +86,7 @@ a.categorySidebarLink {margin: 0px;}
 checkbox {margin-right:5px;}
 
 /* -- Tables -- */
+table.standardTable {min-width:100%;}
 .table td, .table th {vertical-align: middle;}
 .standardTable a {font-weight: normal;}
 .standardTable img {box-shadow: none; border: 0px;}
