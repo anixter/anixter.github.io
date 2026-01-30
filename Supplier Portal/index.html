@@ -1,0 +1,1708 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+    <link rel="manifest" href="images/site.webmanifest" />
+    <title>Loyalty - Supplier Dashboard</title>
+
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/screen.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&amp;family=Titillium+Web:wght@700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet" />
+
+
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+
+    <header>
+        <div class="container">
+            <img src="images/wesco-logo.jpg" alt="Wesco Logo" class="pt-3 pb-3 logo" />
+            <div id="langOptions" class="d-flex float-end mt-4">
+                <p class="mb-0"><span class="me-3"><i class="fas fa-user"></i> Welcome John Doe</span>
+                    <div class="dropdown">
+                      <a class="dropdown-toggle choose-language-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-globe-americas"></i> Choose Language
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#"><img src="images/us.jpg" alt="American Flag" /> English</a></li>
+                        <li><a class="dropdown-item" href="#"><img src="images/fr.jpg" alt="French Flag" /> Français</a></li>
+                    </ul>
+                </div>
+            </p>
+        </div><!--User and Language-->
+    </div>
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="#">Loyalty App</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="#">Assign Customers</a>
+      </li>
+      <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Customers
+        </a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">2023 Selected Customers</a></li>
+            <li><a class="dropdown-item" href="#">2023 Enrolled Customers</a></li>
+        </ul>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Logout</a>
+  </li>
+</ul>
+
+
+
+</div>
+</div>
+</nav>
+
+<div class="container mb-5">
+
+    <!--<div class="alert-message mt-3 mb-3"><i class="fas fa-exclamation-triangle"></i> This is a sample alert message for validation.</div>-->
+
+    <div style="display:none;" class="card mt-3">
+        <div class="card-header">
+            <strong><i class="fas fa-exclamation-triangle"></i> Please Note</strong>
+        </div>
+        <div class="card-body">
+            <p class="mb-2">All internal winners, regardless of final performance, need to be approved by the SBU N-2 leader. Based on number of trips contracted at each venue for VIP Elite and EDGE Advantage, internal employees cannot automatically earn both trips regardless of performance. If there is not enough Wesco representatives to cover customer winners, then this statement can be overruled by the SBU N-2 leader.</p>
+
+            <p class="mb-0">The sales detail reflected on this page is limited to customer accounts that are currently assigned to your direct reports. If you would like to view the entire list of customers tied to your sales locations, please click the "Full Location View" option on the top navigation bar.</p>
+        </div>
+    </div><!--Message Text-->
+
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="mt-3">Supplier Portal</h2>
+            <div class="content-block wesco-scorecard">
+                <h2>Demographics - All Loyalty</h2>
+                <div class="btn-group documents-btn">
+                  <button class="btn btn-default document-library-nav-link btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Document Library
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href=""><div class="file-icon word"><i class="fas fa-file-word"></i></div> VIP Terms and Conditions</a></li>
+                    <hr class="dropdown-divider">
+                    <li><a class="dropdown-item" href=""><div class="file-icon pdf"><i class="fas fa-file-pdf"></i></div> The WESCO Advantage</a></li>
+                    <li><a class="dropdown-item" href=""><div class="file-icon pdf"><i class="fas fa-file-pdf"></i></div> WESCO VIP Program Brochure</a></li>
+                    <li><a class="dropdown-item" href=""><div class="file-icon pdf"><i class="fas fa-file-pdf"></i></div> WESCO VIP Customer Guide</a></li>
+                    <li><a class="dropdown-item" href=""><div class="file-icon pdf"><i class="fas fa-file-pdf"></i></div> INTERNAL ONLY WESCO Loyalty Program Overview</a></li>
+                    <li><a class="dropdown-item" href=""><div class="file-icon pdf"><i class="fas fa-file-pdf"></i></div> 2020 VIP Destinations Magazine - Volume 1</a></li>
+                    <li><a class="dropdown-item" href=""><div class="file-icon pdf"><i class="fas fa-file-pdf"></i></div> Back to Work Safety Kits</a></li>
+                </ul>
+            </div>
+
+
+            <div class="row">
+                <div class="col-md-3 scorecard">
+                    <div class="sales-all-programs hover12">
+                        <div class="osr-card-content">
+                            <p class="scorecard-value">3,648</p>
+                            <p class="scorecard-desc">TOTAL ENROLLED</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 scorecard">
+                    <div class="customers-card">
+                        <div class="osr-card-content">
+                            <p class="scorecard-value">423</p>
+                            <p class="scorecard-desc">CUSTOMERS WHO BOUGHT FROM ME</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 scorecard">
+                    <div class="ytd-cogs-card">
+                        <div class="osr-card-content">
+                            <p class="scorecard-value">$1,715,226</p>
+                            <p class="scorecard-desc">YTD COGS</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 scorecard">
+                    <div class="pytd-cogs-card">
+                        <div class="osr-card-content">
+                            <p class="scorecard-value">$1,234,883</p>
+                            <p class="scorecard-desc">PYTD COGS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!--Scorecard Row-->
+
+
+<div class="row">
+    <div class="col-md-12 content-block">
+        <h2>My Performance</h2>
+        <div class="btn-group documents-btn">
+          <button data-bs-toggle="modal" data-bs-target="#allEnrolledCharts" class="btn btn-default document-library-nav-link btn-sm" type="button" >
+            Chart your Progress
+        </button>
+
+        <span class="mt-1 ml-2 mr-2 white-link">|</span>
+        
+                  <button class="btn btn-default document-library-nav-link btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Historical Data
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" href="docs/Loyalty - Supplier Dashboard - 2024.xlsx">
+                            View 2024
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="docs/Loyalty - Supplier Dashboard - 2023.xlsx">
+                            View 2023
+                        </a>
+                    </li>
+                </ul>
+            
+    </div>
+
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item ms-0" role="presentation">
+            <button class="nav-link active" id="pills-salesbreakdown-tab" data-bs-toggle="pill" data-bs-target="#salesBreakdownContent" type="button" role="tab" aria-controls="pills-salesbreakdown" aria-selected="true"><i class="fas fa-table"></i> All Enrolled</button>
+        </li>
+
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="pills-vipelite-tab" data-bs-toggle="pill" data-bs-target="#vipEliteContent" type="button" role="tab" aria-controls="pills-vipelite" aria-selected="false"><i class="fas fa-table"></i> Projected to Earn Rewards</button>
+        </li>
+    </ul><!--Pills -->
+
+    <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="salesBreakdownContent" role="tabpanel" aria-labelledby="pills-salesbreakdown-tab">
+
+            
+                <table id="salesBreakdown" class="table table-striped table-hover">
+                    <thead>
+                        <tr>
+                            <th>Program</th>
+                            <th>PYTD COGS</th>
+                            <th>YTD COGS</th>
+                            <th>Growth ($)</th>
+                            <th>Growth (%)</th>
+                            <th>Enrolled</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>CONNECT Rewards</td>
+                            <td>$95,397</td>
+                            <td>$197,434</td>
+                            <td>$102,037</td>
+                            <td><i class="fas fa-arrow-alt-circle-up green"></i> 107%</td>
+                            <td>129</td>
+                        </tr>
+
+                        <!--<tr>
+                            <td>CONNECT Plus</td>
+                            <td>$6,784</td>
+                            <td>$44,985</td>
+                            <td>$38,201</td>
+                            <td><i class="fas fa-arrow-alt-circle-up green"></i> 563%</td>
+                            <td>24</td>
+                        </tr>-->
+
+                        <tr>
+                            <td>Edge Advantage</td>
+                            <td>$147,633</td>
+                            <td>$219,714</td>
+                            <td>$72,081</td>
+                            <td><i class="fas fa-arrow-alt-circle-up green"></i> 48%</td>
+                            <td>104</td>
+                        </tr>
+
+                        <tr>
+                            <td>VIP Elite</td>
+                            <td>$985,069</td>
+                            <td>$1,253,093</td>
+                            <td>$268,025</td>
+                            <td><i class="fas fa-arrow-alt-circle-up green"></i> 27%</td>
+                            <td>166</td>
+                        </tr>
+                    </tbody>
+
+                    <tfoot>
+                       <tr>
+                        <td><i class="fas fa-money-bill-wave"></i> Total</td>
+                        <td>$1,234,883</td>
+                        <td>$1,715,226</td>
+                        <td>$480,343</td>
+                        <td><i class="fas fa-arrow-alt-circle-up green"></i> 39%</td>
+                        <td>423</td>
+                    </tr>
+                </tfoot>
+            </table>
+        
+    </div><!--Sales Breakdown Table-->
+
+    <div class="tab-pane fade" id="vipEliteContent" role="tabpanel" aria-labelledby="pills-vipelite-tab">
+
+        
+            <table id="projectedEarn" class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Program</th>
+                        <th>PYTD COGS</th>
+                        <th>YTD COGS</th>
+                        <th>Growth ($)</th>
+                        <th>Growth (%)</th>
+                        <th>Enrolled</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>CONNECT Rewards</td>
+                        <td>$95,397</td>
+                        <td>$197,434</td>
+                        <td>$102,037</td>
+                        <td><i class="fas fa-arrow-alt-circle-up green"></i> 107%</td>
+                        <td>129</td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td>Edge Advantage</td>
+                        <td>$147,633</td>
+                        <td>$219,714</td>
+                        <td>$72,081</td>
+                        <td><i class="fas fa-arrow-alt-circle-up green"></i> 48%</td>
+                        <td>104</td>
+                    </tr>
+
+                    <tr>
+                        <td>VIP Elite</td>
+                        <td>$985,069</td>
+                        <td>$1,253,093</td>
+                        <td>$268,025</td>
+                        <td><i class="fas fa-arrow-alt-circle-up green"></i> 27%</td>
+                        <td>166</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                   <tr>
+                    <td><i class="fas fa-money-bill-wave"></i> Total</td>
+                    <td>$1,234,883</td>
+                    <td>$1,715,226</td>
+                    <td>$480,343</td>
+                    <td><i class="fas fa-arrow-alt-circle-up green"></i> 39%</td>
+                    <td>423</td>
+                </tr>
+            </tfoot>
+        </table>
+    
+</div><!--VIP Elite Table-->
+</div><!--Pills Content Container -->
+</div><!--Content Block-->
+</div><!-- Primary Row -->
+
+<div class="row">
+    <div class="col-md-12 content-block">
+        <h2>Performance by Program</h2>
+
+
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+            <!--<li class="nav-item ms-0" role="presentation">
+                <button class="nav-link active" id="pills-connectPlusSummary-tab" data-bs-toggle="pill" data-bs-target="#connectPlusSummary" type="button" role="tab" aria-controls="pills-connectPlusSummary" aria-selected="true"><i class="fas fa-table"></i> CONNECT Plus</button>
+            </li>-->
+
+            <li class="nav-item ms-0" role="presentation">
+                <button class="nav-link active" id="pills-connectRewardsSummary-tab" data-bs-toggle="pill" data-bs-target="#connectRewardsSummary" type="button" role="tab" aria-controls="pills-connectRewardsSummary" aria-selected="false"><i class="fas fa-table"></i> CONNECT Rewards</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-edgeAdvantageSummary-tab" data-bs-toggle="pill" data-bs-target="#edgeAdvantageSummary" type="button" role="tab" aria-controls="pills-edgeAdvantageSummary" aria-selected="false"><i class="fas fa-table"></i> Edge Advantage</button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-vipEliteSummary-tab" data-bs-toggle="pill" data-bs-target="#vipEliteSummary" type="button" role="tab" aria-controls="pills-vipEliteSummary" aria-selected="false"><i class="fas fa-table"></i> VIP Elite</button>
+            </li>
+        </ul><!--Pills -->
+
+        <div class="tab-content" id="pills-tabContent">
+            <!--<div class="tab-pane fade show active" id="connectPlusSummary" role="tabpanel" aria-labelledby="pills-connectPlusSummary-tab">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="images/program-card-left.jpg" />
+                            </div>
+
+                            <div class="col-md-8 program-card-text">
+                                <h4>TOP REGION</h4>
+                                <p class="mb-0">EES Construction South East</p>
+                                <p>153 Customers - <a class="white-link" data-bs-toggle="modal" data-bs-target="#viewCustomersShelf" href="">View</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="images/program-card-left-orange.jpg" />
+                            </div>
+
+                            <div class="col-md-8 program-card-text">
+                                <h4>TOP BRANCH</h4>
+                                <p>US-OH-Columbus</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="images/program-card-left-blue.jpg" />
+                            </div>
+
+                            <div class="col-md-8 program-card-text">
+                                <h4>TOP OSR</h4>
+                                <p class="mb-0">William Adams</p>
+                                <p class="mb-0">Senior Representative - Outside Sales</p>
+                                <p class="mb-0"><a class="white-link" href="mailto:">Bill.Adams@wescodist.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>-->
+
+            <div class="tab-pane fade show active" id="connectRewardsSummary" role="tabpanel" aria-labelledby="pills-connectRewardsSummary-tab">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="images/program-card-left.jpg" />
+                            </div>
+
+                            <div class="col-md-8 program-card-text">
+                                <h4>TOP REGION</h4>
+                                <p class="mb-0">UBS - West</p>
+                                <p>104 Customers  - <a class="white-link" data-bs-toggle="modal" data-bs-target="#viewCustomersShelf" href="">View</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="images/program-card-left-orange.jpg" />
+                            </div>
+
+                            <div class="col-md-8 program-card-text">
+                                <h4>TOP BRANCH</h4>
+                                <p>US-OH-Anaheim</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="images/program-card-left-blue.jpg" />
+                            </div>
+
+                            <div class="col-md-8 program-card-text">
+                                <h4>TOP OSR</h4>
+                                <p class="mb-0">Sander Cohen</p>
+                                <p class="mb-0">Senior Representative - Outside Sales</p>
+                                <p class="mb-0"><a class="white-link" href="mailto:">sander.cohen@wescodist.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--ROW-->
+                
+            </div><!--CONNECT REWARDS SUMMARY-->
+
+            <div class="tab-pane fade" id="edgeAdvantageSummary" role="tabpanel" aria-labelledby="pills-edgeAdvantageSummary-tab">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="images/program-card-left.jpg" />
+                            </div>
+
+                            <div class="col-md-8 program-card-text">
+                                <h4>TOP REGION</h4>
+                                <p class="mb-0">EES Northeast</p>
+                                <p>166 Customers  - <a class="white-link" data-bs-toggle="modal" data-bs-target="#viewCustomersShelf" href="">View</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="images/program-card-left-orange.jpg" />
+                            </div>
+
+                            <div class="col-md-8 program-card-text">
+                                <h4>TOP BRANCH</h4>
+                                <p>US-IL-Chicago</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="images/program-card-left-blue.jpg" />
+                            </div>
+
+                            <div class="col-md-8 program-card-text">
+                                <h4>TOP OSR</h4>
+                                <p class="mb-0">Frank Fontaine</p>
+                                <p class="mb-0">Representative - Inside Sales</p>
+                                <p class="mb-0"><a class="white-link" href="mailto:">frank.fontaine@wescodist.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--ROW-->
+                
+            </div><!--EDGE ADVANTAGE SUMMARY-->
+
+            <div class="tab-pane fade" id="vipEliteSummary" role="tabpanel" aria-labelledby="pills-vipEliteSummary-tab">
+               <div class="row">
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="images/program-card-left.jpg" />
+                            </div>
+
+                            <div class="col-md-8 program-card-text">
+                                <h4>TOP REGION</h4>
+                                <p>CSS - South East</p>
+                                <p>25 Customers  - <a class="white-link" href="">View</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="images/program-card-left-orange.jpg" />
+                            </div>
+
+                            <div class="col-md-8 program-card-text">
+                                <h4>TOP BRANCH</h4>
+                                <p>US-OH-Atlanta</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="images/program-card-left-blue.jpg" />
+                            </div>
+
+                            <div class="col-md-8 program-card-text">
+                                <h4>TOP OSR</h4>
+                                <p class="mb-0">Brigid Tenenbaum</p>
+                                <p class="mb-0">Senior Representative - Outside Sales</p>
+                                <p class="mb-0"><a class="white-link" href="mailto:">Brigid.Tenenbaum@wescodist.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div><!--ROW-->
+                
+            </div><!--VIP ELITE SUMMARY-->
+        </div><!--Pills Content Container -->
+    </div><!--Content Block-->
+</div><!-- Primary Row -->
+
+<div class="row">
+    <div class="col-md-12 content-block">
+        <h2>Demographics
+        <div class="btn-group documents-btn">
+          <button data-bs-toggle="modal" data-bs-target="#demographicsSummary" class="btn btn-default document-library-nav-link btn-sm" type="button" >
+            View Overall Summary
+        </button>
+    </h2>
+
+        <div class="row">
+            <div class="col-md-6">
+
+                <table class="table table-striped nav nav-tabs demographic-table" id="demographicsTable" role="tablist">
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th>Enrolled</th>
+                            <th>YTD COGS</th>
+                            <th>PYTD COGS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a class="nav-link demographic-link" id="residential-tab" data-bs-toggle="tab" data-bs-target="#residential-graph" type="button" role="tab" aria-controls="residential" aria-selected="false"><i class="fas fa-home"></i> Residential</a>
+                            </td>
+                            <td>256</td>
+                            <td>$683,221</td>
+                            <td>$474,872</td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                                <button class="nav-link demographic-link" id="lowVolt-tab" data-bs-toggle="tab" data-bs-target="#lowVolt-graph" type="button" role="tab" aria-controls="lowVolt" aria-selected="false"><i class="fab fa-usb"></i> Low Voltage/Data Communications</button>
+                            </td>
+                            <td>61</td>
+                            <td>$781,795</td>
+                            <td>$473,866</td>
+                        </tr>
+
+                    <tr>
+                      <td>
+                            <button class="nav-link demographic-link" id="commercial-tab" data-bs-toggle="tab" data-bs-target="#commercial-graph" type="button" role="tab" aria-controls="commercial" aria-selected="false"><i class="fas fa-building"></i> Commercial Electrical</button>
+                        </td>
+                        <td>38</td>
+                        <td>$49,218</td>
+                        <td>$67,122</td>
+                    </tr>
+
+                 <tr>
+                      <td>
+                        <button class="nav-link demographic-link" id="industrial-tab" data-bs-toggle="tab" data-bs-target="#industrial-graph" type="button" role="tab" aria-controls="industrial" aria-selected="false"><i class="fas fa-industry"></i> Industrial/OEM Electrical</button>
+                    </td>
+                    <td>36</td>
+                    <td>$72,738</td>
+                    <td>$53,458</td>
+                </tr>
+
+                 <tr>
+                      <td>
+                        <button class="nav-link demographic-link" id="security-tab" data-bs-toggle="tab" data-bs-target="#security-graph" type="button" role="tab" aria-controls="security" aria-selected="false"><i class="fas fa-key"></i> Security Integrator</button>
+                    </td>
+                    <td>17</td>
+                    <td>$10,596</td>
+                    <td>$17,657</td>
+                </tr>
+
+                 <tr>
+                      <td>
+                        <button class="nav-link demographic-link active" id="contact-tab" data-bs-toggle="tab" data-bs-target="#audioVisual-graph" type="button" role="tab" aria-controls="audiovisual" aria-selected="true"><i class="fas fa-volume-down"></i> Audio Visual Integrator</button>
+                    </td>
+                    <td>5</td>
+                    <td>$9,231</td>
+                    <td>$29,946</td>
+                </tr>
+
+                 <tr>
+                      <td>
+                        <button class="nav-link demographic-link" id="nonconstruction-tab" data-bs-toggle="tab" data-bs-target="#nonconstruction-graph" type="button" role="tab" aria-controls="contact" aria-selected="false"><i class="fas fa-truck-loading"></i> Non Construction</button>
+                    </td>
+                    <td>4</td>
+                    <td>$67,011</td>
+                    <td>$56,024</td>
+                </tr>
+
+                 <tr>
+                      <td>
+                        <button class="nav-link demographic-link" id="utility-tab" data-bs-toggle="tab" data-bs-target="#utility-graph" type="button" role="tab" aria-controls="utility" aria-selected="false"><i class="fas fa-bolt"></i> Utility</button>
+                    </td>
+                    <td>4</td>
+                    <td>$40,014</td>
+                    <td>$61,664</td>
+                </tr>
+
+                 <tr>
+                      <td>
+                        <button class="nav-link demographic-link" id="solar-tab" data-bs-toggle="tab" data-bs-target="#solar-graph" type="button" role="tab" aria-controls="solar" aria-selected="false"><i class="far fa-sun"></i> Solar & Alternative Energy</button>
+                    </td>
+                    <td>2</td>
+                    <td>$1,402</td>
+                    <td>$254</td>
+                </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="col-md-6">
+        <div class="tab-content" id="myTabContent">
+          <div style="max-height:300px; text-align:center; margin:0 auto;" class="tab-pane fade" id="residential-graph" role="tabpanel" aria-labelledby="residential-tab">
+            <h4 class="mt-3">Residential</h4>
+            <canvas id="demographicsResChart"></canvas>
+          </div>
+
+          <div style="max-height:300px; text-align:center; margin:0 auto;" class="tab-pane fade" id="lowVolt-graph" role="tabpanel" aria-labelledby="lowVolt-tab">
+            <h4 class="mt-3">Low Voltage/Data Communications</h4>
+            <div style="display: flex;justify-content: center;align-items: center;height: 300px;">
+                <canvas id="demographicsLowVoltChart"></canvas>
+            </div>
+          </div>
+
+          <div style="max-height:300px; text-align:center; margin:0 auto;" class="tab-pane fade" id="commercial-graph" role="tabpanel" aria-labelledby="commercial-tab">
+            <h4 class="mt-3">Commercial Electrical</h4>
+            <div style="display: flex;justify-content: center;align-items: center;height: 300px;">
+                <canvas id="demographicsCommercialChart"></canvas>
+            </div>
+          </div>
+
+          <div style="max-height:300px; text-align:center; margin:0 auto;" class="tab-pane fade" id="industrial-graph" role="tabpanel" aria-labelledby="industrial-tab">
+            <h4 class="mt-3">Industrial/OEM Electrical</h4>
+            <div style="display: flex;justify-content: center;align-items: center;height: 300px;">
+                <canvas id="demographicsIndustrialChart"></canvas>
+            </div>
+          </div>
+
+          <div style="max-height:300px; text-align:center; margin:0 auto;" class="tab-pane fade" id="security-graph" role="tabpanel" aria-labelledby="security-tab">
+            <h4 class="mt-3">Security Integrator</h4>
+            <div style="display: flex;justify-content: center;align-items: center;height: 300px;">
+                <canvas id="demographicsSecurityChart"></canvas>
+            </div>
+          </div>
+
+          <div style="max-height:300px; text-align:center; margin:0 auto;" class="tab-pane fade show active" id="audioVisual-graph" role="tabpanel" aria-labelledby="av-tab">
+            <h4 class="mt-3">Audio Visual Integrator</h4>
+            <div style="display: flex;justify-content: center;align-items: center;height: 300px;">
+                <canvas id="demographicsAVChart"></canvas>
+            </div>
+          </div>
+
+          <div style="max-height:300px; text-align:center; margin:0 auto;" class="tab-pane fade" id="nonconstruction-graph" role="tabpanel" aria-labelledby="nonconstruction-tab">
+            <h4 class="mt-3">Non Construction</h4>
+            <div style="display: flex;justify-content: center;align-items: center;height: 300px;">
+                <canvas id="demographicsNonconstructionChart"></canvas>
+            </div>
+          </div>
+
+          <div style="max-height:300px; text-align:center; margin:0 auto;" class="tab-pane fade" id="utility-graph" role="tabpanel" aria-labelledby="utility-tab">
+            <h4 class="mt-3">Utility</h4>
+            <div style="display: flex;justify-content: center;align-items: center;height: 300px;">
+                <canvas id="demographicsUtilityChart"></canvas>
+            </div>
+          </div>
+
+          <div style="max-height:300px; text-align:center; margin:0 auto;" class="tab-pane fade" id="solar-graph" role="tabpanel" aria-labelledby="solar-tab">
+            <h4 class="mt-3">Solar &amp; Alternative Energy</h4>
+            <div style="display: flex;justify-content: center;align-items: center;height: 300px;">
+                <canvas id="demographicsSolarChart"></canvas>
+            </div>
+          </div>
+
+      </div>
+</div>
+</div>
+
+</div>
+</div>
+
+
+
+<div class="row">
+    <div class="col-md-12 content-block">
+        <h2>News Feed</h2>
+    </div>
+</div><!--Row-->
+
+<div class="row mb-5">
+  <div class="col-sm-3">
+    <div class="card enrolled-customers-card">
+      <div class="card-body">
+        <h5 class="card-title mb-0">Latest Updates</h5>
+        <img src="images/green-bar-sm.png" />
+        <p class="card-text">Read the latest news and updates.</p>
+        <a data-bs-toggle="offcanvas" href="#newsFeed" role="button" aria-controls="newsFeed" class="btn btn-primary">View</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-3">
+    <div class="card enrolled-customers-card">
+      <div class="card-body">
+        <h5 class="card-title mb-0">Customer Engagement Events</h5>
+        <img src="images/green-bar-sm.png" />
+        <p class="card-text">Customer Engagement Events provides a resource to  engage customers.</p>
+        <a data-bs-toggle="offcanvas" href="#customerEngagementEvents" role="button" aria-controls="customerEngagementEvents" class="btn btn-primary">View</a>
+    </div>
+</div>
+</div>
+
+<div class="col-sm-3">
+    <div class="card enrolled-customers-card">
+      <div class="card-body">
+        <h5 class="card-title mb-0">Connect Plus</h5>
+        <img src="images/green-bar-sm.png" />
+        <p class="card-text">Learn about who is eligible and how does the program work.</p>
+        <a data-bs-toggle="offcanvas" href="#connectPlus" role="button" aria-controls="connectPlus" class="btn btn-primary">View</a>
+    </div>
+</div>
+</div>
+
+<div class="col-sm-3">
+    <div class="card enrolled-customers-card">
+      <div class="card-body">
+        <h5 class="card-title mb-0">Connect Plus Taxable Income</h5>
+        <img src="images/green-bar-sm.png" />
+        <p class="card-text">Learn more about how taxes work with the Connect Plus program.</p>
+        <a data-bs-toggle="offcanvas" href="#connectPlusTaxableIncome" role="button" aria-controls="connectPlusTaxableIncome" class="btn btn-primary">View</a>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="row mb-5">
+  <div class="col-sm-3">
+    <div class="card enrolled-customers-card">
+      <div class="card-body">
+        <h5 class="card-title mb-0">Wesco VIP - 2020 Program Snapshot</h5>
+        <img src="images/green-bar-sm.png" />
+        <p class="card-text">Take the time to familiarize yourself with the VIP program rules.</p>
+        <a data-bs-toggle="offcanvas" href="#wescoVIP" role="button" aria-controls="wescoVIP" class="btn btn-primary">View</a>
+    </div>
+</div>
+</div>
+<div class="col-sm-3">
+    <div class="card enrolled-customers-card">
+      <div class="card-body">
+        <h5 class="card-title mb-0">Connect: Merchandise Incentive Program</h5>
+        <img src="images/green-bar-sm.png" />
+        <p class="card-text">Learn about who is eligible and how does the program work.</p>
+        <a data-bs-toggle="offcanvas" href="#connectMerch" role="button" aria-controls="ConnectMerch" class="btn btn-primary">View</a>
+    </div>
+</div>
+</div>
+
+<div class="col-sm-3">
+    <div class="card enrolled-customers-card">
+      <div class="card-body">
+        <h5 class="card-title mb-0">Supplier Bonus Multipliers</h5>
+        <img src="images/green-bar-sm.png" />
+        <p class="card-text">Learn how you can reach your goals faster.</p>
+        <a data-bs-toggle="offcanvas" href="#supplierBonus" role="button" aria-controls="supplierBonus" class="btn btn-primary">View</a>
+    </div>
+</div>
+</div>
+
+<div class="col-sm-3">
+    <div class="card enrolled-customers-card">
+      <div class="card-body">
+        <h5 class="card-title mb-0">Wesco Loyalty Taxable Income</h5>
+        <img src="images/green-bar-sm.png" />
+        <p class="card-text">Learn more about how taxes work with the Wesco Loyalty program.</p>
+        <a data-bs-toggle="offcanvas" href="#wescoLoyalty" role="button" aria-controls="wescoLoyalty" class="btn btn-primary">View</a>
+    </div>
+</div>
+</div>
+</div>
+
+
+<div class="row">
+  <div class="col-sm-3">
+    <div class="card enrolled-customers-card">
+      <div class="card-body">
+        <h5 class="card-title mb-0">Connect Taxable Income</h5>
+        <img src="images/green-bar-sm.png" />
+        <p class="card-text">Learn more about how taxes work with the Connect program.</p>
+        <a data-bs-toggle="offcanvas" href="#connectTaxableIncome" role="button" aria-controls="connectTaxableIncome" class="btn btn-primary">View</a>
+    </div>
+</div>
+</div>
+</div>
+
+
+</div><!--Container-->
+
+<footer class="footer mt-auto py-3 text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <img src="images/wesco-logo.jpg" alt="Wesco Logo" class="mb-3 footer-logo" />
+                <p class="mb-0">&copy; Wesco, Inc All Rights Reserved</p>
+                <p class="mb-0"><a target="_blank" href="https://www.anixter.com/en_us/privacy-policy.html">Privacy Policy</a> <span class="mr-2 ml-2">|</span> <a target="_blank" href="https://www.anixter.com/en_us/about-us/terms-of-use.html">Terms and Conditions</a></p>
+                <p class="mb-0 version-info">Version 1.02</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- News Feed -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="newsFeed" aria-labelledby="newsFeed">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">News Feed</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+<div class="offcanvas-body">
+    <div>
+        <img src="images/news-feed-thumbnail.jpg" class="w-100" />
+        <p>For a limited time only, WESCO Safety is offering a 50-pack of KN95 masks for <strong>FREE</strong> when you purchase $2,500 worth of protective masks.</p>
+
+        <p>Click here to learn more: <a target="_blank" href="https://wesco.widen.net/s/msgu0za9vp">KN95 Customer Promotion</a></p>
+    </div>
+</div>
+</div>
+
+<!-- Customer Engagement Events -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="customerEngagementEvents" aria-labelledby="customerEngagementEvents">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Customer Engagement Events</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+<div class="offcanvas-body">
+    <div>
+      <p>Customer Engagement Events provide a local platform for the field sales team and our key supplier partners to engage customers, develop relationships and drive sales growth. These shows are fully managed and executed by our Pittsburgh events team and events fully utilize field supplier BDF funds. These events fill up fast and customers performance updates will now be included on the new loyalty platform under "Events."</p>
+
+      <p>Contact the Pittsburgh events team directly to schedule a show or reach out to your local region marketing manager and they will point you in the right direction. </p>
+  </div>
+</div>
+</div>
+
+<!-- Connect Plus -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="connectPlus" aria-labelledby="connectPlus">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Connect Plus</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+<div class="offcanvas-body">
+    <div>
+      <p>Who is eligible and how does it work?</p>
+      <ul>
+          <li>Any WESCO customer that purchased less than $200,000 in 2019 is eligible for Connect</li>
+          <li>Purchases from January 1, 2021 through December 31, 2021 qualify</li>
+          <li>Only one customer contact can participate and redeem points earned</li>
+          <li>Over 35,000 reward options including merchandise, gift cards, and local event tickets are available via our online category ordering tool</li>
+          <li>Points are paid out at $50,000, $100,000, $200,000 and $300,000 customer purchase milestones</li>
+      </ul>
+
+      <p>Customer Point Structure</p>
+
+      <ul>
+          <li><strong>Maximum value for any customer participant is 75,000 points</strong></li>
+          <li>$50,000 in purchases receives 12,500 points</li>
+          <li>$100,000 in purchases receives an additional 12,500 points</li>
+          <li>$200,000 in purchases receives an additional 25,000 points</li>
+          <li> $300,000 in purchases receives an additional 25,000 points</li>
+      </ul>
+  </div>
+
+</div>
+</div>
+
+<!-- Connect Plus Taxable Income -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="connectPlusTaxableIncome" aria-labelledby="connectPlusTaxableIncome">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Connect Plus Taxable Income</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+<div class="offcanvas-body">
+    <div>
+      <p>All WESCO Loyalty participants are responsible for taxable income. Once customers earn points they will be able to redeem those points on our online merchandise site. Before redeeming any points customers must provide an updated business or personal W9. </p>
+
+      <p>Details provided on the W9 form will be used to report the necessary taxable income value to the IRS. Note that WESCO is NOT required to report any taxable income value under $600.</p>
+
+      <p>Participants that provide incorrect W9 information <strong>will be removed from the WESCO Loyalty program</strong> and not eligible to participate in future programs.</p>
+  </div>
+</div>
+</div>
+
+<!-- Wesco VIP -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="wescoVIP" aria-labelledby="wescoVIP">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Wesco VIP - 2020 Program Snapshot</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+<div class="offcanvas-body">
+    <div>
+      <p>Take the time to familiarize yourself with the VIP program rules. It is imperative that you understand how to qualify and how credit is earned. Please be sure to log into the platform frequently to view purchase information and key program information and news.</p>
+
+      <ul>
+          <li>Program Dates: All sales included starting Jan. 1, 2020 through Dec. 31, 2020</li>
+          <li>The Purchase Goal: These are the purchases (sales dollars) you need to achieve in order earn a trip for two people. Each customer will be assigned 1 purchase goal for 2020.</li>
+          <li>The VIP Trip: A once-in-a-lifetime, 6-night trip to the beautiful island of Maui</li>
+          <li>Travel Dates: The VIP Program Travel will take place June 21 through June 27, 2021 with no exceptions. If you cannot travel on those dates there will be no awards in lieu of the VIP Program trip.</li>
+          <li>Supplier Bonus Multipliers. An incentive for our customers to purchase products from suppliers that are participating in VIP. Customers can earn up to a 10% bonus on select purchases. This information is available on the WESCO Loyalty Platform website.</li>
+          <li>Review your VIP purchase goal with your WESCO account manager so they can answer any questions you may have. Share current and future project needs and map out a plan to ensure that you achieve your goal.</li>
+          <li>Taxable Income: Let's face it, nobody likes taxes. But to remain compliant with the IRS, WESCO will need to request W9 information prior to travel. Providing an updated business W9 is mandatory prior to travel eligibility.</li>
+      </ul>
+  </div>
+</div>
+</div>
+
+<!-- Connect Merchandize -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="connectMerch" aria-labelledby="connectMerch">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Connect: Merchandise Incentive Program</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+<div class="offcanvas-body">
+    <div>
+      <p>Who is eligible and how does it work?</p>
+      <ul>
+          <li>Any WESCO customer that purchased less than $200,000 in 2019 is eligible for Connect</li>
+          <li>Purchases from January 1, 2021 through December 31, 2021 qualify</li>
+          <li>Only one customer contact can participate and redeem points earned</li>
+          <li>Over 35,000 reward options including merchandise, gift cards, and local event tickets are available via our online category ordering tool</li>
+          <li>Points are paid out at $50,000, $100,000, $200,000 and $300,000 customer purchase milestones</li>
+      </ul>
+
+      <p>Customer Point Structure</p>
+
+      <ul>
+          <li><strong>Maximum value for any customer participant is 75,000 points</strong></li>
+          <li>$50,000 in purchases receives 12,500 points</li>
+          <li>$100,000 in purchases receives an additional 12,500 points</li>
+          <li>$200,000 in purchases receives an additional 25,000 points</li>
+          <li> $300,000 in purchases receives an additional 25,000 points</li>
+      </ul>
+  </div>
+</div>
+</div>
+
+
+
+<!-- Wesco Loyalty Taxable Income -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="wescoLoyalty" aria-labelledby="wescoLoyalty">
+  <div class="offcanvas-header">
+    <h2 class="offcanvas-title" id="offcanvasExampleLabel">Wesco Loyalty Taxable Income</h2>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+<div class="offcanvas-body">
+    <div>
+
+
+        <p>All WESCO Loyalty participants are responsible for taxable income. Customers that achieve their WESCO VIP purchase goal will be eligible for group travel. During the travel registration process, customers must provide an updated business W9. Business details provided on the W9 form will be used to report the necessary taxable income value to the IRS. Note: WESCO is not required by the IRS to report any taxable value for businesses that are incorporated (i.e., S-Corp, C-Corp, etc.)</p>
+
+        <p>Participants that provide incorrect business W9 information will be removed from the WESCO Loyalty program and not eligible to participate in future programs.</p>
+
+    </div>
+</div>
+</div>
+
+<!-- Connect Taxable Income -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="connectTaxableIncome" aria-labelledby="connectTaxableIncome">
+  <div class="offcanvas-header">
+    <h2 class="offcanvas-title" id="offcanvasExampleLabel">Connect Taxable Income</h2>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+</div>
+<div class="offcanvas-body">
+    <div>
+      <p>All WESCO Loyalty participants are responsible for taxable income. Once customers earn points they will be able to redeem those points on our online merchandise site. Before redeeming any points customers must provide an updated business or personal W-9. Details provided on the W-9 form will be used to report the necessary taxable income value to the IRS. Note that WESCO is NOT required to report any taxable income value under $600.</p>
+
+      <p>Participants that provide incorrect W-9 information will be removed from the WESCO Loyalty program and not eligible to participate in future programs.</p>
+  </div>
+</div>
+</div>
+
+
+
+<!-- Choose Language -->
+<div class="modal fade" id="chooseLanguage" tabindex="-1" aria-labelledby="chooseLanguage" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+        ...
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+    </div>
+</div>
+</div>
+</div>
+
+
+<!-- All Enrolled Charts -->
+<div class="modal fade" id="allEnrolledCharts" tabindex="-1" aria-labelledby="connectPlusChart" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">All Enrolled Progress Chart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-3 mt-3">
+                    <div class="card-header stats-card-header">PYTD COGS Vs YTD COGS</div>
+                    <canvas id="cogsData"></canvas>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card mb-3 mt-3">
+                    <div class="card-header stats-card-header">Number Enrolled</div>
+                    <canvas style="max-height:270px;" id="enrolledNumber"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-3 mt-3">
+                    <div class="card-header stats-card-header">Growth ($)</div>
+                    <canvas id="growthMoney"></canvas>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card mb-3 mt-3">
+                    <div class="card-header stats-card-header">Growth (%)</div>
+                    <canvas style="max-height:270px;" id="growthPercent"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+    </div>
+</div>
+</div>
+</div>
+
+<!-- Demographics Summary -->
+<div class="modal fade" id="demographicsSummary" tabindex="-1" aria-labelledby="demographicsSummary" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Demographics Summary</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+
+        <canvas id="demographicsSummaryChart"></canvas>
+        
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+    </div>
+</div>
+</div>
+</div>
+
+<!-- View Customers Shelf -->
+<div class="modal left fade" data-bs-backdrop="static" data-bs-keyboard="false" id="viewCustomersShelf" tabindex="-1" role="dialog" aria-labelledby="left_modal">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">CONNECT Rewards - Customers</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>View your customers for the CONNECT Rewards program.</p>
+                
+
+        <table id="customerTable" class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Customer</th>
+                    <th>Branch</th>
+                    <th>Branch Name</th>
+                    <th>SBU</th>
+                    <th>PYTD COGS</th>
+                    <th>YTD COGS</th>
+                    <th>Growth</th>
+                    <th>% Changed</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>AV ACUMEN LLC</td>
+                    <td>1020T</td>
+                    <td>Tri-Ed Atlanta</td>
+                    <td>CSS</td>
+                    <td>0</td>
+                    <td>2,197</td>
+                    <td>2,197</td>
+                    <td><i class="fas fa-arrow-alt-circle-up green"></i> 0.00%</td>
+                </tr>
+
+                <tr>
+                    <td>3M</td>
+                    <td>1020T</td>
+                    <td>Tri-Ed Atlanta</td>
+                    <td>CSS</td>
+                    <td>0</td>
+                    <td>4,574</td>
+                    <td>3,2567</td>
+                    <td><i class="fas fa-arrow-alt-circle-up green"></i> 5.00%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<div class="modal-footer modal-footer-fixed">
+    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" aria-label="Close">Close</button>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<!-- SCRIPTS -->
+<script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+<script src="scripts/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+<script>
+    const cogsData = document.getElementById('cogsData');
+
+    new Chart(cogsData, {
+      type: 'bar',
+      data: {
+        labels: ['CONNECT Rewards', 'Edge Advantage', 'VIP Elite'],
+        datasets: [
+            {
+              label: 'PYTD COGS',
+              data: [95397, 147633,985069],
+              backgroundColor: '#5886a5',
+              borderWidth: 1
+          },
+
+          {
+              label: 'YTD COGS',
+              data: [197434, 219714, 1253093],
+              backgroundColor: '#9dc6e0',
+              borderWidth: 1
+          }
+      ]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+    }
+}
+}
+});
+</script>
+
+<script>
+    const demographicsSummaryChart = document.getElementById('demographicsSummaryChart');
+
+    new Chart(demographicsSummaryChart, {
+      type: 'bar',
+      data: {
+        labels: ['Residential', 'Low Voltage/Date Communications', 'Commercial Electric', 'Industrial/OEM Electrical','Security Integrator','Audio Visual Integrator','Non Construction','Utility','Solar and Alternative Energy'],
+        datasets: [
+            {
+              label: 'PYTD COGS',
+              data: [474872, 473866, 67122,53458,17657,29946,56024,61664,254],
+              backgroundColor: '#5886a5',
+              borderWidth: 1
+          },
+
+          {
+              label: 'YTD COGS',
+              data: [683221, 781795, 49218, 72738,10596,9231,67011,40014,1402],
+              backgroundColor: '#9dc6e0',
+              borderWidth: 1
+          }
+      ]
+  },
+  options: {
+    indexAxis: 'y',
+  }
+});
+</script>
+
+<script>
+    const growthMoney = document.getElementById('growthMoney');
+
+    new Chart(growthMoney, {
+      type: 'bar',
+      data: {
+        labels: ['CONNECT Rewards', 'Edge Advantage', 'VIP Elite'],
+        datasets: [
+            {
+              label: 'Growth ($)',
+              data: [102037, 72081,268025],
+              backgroundColor: '#5886a5',
+              borderWidth: 1
+          }
+
+
+      ]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+    }
+}
+}
+});
+</script>
+
+<script>
+    const growthPercent = document.getElementById('growthPercent');
+
+    new Chart(growthPercent, {
+      type: 'pie',
+      data: {
+        labels: ['CONNECT Rewards', 'Edge Advantage', 'VIP Elite'],
+        datasets: [{
+          label: '',
+          data: [107,48,27],
+          backgroundColor: [
+            '#EAC435',
+            '#345995',
+            '#03CEA4',
+            '#FB4D3D'
+        ],
+        borderWidth: 1
+
+    },
+
+
+]
+},
+options: {
+  plugins:{
+     legend: {
+        display: true
+    }
+}
+}
+});
+</script>
+
+<script>
+    const demographicsResChart = document.getElementById('demographicsResChart');
+
+    new Chart(demographicsResChart, {
+      type: 'bar',
+      data: {
+        labels: ['PYTD COGS ($)', 'YTD COGS ($)'],
+        datasets: [{
+          label: '',
+          data: [683221,474872],
+          backgroundColor: [
+            '#00aa13',
+            '#db6b30'
+        ],
+        borderWidth: 1
+
+    },
+
+
+]
+},
+options: {
+  plugins:{
+     legend: {
+        display: true
+    }
+}
+}
+});
+</script>
+
+<script>
+    const demographicsLowVoltChart = document.getElementById('demographicsLowVoltChart');
+
+    new Chart(demographicsLowVoltChart, {
+      type: 'bar',
+      data: {
+        labels: ['PYTD COGS ($)', 'YTD COGS ($)'],
+        datasets: [{
+          label: '',
+          data: [781795,473866],
+          backgroundColor: [
+            '#00aa13',
+            '#db6b30'
+        ],
+        borderWidth: 1
+
+    },
+
+
+]
+},
+options: {
+  plugins:{
+     legend: {
+        display: true
+    }
+}
+}
+});
+</script>
+
+<script>
+    const demographicsCommercialChart = document.getElementById('demographicsCommercialChart');
+
+    new Chart(demographicsCommercialChart, {
+      type: 'bar',
+      data: {
+        labels: ['PYTD COGS ($)', 'YTD COGS ($)'],
+        datasets: [{
+          label: '',
+          data: [49218,67122],
+          backgroundColor: [
+            '#00aa13',
+            '#db6b30'
+        ],
+        borderWidth: 1
+
+    },
+
+
+]
+},
+options: {
+  plugins:{
+     legend: {
+        display: true
+    }
+}
+}
+});
+</script>
+
+<script>
+    const demographicsIndustrialChart = document.getElementById('demographicsIndustrialChart');
+
+    new Chart(demographicsIndustrialChart, {
+      type: 'bar',
+      data: {
+        labels: ['PYTD COGS ($)', 'YTD COGS ($)'],
+        datasets: [{
+          label: '',
+          data: [53458,72738],
+          backgroundColor: [
+            '#00aa13',
+            '#db6b30'
+        ],
+        borderWidth: 1
+
+    },
+
+
+]
+},
+options: {
+  plugins:{
+     legend: {
+        display: true
+    }
+}
+}
+});
+</script>
+
+<script>
+    const demographicsSecurityChart = document.getElementById('demographicsSecurityChart');
+
+    new Chart(demographicsSecurityChart, {
+      type: 'bar',
+      data: {
+        labels: ['PYTD COGS ($)', 'YTD COGS ($)'],
+        datasets: [{
+          label: '',
+          data: [17657,10596],
+          backgroundColor: [
+            '#00aa13',
+            '#db6b30'
+        ],
+        borderWidth: 1
+
+    },
+
+
+]
+},
+options: {
+  plugins:{
+     legend: {
+        display: true
+    }
+}
+}
+});
+</script>
+
+<script>
+    const demographicsAVChart = document.getElementById('demographicsAVChart');
+
+    new Chart(demographicsAVChart, {
+      type: 'bar',
+      data: {
+        labels: ['PYTD COGS ($)', 'YTD COGS ($)'],
+        datasets: [{
+          label: '',
+          data: [29946,9321],
+          backgroundColor: [
+            '#00aa13',
+            '#db6b30'
+        ],
+        borderWidth: 1
+
+    },
+
+
+]
+},
+options: {
+  plugins:{
+     legend: {
+        display: true
+    }
+}
+}
+});
+</script>
+
+<script>
+    const demographicsNonconstructionChart = document.getElementById('demographicsNonconstructionChart');
+
+    new Chart(demographicsNonconstructionChart, {
+      type: 'bar',
+      data: {
+        labels: ['PYTD COGS ($)', 'YTD COGS ($)'],
+        datasets: [{
+          label: '',
+          data: [67011,56024],
+          backgroundColor: [
+            '#00aa13',
+            '#db6b30'
+        ],
+        borderWidth: 1
+
+    },
+
+
+]
+},
+options: {
+  plugins:{
+     legend: {
+        display: true
+    }
+}
+}
+});
+</script>
+
+
+<script>
+    const demographicsUtilityChart = document.getElementById('demographicsUtilityChart');
+
+    new Chart(demographicsUtilityChart, {
+      type: 'bar',
+      data: {
+        labels: ['PYTD COGS ($)', 'YTD COGS ($)'],
+        datasets: [{
+          label: '',
+          data: [40014,61664],
+          backgroundColor: [
+            '#00aa13',
+            '#db6b30'
+        ],
+        borderWidth: 1
+
+    },
+
+
+]
+},
+options: {
+  plugins:{
+     legend: {
+        display: true
+    }
+}
+}
+});
+</script>
+
+<script>
+    const demographicsSolarChart = document.getElementById('demographicsSolarChart');
+
+    new Chart(demographicsSolarChart, {
+      type: 'bar',
+      data: {
+        labels: ['PYTD COGS ($)', 'YTD COGS ($)'],
+        datasets: [{
+          label: '',
+          data: [1402,254],
+          backgroundColor: [
+            '#00aa13',
+            '#db6b30'
+        ],
+        borderWidth: 1
+
+    },
+
+
+]
+},
+options: {
+  plugins:{
+     legend: {
+        display: true
+    }
+}
+}
+});
+</script>
+
+
+
+<script>
+    const enrolledNumber = document.getElementById('enrolledNumber');
+
+    new Chart(enrolledNumber, {
+      type: 'doughnut',
+      data: {
+        labels: ['CONNECT Rewards', 'Edge Advantage', 'VIP Elite'],
+        datasets: [{
+          label: '',
+          data: [129,104,166],
+          backgroundColor: [
+            '#EAC435',
+            '#345995',
+            '#03CEA4',
+            '#FB4D3D'
+        ],
+        borderWidth: 1
+
+    },
+
+
+]
+},
+options: {
+  plugins:{
+     legend: {
+        display: true
+    }
+}
+}
+});
+</script>
+
+<link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.0.1/css/buttons.dataTables.min.css">
+
+<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.0.1/js/dataTables.buttons.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.html5.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/2.0.1/js/buttons.print.min.js"></script>
+
+
+
+<script>
+    document.querySelectorAll('button[data-bs-toggle="pill"]').forEach((el) => {
+        el.addEventListener('shown.bs.tab', () => {
+            DataTable.tables({ visible: true, api: true }).columns.adjust();
+        });
+    });
+</script>
+<script>
+    $(document).ready(function() {
+        $('#salesBreakdown').DataTable( {
+            dom: 'Bfrtip',
+            paging: false,
+            buttons: [
+                'copy', 'csv', 'excel', 'pdf', 'print'
+            ]
+        } );
+    } );
+</script>
+
+<script>
+    $(document).ready(function() {
+        $('#projectedEarn').DataTable( {
+            dom: 'Bfrtip',
+            paging: false,
+            buttons: [
+                'copy', 'csv', 'excel', 'pdf', 'print'
+            ]
+        } );
+    } );
+</script>
+
+<script>
+    $( document ).ready(function() {
+        new DataTable('#salesBreakdownEnrolled', {
+            scrollY: 300,
+            paging: false
+        } );
+    });
+</script>
+
+<script>
+    $( document ).ready(function() {
+        new DataTable('#vipEliteTable', {
+            scrollY: 300,
+            paging: false
+        } );
+    });
+</script>
+
+<script>
+    $( document ).ready(function() {
+        new DataTable('#demographicsTable', {
+            dom: 'Bfrtip',
+            searching: false,
+            responsive: true,
+            paging: false,
+            buttons: [
+                'copy', 'csv', 'excel', 'pdf', 'print'
+            ]
+        } );
+    });
+</script>
+
+<script>
+    $( document ).ready(function() {
+        new DataTable('#customerTable', {
+            dom: 'Bfrtip',
+            searching: false,
+            responsive: true,
+            paging: false,
+            buttons: [
+                'copy', 'csv', 'excel', 'pdf', 'print'
+            ]
+        } );
+    });
+</script>
+
+</body>
+</html>
